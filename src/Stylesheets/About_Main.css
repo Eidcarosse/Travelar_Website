@@ -1,0 +1,92 @@
+.About_Main {
+    height: fit-content;
+    margin-bottom: 5em;
+  }
+  
+.Abt_Main_Wrapper{
+    max-width: 76%;
+    overflow:hidden;
+    height: fit-content;
+    margin : auto;
+    margin-top: 2vh ;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.Abt_Main_Wrapper h2{
+  margin-top: 1em;
+  width: fit-content;
+  color: black;
+  font-family: Carme;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 1.5em;
+  
+}
+
+.highlight{
+  position: relative;
+}
+
+.highlight::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 14px;
+  width: 100%;
+  background-color: #3a9bdc;
+  transform: translateY(-98%);
+  z-index: -1;
+}
+
+.Abt_Main_Wrapper p {
+  line-height: 4.5vh;
+  color: black;
+  font-family: Inter;
+}
+
+.About_Main2 {
+  height: fit-content;
+
+}
+
+.Abt_Main_Wrapper2{
+  max-width: 76%;
+  overflow:hidden;
+  height: fit-content;
+  margin : auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+ 
+}
+
+.head_style{
+  margin-top: 1em;
+  width: fit-content;
+  color: black;
+  font-family: Carme;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 1.5em;
+  
+}
+
+.Cotn_Btn {
+  font-family: Inter;
+  color: #fff !important;
+  background-color: #3a9bdc;
+  border-radius: 1em;
+  padding: 1em;
+  width: fit-content;
+}
+
+
+
+

@@ -1,0 +1,35 @@
+.Items_Container {
+    height: 2em;
+    margin: 1.5em auto;
+    width: 85%;
+    text-align: center;
+    color: #fff;
+   
+}
+
+.Undln_Anim {
+    display: inline-block;
+    position: relative;
+  }
+
+.Undln_Anim:hover{
+    font-weight: bold;
+}   
+  
+.Undln_Anim:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #fff;
+    transform-origin: bottom right;
+    transition: transform 0.35s cubic-bezier(0.45, 0.58, 0.85, 0.85);
+  }
+  
+.Undln_Anim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } 

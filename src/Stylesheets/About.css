@@ -1,0 +1,150 @@
+:root{
+    --Grad :  linear-gradient(90deg, rgba(0,45,98,1) 0%, rgba(10,65,120,1) 40%, rgba(58,155,220,1) 100%);
+    --Grad2 : linear-gradient(0deg, rgba(0,45,98,1) 0%, rgba(58,155,220,1) 100%);
+}
+#About{
+    margin-top: 5em;
+    height: 50vh;
+    background-color: #fff;  
+}
+
+.Abt_Wrapper {
+    width: 87%;
+    overflow:hidden;
+    height: 100%;
+    margin : auto;
+    display: flex;
+    flex-direction: row;  
+    align-items:center;
+    justify-content:space-around;
+    border-radius: 1em;
+}
+
+.Abt_description {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+}
+
+.Abt_description h3 {
+    font-weight: bold;
+    font-family: Carme, Sans, sans-serif;
+    font-size: 2.4em;
+    color: rgb(45, 46, 46);
+}
+
+.Abt_description p {
+    font-family: Inter;
+    padding-bottom: 1em;
+    text-align: justify;
+    color: rgb(45, 46, 46);
+}
+
+.Read_Mr_Dn{
+    width: fit-content;
+    padding: 0.5em 1em;
+    color: #fff !important;
+    border-radius: 0.5em;
+    font-family: Inter;
+    font-size: small;
+    background-color: #3a9bdc;
+    outline : 1px solid transparent;
+    transition: all 0.35s;
+    
+}
+
+.Abt_description a:hover{
+    background-color: #0066b2;
+}
+
+
+.Abt_img{
+    background-color: #3a9bdc;
+    width: 35%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+div.Abt_img img{
+    padding: 4%;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1400px) {
+
+    .Abt_Wrapper {
+        width: 97%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #About{
+        height: fit-content; 
+    }
+    
+    .Abt_Wrapper {
+        height: fit-content;
+    }
+    
+    .Abt_description h3 {
+        font-size: 2em;
+    }
+        
+    .Read_Mr_Dn{
+        width: fit-content; 
+    }
+    
+    .Abt_img{
+        background-color: #3a9bdc;
+        width: 32%;
+        height: 100%;
+        border-radius: 30px;
+    }
+    
+    div.Abt_img img{
+        padding: 4%;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #About{
+        height: fit-content; 
+    }
+    
+    .Abt_Wrapper {
+        height: fit-content;
+        flex-direction: column-reverse;
+        row-gap: 3vh;
+    }
+
+    .Abt_description {
+        width: 85%;
+    }
+    
+    .Abt_description h3 {
+        font-size: 1.5em;
+    }
+        
+    .Read_Mr_Dn{
+        width: fit-content; 
+    }
+    
+    .Abt_img{
+        background-color: #3a9bdc;
+        width: 80%;
+        height: fit-content;
+        border-radius: 30px;
+    }
+    
+    div.Abt_img img{
+        padding: 4%;
+        width: 95%;
+        height: 270px;
+    }
+    
+}

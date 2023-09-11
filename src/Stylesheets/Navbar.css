@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+:root{
+    --hblue : #AFD1F9;
+    --h1blue : #D6e8fe;
+    --Gradient1 : linear-gradient(to right, #005a9c, #004f93, #00448a, #003a81, #002f77, #002f76, #002e74, #002e73, #00377a, #004181, #004a86, #00538c);
+
+}
+
+@font-face {
+    font-family: custom;
+    src: url(/src/Fonts/TakeLooks.otf);
+  }
+
+button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+  }
+
+button:focus, input:focus {
+    outline: 0;
+  }
+  
+/*------------Nav---------*/
+
+.nav_wrapper
+
+{
+    overflow: visible;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    background-color:#fff;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 86%;
+    overflow: visible;
+    box-shadow: 0px 3px 10px rgba(0, 0. 0, 0.1);
+    font-family: Poppins;
+    height: 5em;
+} 
+
+.nav {
+    background-color: #fff;
+    display: flex;
+    height: 4em;
+    line-height: 4em;
+    flex-grow: 1;
+}
+
+.Scroll_border {
+    box-shadow:  0px 0.5px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav.left {
+    width: auto;
+    height: auto;
+}
+
+.Main_Logo {
+    margin: auto 0;
+    background-color: #fff;
+    text-align: left;
+    width: fit-content;
+    color: #3a9bdc;
+}
+
+.Main_Logo a {
+    cursor: default;
+    font-family: custom;
+    color: #2283c4 !important;
+    font-size: 2.5em;
+}
+
+.nav-link{ 
+    text-align: center;
+    line-height: 4.5em;
+    padding: 0 1em;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #fff;
+    
+}
+
+.nav-link:nth-child(2){
+    margin-left: 8em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: rgb(45, 46, 46);
+}
+
+
+.nav.right {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.Clapsed_Btn {
+    background-color: none;
+}
+
+.App_Downld {
+    border-radius: 0.7em;
+    margin: 1.5em 1em;
+    line-height: 2.5em;
+    height: fit-content;  
+    font-family: Inter;
+    font-size: 0.9em;
+    font-weight: 400;
+    background: #3a9bdc;
+}
+
+.App_Downld a{
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+}
+
+@media (min-width : 1201px) {
+
+    .btn-nav {
+        display: none !important;
+    }
+
+    .Collapsed_Menu {
+        display: none !important;
+    } 
+
+}
+
+@media (max-width: 1400px) {
+    #nav {
+        width: 97%;      
+    } 
+    
+}
+
+@media (max-width : 1200px ) {
+    .Res_dropdown{
+        display: none !important;
+    }
+
+    #nav {
+        width: 97%;      
+    } 
+    
+    .nav.left {  
+        width: auto;
+    }
+    
+    .Main_Logo {
+        text-align: left;        
+    }
+
+    .Main_Logo a {
+        font-size: 2em;
+    }
+    
+    .Logo_IMG {
+        height: 3.5em;
+        width: 3.5em;
+    }
+    
+    .nav-link{ 
+        display: none;
+   }
+     
+    .nav.right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        width: auto;
+        height: 100%;
+    }
+     
+
+    .Clapsed_Btn {
+        align-self: center;
+    }
+
+    .btn-nav {
+        color: #3a9bdc ;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    .Btn_Aniim {
+        animation: jackInTheBox;
+        animation-duration: 1s;
+    }
+
+    .Collapsed_Menu {
+        position: absolute;
+        z-index: 100;
+        overflow: hidden;
+        animation: slideInDown;
+        animation-duration: 0.5s;
+        right: 0%;
+        height: auto;
+        width: 50vw;
+        border-bottom-left-radius: 20px;
+        background-color: #3a9bdc;
+    }
+    
+}
+
+@media (max-width : 992px ) {
+    .Main_Logo a {
+        font-size: 2em;
+    }
+}
+
+@media (max-width : 768px ) {
+    .Main_Logo a {
+        font-size: 2em;
+    }
+}
+
+@media (max-width : 576px ) {
+    .nav.right {
+        overflow: hidden;
+    }
+    .Main_Logo a {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+

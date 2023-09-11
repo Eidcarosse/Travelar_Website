@@ -1,0 +1,191 @@
+:root {
+    --Grad: linear-gradient(90deg, rgba(113, 153, 214, 1) 20%, rgba(175, 209, 249, 1) 50%, rgba(113, 153, 214, 1) 80%);
+}
+
+
+@font-face {
+    font-family: Puffy;
+    src: url(/src/Fonts/Puffy.otf);
+}
+
+
+@font-face {
+    font-family: Pakades;
+    src: url(/src/Fonts/HowLimit.otf);
+}
+
+
+#ServicesInfo {
+    height: 67vh;
+    background-color: #fff;
+    margin-top: 5vh;
+
+}
+
+.ServicesInfo_Wrapper {
+    max-width: 86%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 65vh;
+    margin: auto;
+    cursor: default;
+}
+
+
+.Hme_img {
+    height: fit-content;
+    width: fit-content;
+}
+
+.Hme_img_ds {
+    height: 100%;
+    width: 745px;
+
+}
+
+.Hme_info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+
+}
+
+div.Hme_info h3 {
+    font-family: Carme;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+div.Hme_info li {
+    font-family: Inter;
+    font-size: 1.5em;
+}
+
+@media (max-width: 1400px) {
+
+    .ServicesInfo_Wrapper {
+        max-width: 97%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #ServicesInfo {
+        height: fit-content;
+    }
+
+    .ServicesInfo_Wrapper {
+        width: 97%;
+        height: fit-content;
+    }
+
+
+
+    .Hme_img {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .Hme_img_ds {
+        height: 100%;
+        width: 645px;
+
+    }
+
+    .Hme_info {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: 100%;
+
+    }
+
+    div.Hme_info h3 {
+        font-family: Carme;
+        font-weight: bold;
+        font-size: 2em;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    div.Hme_info li {
+        font-family: Inter;
+        font-size: 1.5em;
+    }
+
+
+
+
+    .Hme_info {
+        width: fit-content;
+    }
+
+    div.Hme_info h3 {
+        font-size: 1.7em;
+    }
+
+    div.Hme_info li {
+        font-size: 1.2em;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .Hme_img_ds {
+        height: 100%;
+        width: 445px;
+
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+
+    #ServicesInfo {
+        height: fit-content;
+    }
+
+    .ServicesInfo_Wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .Hme_img_ds {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .Hme_info {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #ServicesInfo {
+        height: fit-content;
+    }
+
+    .ServicesInfo_Wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .Hme_img_ds {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .Hme_info {
+        width: 100%;
+    }
+
+}
