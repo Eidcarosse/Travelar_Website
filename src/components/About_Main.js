@@ -8,7 +8,6 @@ import avatar3 from '../SVGs/Avatar3.svg'
 import logo2 from '../SVGs/OdRd2.svg'
 import Missn_Img from '../SVGs/OdRd4.svg'
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,19 +23,17 @@ export default function About_Main() {
   }
   return (
     <>
-      <Home
-        title="About us"
-        description="Traveler is led by a powerful purpose to
+      <Home title="About us" description="Traveler is led by a powerful purpose to
             simplify and improve the lives of people and build an awesome
             organisation that inspires. Since 2023, Traveler has built a platform
             for the region’s best talent to thrive and for entrepreneurs to
             scale their businesses. Careem operates in over 70 cities across 10
-            countries, from Morocco to Pakistan."
-        logo={logo2}
+            countries, from Morocco to Pakistan." logo={logo2}
       />
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
-          <h2 className="highlight">We are always here for you</h2>
+          <h3 className="head_style_cs1">We are always here for</h3>
+          <h4 className="head_style_cs2 highlight">you</h4>
           <p>Please share your feedback or report a problem</p>
           <Link  to="/Contact" onClick={topfunction} className="Cotn_Btn try_trans">Contact Us</Link>
         </div>
@@ -51,30 +48,30 @@ export default function About_Main() {
           <h3 className="head_style highlight">Teams</h3>
           <Row>
             <Col md={4}>
-              <Card style={{width: "100%", height:"13em"  }}>
+              <Card className="mt-3 Abt_Main_Teams_Cards">
                 <Card.Body>
-                  <Card.Title>Support Team</Card.Title>
-                  <Button className="mb-2" href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
-                  <Card.Title>Policy and Government Relations</Card.Title>
-                  <Button href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
+                  <Card.Title className='Abt_Inherit_Txt'>Support Team</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#3a9bdc", border:"none"}} href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
+                  <Card.Title className='Abt_Inherit_Txt'>Policy and Government Relations</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#3a9bdc", border:"none"}} href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={4}>
-              <Card style={{width: "100%", height:"13em" }}>
+              <Card className="mt-3 Abt_Main_Teams_Cards" style={{width: "100%", height:"13em" }}>
                 <Card.Body>
-                  <Card.Title>Collaboration and Advertising</Card.Title>
-                  <Button className='mb-2' href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
-                  <Card.Title>PR department</Card.Title>
-                  <Button href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
+                  <Card.Title className='Abt_Inherit_Txt'>Collaboration and Advertising</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#3a9bdc", border:"none"}} href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
+                  <Card.Title className='Abt_Inherit_Txt'>PR department</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#3a9bdc", border:"none"}} href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={4}>
-              <Card style={{ width: "100%", height:"13em" }}>
+              <Card className="mt-3 Abt_Main_Teams_Cards" style={{ width: "100%", height:"13em" }}>
                 <Card.Body>
-                  <Card.Title>Cyber Security</Card.Title>
-                  <Card.Text>We accept vulerablity reports through the HackerOne platform</Card.Text>
+                  <Card.Title className='Abt_Inherit_Txt'>Cyber Security</Card.Title>
+                  <Card.Text className="mb-2 Abt_Sb_Inherit_Txt">We accept vulerablity reports through the HackerOne platform</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -90,70 +87,64 @@ export default function About_Main() {
         <div className="Abt_Main_Wrapper2">
           <h3 className="head_style highlight">Leadership</h3>
           <Card>
-            <Card.Header style={{ backgroundColor: "#3A9BDC", color: "#fff" }}>
+            <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: "#3A9BDC", color: "#fff" }}>
               Our Leadership statement
             </Card.Header>
             <Card.Body>
               <blockquote className="blockquote mb-1">
-                <p>
-                  '' Adapt to change, and turn challenges into opportunities. ''
+                <p className='Abt_Sb_Inherit_Txt'>
+                  '' Adapt to change, and turn challenges into opportunities.''
                 </p>
-                <footer className="blockquote-footer">Richard Branson</footer>
+                <footer className="blockquote-footer Abt_Sb_Inherit_Txt">Richard Branson</footer>
               </blockquote>
             </Card.Body>
           </Card>
           <Container fluid>
-            <Row>
-              <Col>
-                <Card
-                  style={{ width: "18rem", border: "none", marginTop: "1em" }}
-                >
-                  <Card.Img variant="top" src={avatar1} />
+            <Row className='Card_rw'>
+              <Col className='Card_clm' md={4}>
+                <Card className='Card_bdy'>
+                  <Card.Img className='Avatr_Ds' variant="top" src={avatar1} />
                   <Card.Body>
-                    <Card.Title>Chandler</Card.Title>
-                    <Card.Text>Co-founder and CEO</Card.Text>
+                    <Card.Title className='Abt_Inherit_Txt'>Chandler</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder and CEO</Card.Text>
                     <Button
-                      style={{ backgroundColor: "#3A9BDC", color: "#fff" }}
+                      style={{ backgroundColor: "#3A9BDC", color: "#fff", border:"none" }}
                       href="/"
                       target="_blank"
                     >
-                      Go somewhere
+                      Read More
                     </Button>
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
-                <Card
-                  style={{ width: "18rem", border: "none", marginTop: "1em" }}
-                >
-                  <Card.Img variant="top" src={avatar2} />
+              <Col className='Card_clm' md={4}>
+                <Card className='Card_bdy'>
+                  <Card.Img className='Avatr_Ds' variant="top" src={avatar2} />
                   <Card.Body>
-                    <Card.Title>Monica</Card.Title>
-                    <Card.Text>Co-founder</Card.Text>
+                    <Card.Title className='Abt_Inherit_Txt'>Monica</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder</Card.Text>
                     <Button
-                      style={{ backgroundColor: "#3A9BDC", color: "#fff" }}
+                      style={{ backgroundColor: "#3A9BDC", color: "#fff", border:"none"}}
                       href="/"
                       target="_blank"
                     >
-                      Go somewhere
+                      Read More
                     </Button>
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
-                <Card
-                  style={{ width: "18rem", border: "none", marginTop: "1em" }}
-                >
-                  <Card.Img variant="top" src={avatar3} />
+              <Col className='Card_clm' md={4}>
+                <Card className='Card_bdy'>
+                  <Card.Img className='Avatr_Ds' variant="top" src={avatar3} />
                   <Card.Body>
-                    <Card.Title>Jannice</Card.Title>
-                    <Card.Text>Chief Product Architect</Card.Text>
+                    <Card.Title className='Abt_Inherit_Txt'>Jannice</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt'>Chief Product Architect</Card.Text>
                     <Button
-                      style={{ backgroundColor: "#3A9BDC", color: "#fff" }}
+                      style={{ backgroundColor: "#3A9BDC", color: "#fff", border:"none" }}
                       href="/"
                       target="_blank"
                     >
-                      Go somewhere
+                      Read More
                     </Button>
                   </Card.Body>
                 </Card>

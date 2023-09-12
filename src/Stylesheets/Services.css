@@ -6,3 +6,10 @@
 .SS_Section1 {
     width: 100%;
 }
+
+.SS_Section2 {
+    margin: auto;
+    margin-top: 3em;
+    width: 87%;
+}
+

@@ -4,7 +4,7 @@
   }
   
 .Abt_Main_Wrapper{
-    max-width: 76%;
+    width: 87%;
     overflow:hidden;
     height: fit-content;
     margin : auto;
@@ -15,8 +15,33 @@
    
 }
 
-.Abt_Main_Wrapper h2{
-  margin-top: 1em;
+.head_style{
+  text-align: center;
+  margin: 1em auto;
+  width: fit-content;
+  color: black;
+  font-family: Carme;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 1.5em;
+  
+}
+
+.head_style_cs1{
+  text-align: center;
+  margin: 1em auto 0em auto;
+  width: fit-content;
+  color: black;
+  font-family: Carme;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: auto;
+  
+}
+
+.head_style_cs2{
+  text-align: center;
+  margin: 0em auto;
   width: fit-content;
   color: black;
   font-family: Carme;
@@ -36,17 +61,35 @@
   left: 0;
   bottom: 0;
   height: 14px;
-  width: 100%;
+  width:100%;
   background-color: #3a9bdc;
   transform: translateY(-98%);
   z-index: -1;
 }
 
 .Abt_Main_Wrapper p {
+  text-align: center;
   line-height: 4.5vh;
   color: black;
   font-family: Inter;
 }
+
+.Cotn_Btn {
+  font-family: Inter;
+  color: #fff !important;
+  background-color: #3a9bdc;
+  border-radius: 1em;
+  margin: auto;
+  padding: 1em;
+  width: fit-content;
+}
+
+.Abt_Main_Teams_Cards {
+  text-align: center;
+  width: 100%;
+  height: 13em;
+}
+
 
 .About_Main2 {
   height: fit-content;
@@ -54,7 +97,7 @@
 }
 
 .Abt_Main_Wrapper2{
-  max-width: 76%;
+  width: 87%;
   overflow:hidden;
   height: fit-content;
   margin : auto;
@@ -67,26 +110,127 @@
  
 }
 
-.head_style{
-  margin-top: 1em;
+.Card_rw {
+  width: 87%;
+  margin: auto;
+}
+
+.Card_bdy {
+  text-align: center;
   width: fit-content;
-  color: black;
-  font-family: Carme;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 1.5em;
+  border: none;
+  margin-top: 1em;
+}
+
+@media (max-width: 1400px) {
+
+  .Abt_Main_Wrapper {
+    width: 97%;
+  }
+
+  .Abt_Main_Wrapper2 {
+    width: 97% ;
+  }
+
+  
   
 }
 
-.Cotn_Btn {
-  font-family: Inter;
-  color: #fff !important;
-  background-color: #3a9bdc;
-  border-radius: 1em;
-  padding: 1em;
-  width: fit-content;
+@media (max-width: 1200px) {
+
+  .Abt_Main_Wrapper {
+    font-size: small;
+   }
+
+  .head_style_cs1 {
+    font-size: 42px;
+  }
+
+  .head_style_cs2 {
+    font-size: 42px;
+  }
+
+  .head_style {
+    font-size: 42px;
+    line-height: auto;
+  }
+
+  .highlight::before {
+    height: 12px;
+  }
+
+  .Abt_Main_Teams_Cards {
+    width: 100%;
+    height: 15em !important;
+  }
+
+  .Abt_Inherit_Txt {
+    font-size: medium;
+  }
+
+  .Abt_Sb_Inherit_Txt {
+    font-size: small;
+  }
+
+  .Card_rw {  
+    margin: auto;
+  }
+
+  .Avatr_Ds {
+    height: 200px;
+    width: 100%;
+  }
+ 
 }
 
+@media (max-width: 768px) {
 
+  .head_style_cs1 {
+    font-size: 30px;
+  }
+
+  .head_style_cs2 {
+    font-size: 30px;
+  }
+
+  .head_style {
+    font-size: 30px;
+    line-height: auto;
+  }
+
+  .highlight::before {
+    height: 9px;
+  }
+  
+  .Abt_Main_Teams_Cards {
+    text-align: center;
+    width: 100%;
+    height: fit-content !important;
+  }
+
+  .Avatr_Ds {
+    height: 190px;
+    width: 100%;
+  }
+
+  .Card_clm {
+    width: fit-content;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .Avatr_Ds {
+    height: 220px;
+    width: 100%;
+  }
+
+  .Card_clm {
+    width: fit-content;
+    margin: auto;
+  }
+  
+}
 
 
