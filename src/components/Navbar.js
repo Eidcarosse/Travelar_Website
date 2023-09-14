@@ -69,36 +69,31 @@ export default function Navbar(props) {
    
   };
    
-  const topfunction = () => {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }
-
   return (
     <>
       <header id="nav_wrapper" className='nav_wrapper'>
         <nav id="nav">
           <div className="nav left">
             <span className="Main_Logo">
-              <Link to="/" onClick={topfunction}>Travel|\r</Link>
+              <Link to="/" onClick={props.top_function}>Travel|\r</Link>
             </span>
             <span className="nav-link">
-              <Link to="/" onClick={topfunction} className="Lst_Anim">
+              <Link to="/" onClick={props.top_function} className="Lst_Anim">
                 Home
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/Services" onClick={topfunction} className="Lst_Anim">
+              <Link to="/Services" onClick={props.top_function} className="Lst_Anim">
                 Services
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/About_Main" onClick={topfunction} className="Lst_Anim">
+              <Link to="/About_Main" onClick={props.top_function} className="Lst_Anim">
                 About us
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/Contact" onClick={topfunction} className="Lst_Anim">
+              <Link to="/Contact" onClick={props.top_function} className="Lst_Anim">
                 Contact
               </Link>
             </span>

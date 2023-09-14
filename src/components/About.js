@@ -6,13 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 
 
-export default function Services() {
-
-const topFunction = ()=> {
-  
-  document.documentElement.scrollTop = 0; 
-
-}
+export default function About(props) {
 
   return (
     <>
@@ -22,7 +16,7 @@ const topFunction = ()=> {
             <div className="Abt_description">
               <h3>About us</h3>
               <p>Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services.</p>
-              <Link to='/About_Main' onClick={topFunction} className='Read_Mr_Dn'>Read More</Link>
+              <Link to='/About_Main' onClick={props.top_function} className='Read_Mr_Dn try_trans'>Read More</Link>
             </div>
       
             <div className="Abt_img">

@@ -15,17 +15,7 @@
    
 }
 
-.head_style{
-  text-align: center;
-  margin: 1em auto;
-  width: fit-content;
-  color: black;
-  font-family: Carme;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 1.5em;
-  
-}
+
 
 .head_style_cs1{
   text-align: center;
@@ -51,21 +41,6 @@
   
 }
 
-.highlight{
-  position: relative;
-}
-
-.highlight::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 14px;
-  width:100%;
-  background-color: #3a9bdc;
-  transform: translateY(-98%);
-  z-index: -1;
-}
 
 .Abt_Main_Wrapper p {
   text-align: center;

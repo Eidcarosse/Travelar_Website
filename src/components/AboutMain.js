@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Stylesheets/About_Main.css'
-import Home from '../components/Home';
-import Banner_Hme from '../components/Banner_Hme';
+import '../Stylesheets/AboutMain.css'
+import Home from './Home';
+import InfoBanner from './InfoBanner';
 import avatar1 from '../SVGs/Avatar1.svg'
 import avatar2 from '../SVGs/Avatar2.svg'
 import avatar3 from '../SVGs/Avatar3.svg'
@@ -16,11 +16,8 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function About_Main() {
-  const topfunction = () => {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }
+export default function AboutMain(props) {
+ 
   return (
     <>
       <Home title="About us" description="Traveler is led by a powerful purpose to
@@ -35,10 +32,10 @@ export default function About_Main() {
           <h3 className="head_style_cs1">We are always here for</h3>
           <h4 className="head_style_cs2 highlight">you</h4>
           <p>Please share your feedback or report a problem</p>
-          <Link  to="/Contact" onClick={topfunction} className="Cotn_Btn try_trans">Contact Us</Link>
+          <Link  to="/Contact" onClick={props.top_function} className="Cotn_Btn try_trans">Contact Us</Link>
         </div>
       </div>
-      <Banner_Hme
+      <InfoBanner
         Title="24/7 Available"
         description="Rapid Tech Support "
         Image={Missn_Img}
@@ -78,7 +75,7 @@ export default function About_Main() {
           </Row>
         </div>
       </div>
-      <Banner_Hme
+      <InfoBanner
         Title="Shared Goals"
         description="Innovation, Convenience, and Reliability :) "
         Image={Missn_Img}

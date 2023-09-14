@@ -1,20 +1,18 @@
 import React from 'react'
-import '../Stylesheets/Banner_Hme.css'
+import '../Stylesheets/InfoBanner.css'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
-export default function Services(props) {
+export default function InfoBanner(props) {
   return (
     <>
     <main>
         <section id="About_Us">
           <div className="Abt_US_Wrapper">
             <span className="description">
-              <dl>
                 <h3>{props.Title}</h3>
                 <p>{props.description}</p>
-              </dl>
             </span>
 
             <span className="mb_img">

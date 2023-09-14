@@ -16,7 +16,7 @@
 
 
 #ServicesInfo {
-    height: 67vh;
+    height: fit-content;
     background-color: #fff;
     margin-top: 5vh;
 

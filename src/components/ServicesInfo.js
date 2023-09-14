@@ -24,10 +24,10 @@ export default function Services() {
                   <li>{ar_icon} Certified Drivers</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={100}>  
-                  <li>{ar_icon} Trustworthy Profiles</li>
+                  <li>{ar_icon} Medicine Delivery</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={200}>  
-                  <li>{ar_icon} Informed Decisions</li>
+                  <li>{ar_icon} Car Booking</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={300}>  
                   <li>{ar_icon} Real-time Tracking</li>
