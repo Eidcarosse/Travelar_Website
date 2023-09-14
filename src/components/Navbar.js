@@ -88,7 +88,7 @@ export default function Navbar(props) {
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/Services" className="Lst_Anim">
+              <Link to="/Services" onClick={topfunction} className="Lst_Anim">
                 Services
               </Link>
             </span>
@@ -111,6 +111,7 @@ export default function Navbar(props) {
               </button>
             </span>
             <span className='Res_dropdown'>
+            <FontAwesomeIcon style={{margin:"3.2vh 0 0 0"}} icon="globe" size="xl" />
               <NavDropdown title="Languages" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1" onClick={props.showalert}
                 >German

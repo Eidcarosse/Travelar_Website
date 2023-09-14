@@ -1,7 +1,6 @@
 import React from 'react'
 import '../Stylesheets/Banner_Hme.css'
 import "animate.css/animate.min.css";
-import ABT from '../SVGs/Gift.svg'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 

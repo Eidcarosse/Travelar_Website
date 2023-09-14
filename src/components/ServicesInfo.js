@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import bnrimg from '../images/Home_Banner.jpeg'
 
 export default function Services() {
-  const ar_icon = <FontAwesomeIcon icon="share-from-square" size="lg"/>;
+  const ar_icon = <FontAwesomeIcon icon="share-from-square" size="xs"/>
  
   return (
     <>
@@ -18,22 +18,36 @@ export default function Services() {
             </div>
             <div className='Hme_info'>
               <span><h3>We Provide</h3></span>
-              <span>     
-            <ScrollAnimation animateIn="animate__bounceInRight" animateOnce='true' style={{padding: '0%', width:"100%", height:"95%", animationIterationCount:"1" }}> 
-             
+              <span>          
                   <ul>
-                  <li>Certified Drivers</li>
-                  <li>Trustworthy Profiles</li>
-                  <li>Informed Decisions</li>
-                  <li>Real-time Tracking</li>
-                  <li>Emergency Sharing</li>
-                  <li>Peace of Mind</li>
-                  <li>Enhanced Security</li>
-                  <li>Customized Choices</li>
-                  <li>Comprehensive Solution</li>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true'>  
+                  <li>{ar_icon} Certified Drivers</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={100}>  
+                  <li>{ar_icon} Trustworthy Profiles</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={200}>  
+                  <li>{ar_icon} Informed Decisions</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={300}>  
+                  <li>{ar_icon} Real-time Tracking</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={400}>  
+                  <li>{ar_icon} Emergency Sharing</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={500}>  
+                  <li>{ar_icon} Peace of Mind</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={600}>  
+                  <li>{ar_icon} Enhanced Security</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={700}>  
+                  <li>{ar_icon} Customized Choices</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="animate__fadeInRight" animateOnce='true' delay={800}>  
+                  <li>{ar_icon} Comprehensive Solution</li>
+                  </ScrollAnimation>
                   </ul>
-             
-            </ScrollAnimation>
             </span>
                 
              </div>

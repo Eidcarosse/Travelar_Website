@@ -107,7 +107,7 @@ export default function About_Main() {
                   <Card.Body>
                     <Card.Title className='Abt_Inherit_Txt'>Chandler</Card.Title>
                     <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder and CEO</Card.Text>
-                    <Button
+                    <Button className='try_trans'
                       style={{ backgroundColor: "#3A9BDC", color: "#fff", border:"none" }}
                       href="/"
                       target="_blank"
@@ -123,7 +123,7 @@ export default function About_Main() {
                   <Card.Body>
                     <Card.Title className='Abt_Inherit_Txt'>Monica</Card.Title>
                     <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder</Card.Text>
-                    <Button
+                    <Button  className='try_trans'
                       style={{ backgroundColor: "#3A9BDC", color: "#fff", border:"none"}}
                       href="/"
                       target="_blank"
@@ -139,7 +139,7 @@ export default function About_Main() {
                   <Card.Body>
                     <Card.Title className='Abt_Inherit_Txt'>Jannice</Card.Title>
                     <Card.Text className='Abt_Sb_Inherit_Txt'>Chief Product Architect</Card.Text>
-                    <Button
+                    <Button className='try_trans'
                       style={{ backgroundColor: "#3A9BDC", color: "#fff", border:"none" }}
                       href="/"
                       target="_blank"

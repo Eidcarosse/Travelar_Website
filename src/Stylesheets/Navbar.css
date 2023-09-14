@@ -146,6 +146,11 @@ a:link, a:visited, a:active {
         display: none !important;
     } 
 
+    .Res_dropdown {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 @media (max-width: 1400px) {

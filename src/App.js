@@ -14,8 +14,8 @@ import logo from './SVGs/OdRd.svg'
 import React, { useState } from 'react'
 import ABT from './SVGs/Gift.svg'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faBars, faX, faReplyAll, faShareFromSquare } from '@fortawesome/free-solid-svg-icons'
-library.add(faBars, faX, faReplyAll, faShareFromSquare)
+import {faBars, faX, faReplyAll, faShareFromSquare, faGlobe } from '@fortawesome/free-solid-svg-icons'
+library.add(faBars, faX, faReplyAll, faShareFromSquare, faGlobe)
 
 
 function App() {
