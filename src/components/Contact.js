@@ -7,13 +7,16 @@ import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import CountriesList from './CountriesList';
 import '../Stylesheets/Contact.css'
-import { useEffect } from 'react';
+
 
 
 export default function Contact() {
   return (
     <>
-    <Container className="Media_1" style={{ marginTop: "6em", width:"58%"}}>
+    <div className='Contact_Sec_1'>
+      <h2 className="head_style highlight">Contact us</h2>
+    </div>
+    <Container className="Media_1">
       <Row>
         <Col xs={12}>
           <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
