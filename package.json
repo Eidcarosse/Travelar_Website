@@ -24,7 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prod": "node --max-old-space-size=4096 index.js"
+    "prod": "node --max-old-space-size=4096 index.js",   
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
