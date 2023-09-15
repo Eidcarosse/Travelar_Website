@@ -129,7 +129,7 @@ export default function Navbar(props) {
         </nav>
         <div style={{ display: `${menu}` }} className="Collapsed_Menu">
           {listitems.map((element) => {
-            return <ListItem linked={element.Link} title={element.Item} />;
+            return <ListItem top_function={props.top_function} linked={element.Link} title={element.Item} />;
           })}
         </div>
       </header>
