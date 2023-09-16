@@ -1,9 +1,10 @@
 {
-  "homepage": "https://MuttaqeenChaudhry.github.io/traveler_app",
+  "homepage": "https://MuttaqeenChaudhry.github.io/TravelerApp",
   "name": "traveler_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -25,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prod": "node --max-old-space-size=4096 index.js",   
+    "prod": "node --max-old-space-size=4096 index.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

@@ -11,6 +11,12 @@ import '../Stylesheets/Contact.css'
 
 
 export default function Contact() {
+
+  const sendEmail = (e)=>{
+    e.preventDefault();
+    console.log("Clicked")
+  }
+
   return (
     <>
     <div className='Contact_Sec_1'>
@@ -20,48 +26,51 @@ export default function Contact() {
       <Row>
         <Col xs={12}>
           <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
-          <Form>
+          <Form onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
+
               <Form.Label>Subject</Form.Label>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Enter Subject"
                 className="mb-3"
               >
-                <Form.Control type="text" placeholder="name@example.com" />
+              <Form.Control type="text" name='Cs_Subject' placeholder="Enter Subject" />
               </FloatingLabel>
+
               <Form.Label>Country</Form.Label>
-              <Form.Select aria-label="Default select example">
+              <Form.Select aria-label="Default select example" name='Cs_country'>
                 <CountriesList />
               </Form.Select>
+              
               <Form.Label>Name</Form.Label>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Enter Name"
                 className="mb-3"
               >
-                <Form.Control type="text" placeholder="name@example.com" />
+              <Form.Control type="text" name='Cs_Name' placeholder="Enter Name" />
               </FloatingLabel>
+
               <Form.Label>Email address</Form.Label>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Enter email"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control type="email" name='Cs_Mail' placeholder="name@example.com" />
               </FloatingLabel>
+
               <Form.Label>Comment</Form.Label>
               <Form.Control
+                name='Cs_Concern'
                 as="textarea"
                 rows={5}
                 placeholder="Leave a comment"
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button style={{width:"100%", backgroundColor:"#3a9bdc"}} variant="primary" type="submit">
               Submit
             </Button>
           </Form>

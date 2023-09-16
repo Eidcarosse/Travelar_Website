@@ -37,14 +37,14 @@ function App() {
     <Navbar showalert={setAlert} top_function={Scroll_Top}/>
     <Alert show={Show} style={{width:"87%",margin:"5em auto -5em", textAlign:"center"}} variant="info">Language changed successfull!</Alert>
     <Routes>
-      <Route path='/' element={[<Home title="Travel with us" description=" Your ultimate destination for seamless car booking experiences!
+      <Route path='/TravelerApp' element={[<Home title="Travel with us" description=" Your ultimate destination for seamless car booking experiences!
                 Whether you're planning a road trip, a business venture, or a
                 leisurely escape, Travelar is here to redefine the way you embark
                 on your journeys. With a vast network of trusted rental
                 providers and a user-friendly interface, we bring you a world of
                 convenience at your fingertips." logo={hme_logo} />, <ServicesInfo/>, <Banner_Hme Title="Travelar" description="Enjoy 30% discount on your first Rides !" Image={ABT}/>, <About top_function={Scroll_Top}/>]}/>
       <Route path='/Services' element={<Services/>}/>
-      <Route path='/About_Main' element={<AboutMain top_function={Scroll_Top}/>}/>
+      <Route path='/AboutUs' element={<AboutMain top_function={Scroll_Top}/>}/>
       <Route path='/Contact' element={<Contact/>}/>
     </Routes>
     <Footer/>  

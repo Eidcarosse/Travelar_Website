@@ -21,8 +21,7 @@ export default function Navbar(props) {
     
     {
       Item : "Home",
-      ID : "#Home",
-      Link : "/"
+      Link : "/TravelerApp"
     },
     {
       Item : "Services",
@@ -30,8 +29,7 @@ export default function Navbar(props) {
     },
     { 
       Item : "About Us",
-      ID : "#About_Us",
-      Link : "About_Main"
+      Link : "AboutUs"
     },
     { 
       Item : "Contact",
@@ -75,10 +73,10 @@ export default function Navbar(props) {
         <nav id="nav">
           <div className="nav left">
             <span className="Main_Logo">
-              <Link to="/" onClick={props.top_function}>Travel|\r</Link>
+              <Link to="/TravelerApp" onClick={props.top_function}>Travel|\r</Link>
             </span>
             <span className="nav-link">
-              <Link to="/" onClick={props.top_function} className="Lst_Anim">
+              <Link to="/TravelerApp" onClick={props.top_function} className="Lst_Anim">
                 Home
               </Link>
             </span>
@@ -88,7 +86,7 @@ export default function Navbar(props) {
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/About_Main" onClick={props.top_function} className="Lst_Anim">
+              <Link to="/AboutUs" onClick={props.top_function} className="Lst_Anim">
                 About us
               </Link>
             </span>
@@ -129,7 +127,7 @@ export default function Navbar(props) {
         </nav>
         <div style={{ display: `${menu}` }} className="Collapsed_Menu">
           {listitems.map((element) => {
-            return <ListItem top_function={props.top_function} linked={element.Link} title={element.Item} />;
+            return <ListItem key={element.Item} top_function={props.top_function} linked={element.Link} title={element.Item} />;
           })}
         </div>
       </header>
