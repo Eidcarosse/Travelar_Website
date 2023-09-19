@@ -27,7 +27,7 @@ export default function NavMenu(props) {
 
   return (
     <>
-    <div style={{ display: `${props.MenuState}` }} className="Nav_Menu">
+    <div style={{ display: `${props.MenuDisplay}` }} className="Nav_Menu">
           {listitems.map((element) => {
             return <ListItem key={element.Item} linked={element.Link} title={element.Item} />;
           })}

@@ -1,19 +1,18 @@
-import logo from '../images/TR_LG.png';
 import React, { useContext, useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "animate.css/animate.min.css";
 import '../Stylesheets/Navbar.css';
 import { Link } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import NavMenu from './NavMenu';
 import DataContext from './DataContext';
+import NavMenu from './NavMenu';
 
 
 export default function Navbar(props) {
   
   const Scroll_Top = useContext(DataContext);
-  const [NavMenu, SetNavMenu] = useState("none");
-  const [MenuIcon, SetMenIc] = useState("bars");
+  const [NavMn, setNavMenu] = useState("none");
+  const [MenuIcon, setMenIc] = useState("bars");
   const btn = document.getElementById("Menu_BTN");
 
   window.addEventListener('scroll', () => {
@@ -24,6 +23,7 @@ export default function Navbar(props) {
     nav.classList.remove("Scroll_border");
     });
 
+    
   btn?.addEventListener('click', ()=>{
     btn.classList.remove("Btn_Aniim");
     setTimeout(()=> {
@@ -31,18 +31,18 @@ export default function Navbar(props) {
     });
   });
 
-  let ToggleIcon = () =>
-  {
+
+  let ToggleIcon = () =>{
    
-   if (NavMenu == "none")
+   if (NavMn == "none")
    {
-     SetNavMenu("block");
-     SetMenIc('x');
+     setNavMenu("block");
+     setMenIc('x');
    }
    else
     {
-     SetNavMenu("none");
-     SetMenIc("bars")
+     setNavMenu("none");
+     setMenIc("bars")
    }
   
  };
@@ -106,7 +106,7 @@ export default function Navbar(props) {
             </span>
           </div>
         </nav>
-        <NavMenu MenuState={NavMenu}/>
+        <NavMenu MenuDisplay={NavMn}/>
       </header>
     </>
   );
