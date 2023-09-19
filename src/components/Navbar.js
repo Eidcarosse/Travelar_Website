@@ -12,38 +12,37 @@ import DataContext from './DataContext';
 export default function Navbar(props) {
   
   const Scroll_Top = useContext(DataContext);
+  const [NavMenu, SetNavMenu] = useState("none");
+  const [MenuIcon, SetMenIc] = useState("bars");
+  const btn = document.getElementById("Menu_BTN");
 
   window.addEventListener('scroll', () => {
     const nav = document.querySelector("#nav_wrapper");
-    if(window.scrollY>0) nav.classList.add("Scroll_border")
-    else nav.classList.remove("Scroll_border")
+    if(window.scrollY>0)
+    nav.classList.add("Scroll_border");
+    else
+    nav.classList.remove("Scroll_border");
+    });
+
+  btn?.addEventListener('click', ()=>{
+    btn.classList.remove("Btn_Aniim");
+    setTimeout(()=> {
+    btn.classList.add("Btn_Aniim");
+    });
   });
-
-
-  const [menu, Setmenu] = useState("none");
-  const [mncion, Setmncion] = useState("bars");
-
-  const btn = document.getElementById("Menu_BTN");
 
   let ToggleIcon = () =>
   {
-   btn?.addEventListener('click',function(e){
-     console.log(btn)
-     e.target.classList.remove("Btn_Aniim");
-     setTimeout(()=> {
-     e.target.classList.add("Btn_Aniim");
-     });
-   });
    
-   if (menu == "none")
+   if (NavMenu == "none")
    {
-     Setmenu("block");
-     Setmncion('x');
+     SetNavMenu("block");
+     SetMenIc('x');
    }
    else
     {
-     Setmenu("none");
-     Setmncion("bars")
+     SetNavMenu("none");
+     SetMenIc("bars")
    }
   
  };
@@ -82,7 +81,7 @@ export default function Navbar(props) {
           <div className="nav right">
             <span className="Clapsed_Btn">
               <button id="Menu_BTN" onClick={ToggleIcon} className="btn-nav">
-                <FontAwesomeIcon icon={`${mncion}`} size="lg" />
+                <FontAwesomeIcon icon={`${MenuIcon}`} size="lg" />
               </button>
             </span>
             <span className='Res_dropdown'>
@@ -107,7 +106,7 @@ export default function Navbar(props) {
             </span>
           </div>
         </nav>
-        <NavMenu MenuState={menu}/>
+        <NavMenu MenuState={NavMenu}/>
       </header>
     </>
   );
