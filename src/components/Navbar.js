@@ -1,97 +1,79 @@
 import logo from '../images/TR_LG.png';
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ListItem from './ListItem';
 import "animate.css/animate.min.css";
 import '../Stylesheets/Navbar.css';
 import { Link } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import NavMenu from './NavMenu';
+import DataContext from './DataContext';
 
 
 export default function Navbar(props) {
-  window.addEventListener('scroll', (e) =>{
+  
+  const Scroll_Top = useContext(DataContext);
+
+  window.addEventListener('scroll', () => {
     const nav = document.querySelector("#nav_wrapper");
-    if(window.scrollY>0)
-    {nav.classList.add("Scroll_border");}
-    else
-    {nav.classList.remove("Scroll_border");}
+    if(window.scrollY>0) nav.classList.add("Scroll_border")
+    else nav.classList.remove("Scroll_border")
   });
 
-  const listitems = [
-    
-    {
-      Item : "Home",
-      Link : "/TravelerApp"
-    },
-    {
-      Item : "Services",
-      Link : "/Services"
-    },
-    { 
-      Item : "About Us",
-      Link : "AboutUs"
-    },
-    { 
-      Item : "Contact",
-      Link : "/Contact"
-    }
-   
-  
-  ]
 
   const [menu, Setmenu] = useState("none");
   const [mncion, Setmncion] = useState("bars");
 
   const btn = document.getElementById("Menu_BTN");
-  let togglemenu = () =>
+
+  let ToggleIcon = () =>
+  {
+   btn?.addEventListener('click',function(e){
+     console.log(btn)
+     e.target.classList.remove("Btn_Aniim");
+     setTimeout(()=> {
+     e.target.classList.add("Btn_Aniim");
+     });
+   });
+   
+   if (menu == "none")
    {
-    console.log(btn)
-    btn?.addEventListener('click',function(e){
-      console.log(btn)
-      e.target.classList.remove("Btn_Aniim");
-      setTimeout(()=> {
-      e.target.classList.add("Btn_Aniim");
-      });
-    });
-    
-    if (menu === "none")
+     Setmenu("block");
+     Setmncion('x');
+   }
+   else
     {
-      Setmenu("inline");
-      Setmncion('x')
-    }
-    else
-     {
-      Setmenu("none");
-      Setmncion("bars")
-    }
-   
-  };
-   
+     Setmenu("none");
+     Setmncion("bars")
+   }
+  
+ };
+      
+
   return (
     <>
       <header id="nav_wrapper" className='nav_wrapper'>
         <nav id="nav">
           <div className="nav left">
             <span className="Main_Logo">
-              <Link to="/TravelerApp" onClick={props.top_function}>Travel|\r</Link>
+              <Link to="/TravelerApp" onClick={Scroll_Top}>Travel|\r</Link>
             </span>
             <span className="nav-link">
-              <Link to="/TravelerApp" onClick={props.top_function} className="Lst_Anim">
+              <Link to="/TravelerApp" onClick={Scroll_Top} className="Lst_Anim">
                 Home
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/Services" onClick={props.top_function} className="Lst_Anim">
+              <Link to="/Services" onClick={Scroll_Top} className="Lst_Anim">
                 Services
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/AboutUs" onClick={props.top_function} className="Lst_Anim">
+              <Link to="/AboutUs" onClick={Scroll_Top} className="Lst_Anim">
                 About us
               </Link>
             </span>
             <span className="nav-link">
-              <Link to="/Contact" onClick={props.top_function} className="Lst_Anim">
+              <Link to="/Contact" onClick={Scroll_Top} className="Lst_Anim">
                 Contact
               </Link>
             </span>
@@ -99,7 +81,7 @@ export default function Navbar(props) {
 
           <div className="nav right">
             <span className="Clapsed_Btn">
-              <button id="Menu_BTN" onClick={togglemenu} className="btn-nav">
+              <button id="Menu_BTN" onClick={ToggleIcon} className="btn-nav">
                 <FontAwesomeIcon icon={`${mncion}`} size="lg" />
               </button>
             </span>
@@ -125,11 +107,7 @@ export default function Navbar(props) {
             </span>
           </div>
         </nav>
-        <div style={{ display: `${menu}` }} className="Collapsed_Menu">
-          {listitems.map((element) => {
-            return <ListItem key={element.Item} top_function={props.top_function} linked={element.Link} title={element.Item} />;
-          })}
-        </div>
+        <NavMenu MenuState={menu}/>
       </header>
     </>
   );

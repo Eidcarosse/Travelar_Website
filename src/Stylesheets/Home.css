@@ -15,7 +15,7 @@ html {
   src: url(/src/Fonts/HowLimit.otf);
 }
 
-#Home {
+#Gradient_Home {
     height: 76vh;
     background-color: #fff;
   }
@@ -28,7 +28,6 @@ html {
     margin-top: 5.5rem ;
     background-image: linear-gradient(to right, #005a9c, #004f93, #00448a, #003a81, #002f77, #002f76, #002e74, #002e73, #00377a, #004181, #004a86, #00538c);
     border-radius: 1em;
-    color: #fff;
     display: flex;
     flex-direction: row;
 }
@@ -47,6 +46,7 @@ html {
 }
 
 .Item__1 h1{
+  color: #fff;
   font-family: Carme;
   font-weight: bold;
   font-size: 2.9em;
@@ -61,6 +61,7 @@ html {
 }
 
 .Item__2 p{
+  color : #fff;
   font-size: 1.1em;
   font-family: Inter;
   text-align: justify;
@@ -122,7 +123,7 @@ html {
 
 @media (max-width:1200px) {
 
-    #Home {
+    #Gradient_Home {
         height: fit-content;
       }
       
@@ -166,7 +167,7 @@ html {
   }
 
 @media (max-width:768px) {
-  #Home {
+  #Gradient_Home {
     height: fit-content;
   }
   

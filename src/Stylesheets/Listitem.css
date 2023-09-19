@@ -1,9 +1,7 @@
-.Items_Container {
-    height: 2em;
+.Items_Container {  
+    height: fit-content;
     margin: 1.5em auto;
-    width: 85%;
-    text-align: center;
-    color: #fff;
+    width: fit-content;
    
 }
  

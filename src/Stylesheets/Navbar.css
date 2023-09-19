@@ -69,8 +69,12 @@ button:focus, input:focus {
 }
 
 .Main_Logo {
+    background: -webkit-linear-gradient(left,#3a9bdc, #0072bb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
     margin: auto 0;
-    background-color: #fff;
+   
     text-align: left;
     width: fit-content;
     color: #3a9bdc;
@@ -142,10 +146,6 @@ a:link, a:visited, a:active {
         display: none !important;
     }
 
-    .Collapsed_Menu {
-        display: none !important;
-    } 
-
     .Res_dropdown {
         display: flex;
         flex-direction: row;
@@ -212,19 +212,6 @@ a:link, a:visited, a:active {
     .Btn_Aniim {
         animation: jackInTheBox;
         animation-duration: 1s;
-    }
-
-    .Collapsed_Menu {
-        position: absolute;
-        z-index: 100;
-        overflow: hidden;
-        animation: slideInDown;
-        animation-duration: 0.5s;
-        right: 0%;
-        height: auto;
-        width: 50vw;
-        border-bottom-left-radius: 20px;
-        background-color: #3a9bdc;
     }
     
 }

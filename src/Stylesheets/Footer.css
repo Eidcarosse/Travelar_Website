@@ -24,7 +24,7 @@
 } 
 
 .FR_Sec1 {
-    background-color: #fff;
+    
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,10 @@
 
 
 .FR_Sec1 h6 {
-    color:  rgba(10,65,120,1) ;
+    background: -webkit-linear-gradient(bottom,#3a9bdc, #0072bb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
     font-family: TKL;
     text-align: left;
     font-size: 1.4em;

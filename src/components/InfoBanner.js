@@ -16,7 +16,7 @@ export default function InfoBanner(props) {
             </span>
 
             <span className="mb_img">
-            <ScrollAnimation animateIn="animate__bounceInDown" animateOnce='true' style={{padding: '0%', width:"100%", height:"95%", animationIterationCount:"1" }}> 
+            <ScrollAnimation animateIn="animate__bounceInDown" animateOnce={true} style={{padding: '0%', width:"100%", height:"95%", animationIterationCount:"1" }}> 
               <img src={props.Image} alt="IMG" />
              </ScrollAnimation> 
             </span>

@@ -1,4 +1,7 @@
 import React from 'react'
+import emailjs from '@emailjs/browser';
+import Typed from 'react-typed';
+import { useCallback } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,23 +13,33 @@ import '../Stylesheets/Contact.css'
 
 
 
+
 export default function Contact() {
+
+  const RenderedStrings = [
+    "Queries",
+    "Concerns",
+    "Suggestions",
+    "Thanks !"
+  ];
 
   const sendEmail = (e)=>{
     e.preventDefault();
-    console.log("Clicked")
-  }
+    emailjs.sendForm('service_db2xyw5', 'template_i8nj57a', e.target, '1CPtdC5o6ONqMEhCJ')
+  } 
 
   return (
     <>
     <div className='Contact_Sec_1'>
-      <h2 className="head_style highlight">Contact us</h2>
+      <h2 style={{marginBottom:"0em"}} className="head_style highlight">Contact us</h2>
+      <p className='head_style_def'>Your <Typed className='highlight_def' strings={RenderedStrings} typeSpeed={50} backSpeed={50} loop/></p>
+      
     </div>
     <Container className="Media_1">
       <Row>
         <Col xs={12}>
           <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
-          <Form onSubmit={sendEmail}>
+          <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
 
               <Form.Label>Subject</Form.Label>
@@ -39,7 +52,7 @@ export default function Contact() {
               </FloatingLabel>
 
               <Form.Label>Country</Form.Label>
-              <Form.Select aria-label="Default select example" name='Cs_country'>
+              <Form.Select aria-label="Default select example" name='Cs_Country'>
                 <CountriesList />
               </Form.Select>
               
@@ -70,9 +83,10 @@ export default function Contact() {
               />
             </Form.Group>
 
-            <Button style={{width:"100%", backgroundColor:"#3a9bdc"}} variant="primary" type="submit">
+            <Button id="startButton" style={{width:"100%", backgroundColor:"#3a9bdc", border:"none"}} variant="primary" type="submit">
               Submit
             </Button>
+            
           </Form>
         </Col>
       </Row>
@@ -80,4 +94,6 @@ export default function Contact() {
 </>
 
   );
+
+  
 }

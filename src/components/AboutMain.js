@@ -7,6 +7,7 @@ import avatar2 from '../SVGs/Avatar2.svg'
 import avatar3 from '../SVGs/Avatar3.svg'
 import logo2 from '../SVGs/OdRd2.svg'
 import Missn_Img from '../SVGs/OdRd4.svg'
+import Missn_Img2 from '../SVGs/Shared_Goals.svg'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -20,7 +21,7 @@ export default function AboutMain(props) {
  
   return (
     <>
-      <Home title="About us" description="Traveler is led by a powerful purpose to
+      <Home key="New1" title="About us" description="Traveler is led by a powerful purpose to
             simplify and improve the lives of people and build an awesome
             organisation that inspires. Since 2023, Traveler has built a platform
             for the region’s best talent to thrive and for entrepreneurs to
@@ -78,7 +79,7 @@ export default function AboutMain(props) {
       <InfoBanner
         Title="Shared Goals"
         description="Innovation, Convenience, and Reliability :) "
-        Image={Missn_Img}
+        Image={Missn_Img2}
       />
       <div className="About_Main2">
         <div className="Abt_Main_Wrapper2">
