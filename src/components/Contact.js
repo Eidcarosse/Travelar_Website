@@ -1,6 +1,7 @@
 import React from 'react'
 import emailjs from '@emailjs/browser';
 import Typed from 'react-typed';
+import { useCallback } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,7 +25,7 @@ export default function Contact() {
 
   const sendEmail = (e)=>{
     e.preventDefault();
-    emailjs.sendForm(process.env.REACT_APP_ServiceID, process.env.REACT_APP_TemplateID, e.target, process.env.REACT_APP_ApID)
+    emailjs.sendForm(process.env.REACT_APP_ServiceID, process.env.REACT_APP_TemplateID, e.target, process.env.REACT_APP_ApiID)
   } 
 
   return (
@@ -39,11 +40,11 @@ export default function Contact() {
         <Col xs={12}>
           <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
           <Form onSubmit={sendEmail}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3" controlId="ContactForm">
 
               <Form.Label>Subject</Form.Label>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="Subject"
                 label="Enter Subject"
                 className="mb-3"
               >
@@ -51,13 +52,14 @@ export default function Contact() {
               </FloatingLabel>
 
               <Form.Label>Country</Form.Label>
-              <Form.Select aria-label="Default select example" name='Cs_Country'>
-                <CountriesList />
+              <Form.Select aria-label="Default select example" name='Cs_Country' id='Country'>
+                <CountriesList/>
+              
               </Form.Select>
               
               <Form.Label>Name</Form.Label>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="Name"
                 label="Enter Name"
                 className="mb-3"
               >
@@ -66,11 +68,11 @@ export default function Contact() {
 
               <Form.Label>Email address</Form.Label>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="Email"
                 label="Enter email"
                 className="mb-3"
               >
-              <Form.Control type="email" name='Cs_Mail' placeholder="name@example.com" />
+              <Form.Control type="email" name='Cs_Mail' placeholder="name@gmail.com" />
               </FloatingLabel>
 
               <Form.Label>Comment</Form.Label>
