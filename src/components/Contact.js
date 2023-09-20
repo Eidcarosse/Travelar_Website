@@ -1,7 +1,6 @@
 import React from 'react'
 import emailjs from '@emailjs/browser';
 import Typed from 'react-typed';
-import { useCallback } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -25,7 +24,7 @@ export default function Contact() {
 
   const sendEmail = (e)=>{
     e.preventDefault();
-    emailjs.sendForm('service_db2xyw5', 'template_i8nj57a', e.target, '1CPtdC5o6ONqMEhCJ')
+    emailjs.sendForm(process.env.REACT_APP_ServiceID, process.env.REACT_APP_TemplateID, e.target, process.env.REACT_APP_ApID)
   } 
 
   return (
@@ -39,7 +38,7 @@ export default function Contact() {
       <Row>
         <Col xs={12}>
           <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
-          <Form>
+          <Form onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
 
               <Form.Label>Subject</Form.Label>
