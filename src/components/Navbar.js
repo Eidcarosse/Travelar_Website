@@ -54,10 +54,10 @@ export default function Navbar(props) {
         <nav id="nav">
           <div className="nav left">
             <span className="Main_Logo">
-              <Link to="/TravelerApp" onClick={Scroll_Top}>Travel|\r</Link>
+              <Link to="/" onClick={Scroll_Top}>Travel|\r</Link>
             </span>
             <span className="nav-link">
-              <Link to="/TravelerApp" onClick={Scroll_Top} className="Lst_Anim">
+              <Link to="/" onClick={Scroll_Top} className="Lst_Anim">
                 Home
               </Link>
             </span>

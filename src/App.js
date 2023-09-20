@@ -40,7 +40,7 @@ function App() {
     <Navbar showalert={setAlert}/>
     <Alert show={Show} style={{width:"87%",margin:"5em auto -5em", textAlign:"center"}} variant="info">Language changed successfull!</Alert>
     <Routes>
-      <Route path='/TravelerApp' element={[<Home key="UndApp" title="Travel with us" description=" Your ultimate destination for seamless car booking experiences!
+      <Route path='/' element={[<Home key="UndApp" title="Travel with us" description=" Your ultimate destination for seamless car booking experiences!
                 Whether you're planning a road trip, a business venture, or a
                 leisurely escape, Travelar is here to redefine the way you embark
                 on your journeys. With a vast network of trusted rental
