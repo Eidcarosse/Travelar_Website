@@ -37,6 +37,7 @@ export default function AboutMain(props) {
         </div>
       </div>
       <InfoBanner
+        key='AM01'
         Title="24/7 Available"
         description="Rapid Tech Support "
         Image={Missn_Img}
@@ -77,6 +78,7 @@ export default function AboutMain(props) {
         </div>
       </div>
       <InfoBanner
+        key='AM02'
         Title="Shared Goals"
         description="Innovation, Convenience, and Reliability :) "
         Image={Missn_Img2}

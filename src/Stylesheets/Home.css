@@ -1,20 +1,3 @@
-body {
-    font-family: Poppins;
-}
-
-html {
-    scroll-behavior: smooth;
-  }
-  
-:root{
-    --Grad : radial-gradient(circle, rgb(30, 119, 164) 0%, rgb(243, 49, 15) 100%);
-}
-
-@font-face {
-  font-family: Howlimit;
-  src: url(/src/Fonts/HowLimit.otf);
-}
-
 #Gradient_Home {
     height: 76vh;
     background-color: #fff;
@@ -26,7 +9,7 @@ html {
     height: 74vh;
     margin : auto;
     margin-top: 5.5rem ;
-    background-image: linear-gradient(to right, #005a9c, #004f93, #00448a, #003a81, #002f77, #002f76, #002e74, #002e73, #00377a, #004181, #004a86, #00538c);
+    background: var(--Main_Grad);
     border-radius: 1em;
     display: flex;
     flex-direction: row;

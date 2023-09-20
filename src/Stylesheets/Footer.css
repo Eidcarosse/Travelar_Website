@@ -43,14 +43,6 @@
     margin-bottom: 1.2em;
 }
 
-.Ft_Sec1_li {
-    list-style-type: none;
-    margin-top: 0.5em;
-    margin-inline-start: -2em;
-   
-}
-
-
 .FR_Sec1_a {
     display: flex;
     flex-direction: column;
@@ -68,6 +60,11 @@
     margin-inline-start: -0.6em;
     max-height: 9vh;
     width: 98%;    
+}
+
+.Ft_Sec1_li {
+    list-style-type: none;
+    margin-top: 0.5em;
 }
 
 .Dimensions {

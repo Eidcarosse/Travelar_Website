@@ -8,8 +8,8 @@ export default function InfoBanner(props) {
   return (
     <>
     <main>
-        <section id="About_Us">
-          <div className="Abt_US_Wrapper">
+        <section id="Info_Banner">
+          <div className="Info_Banner_Wrapr">
             <span className="description">
                 <h3>{props.Title}</h3>
                 <p>{props.description}</p>

@@ -15,8 +15,8 @@ export default function Footer() {
         <div className='FR_Sec1'>
           <div className='FR_Sec1_a'>
             <h6>Travelar</h6>
-            <a href="" target='_blank'><img className='Badge_d1 try_trans' src={badge1} alt="" /></a>
-            <a href="" target='_blank'><img className='Badge_d2 try_trans' src={badge2} alt="" /></a>
+            <a href="" target='_blank'><img className='Badge_d1 try_trans' src={badge1} alt="App Store Download =>" /></a>
+            <a href="" target='_blank'><img className='Badge_d2 try_trans' src={badge2} alt="Play Store Download =>" /></a>
           </div>
           
           <div className='FR_Sec1_b Dimensions'>

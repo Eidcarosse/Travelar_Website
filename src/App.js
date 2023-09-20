@@ -45,7 +45,7 @@ function App() {
                 leisurely escape, Travelar is here to redefine the way you embark
                 on your journeys. With a vast network of trusted rental
                 providers and a user-friendly interface, we bring you a world of
-                convenience at your fingertips." logo={hme_logo} />, <ServicesInfo/>, <InfoBanner Title="Travelar" description="Enjoy 30% discount on your first Rides !" Image={ABT}/>, <About/>]}/>
+                convenience at your fingertips." logo={hme_logo} />, <ServicesInfo key='Index_Svcs'/>, <InfoBanner key='IIB01' Title="Travelar" description="Enjoy 30% discount on your first Rides !" Image={ABT}/>, <About key='IA01'/>]}/>
       <Route path='/Services' element={<Services/>}/>
       <Route path='/AboutUs' element={<AboutMain top_function={Scroll_Top}/>}/>
       <Route path='/Contact' element={<Contact/>}/>

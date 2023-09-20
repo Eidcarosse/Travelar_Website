@@ -1,8 +1,23 @@
+:root{
+    --Main_Grad : linear-gradient(to right, #005a9c, #004f93, #00448a, #003a81, #002f77, #002f76, #002e74, #002e73, #00377a, #004181, #004a86, #00538c);
+    --Info_Grad :  linear-gradient(90deg, rgba(0,45,98,1) 0%, rgba(10,65,120,1) 40%, rgba(58,155,220,1) 100%);
+}
+
 body {
+    font-family: Inter;
     background-color: #fff;
     scroll-behavior: smooth;
 }
 
+ul {
+    padding: 0;
+}
+
+@font-face {
+    font-family: Logo_Font;
+    src: url(/src/Fonts/TakeLooks.otf);
+  }
+  
 .head_style{
     text-align: center;
     margin: 1em auto;
