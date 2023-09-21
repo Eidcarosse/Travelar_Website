@@ -1,7 +1,7 @@
 import React from 'react'
 import emailjs from '@emailjs/browser';
 import Typed from 'react-typed';
-import { useCallback } from 'react';
+import Alert from 'react-bootstrap/Alert';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,11 +10,15 @@ import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import CountriesList from './CountriesList';
 import '../Stylesheets/Contact.css'
+import { useState } from 'react';
 
 
 
 
 export default function Contact() {
+  const[Smsg, setSmsg] = useState(null);
+  const[Altmsg, setAltmsg] = useState(null);
+  const[Atclr, setAtclr] = useState(null);
 
   const RenderedStrings = [
     "Queries",
@@ -22,6 +26,38 @@ export default function Contact() {
     "Suggestions",
     "Thanks !"
   ];
+
+   
+  const sspp = (e) =>{
+    e.preventDefault();
+    let Subject = document.querySelector("#Fm_Subject").value;
+    let Country = document.querySelector("#Fm_Country").value;
+    let Name = document.querySelector("#Fm_Name").value;
+    let Email = document.querySelector("#Fm_Email").value;
+    let CommentV = () => {
+      let Comment = document.querySelector("#Fm_Cmnt").value;
+      if (Comment == '') return null;
+    } 
+    console.log(CommentV.value)
+
+    if (Subject && Country && Name && Email && CommentV() !== null)
+    {
+      setAtclr("success");
+      setSmsg("show");
+      setAltmsg("Submitted Successfully, Thank you !")
+      setTimeout(() => {
+      setSmsg(null)
+      }, 2500);}
+    else
+    {
+      setAtclr("danger");
+      setSmsg("show");
+      setAltmsg("All fields must be field");
+      setTimeout(() => {
+        setSmsg(null)
+      }, 2500);
+    }
+  }
 
   const sendEmail = (e)=>{
     e.preventDefault();
@@ -39,12 +75,12 @@ export default function Contact() {
       <Row>
         <Col xs={12}>
           <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
-          <Form onSubmit={sendEmail}>
+          <Form onSubmit={sspp}>
             <Form.Group className="mb-3" controlId="ContactForm">
-
+                
               <Form.Label>Subject</Form.Label>
               <FloatingLabel
-                controlId="Subject"
+                controlId="Fm_Subject"
                 label="Enter Subject"
                 className="mb-3"
               >
@@ -52,14 +88,13 @@ export default function Contact() {
               </FloatingLabel>
 
               <Form.Label>Country</Form.Label>
-              <Form.Select aria-label="Default select example" name='Cs_Country' id='Country'>
-                <CountriesList/>
-              
+              <Form.Select aria-label="Country/Residence" name='Cs_Country' id='Fm_Country'>
+                <CountriesList/>     
               </Form.Select>
               
               <Form.Label>Name</Form.Label>
               <FloatingLabel
-                controlId="Name"
+                controlId="Fm_Name"
                 label="Enter Name"
                 className="mb-3"
               >
@@ -68,13 +103,14 @@ export default function Contact() {
 
               <Form.Label>Email address</Form.Label>
               <FloatingLabel
-                controlId="Email"
+                controlId="Fm_Email"
                 label="Enter email"
                 className="mb-3"
               >
               <Form.Control type="email" name='Cs_Mail' placeholder="name@gmail.com" />
               </FloatingLabel>
 
+              <Form.Group controlId='Fm_Cmnt'>
               <Form.Label>Comment</Form.Label>
               <Form.Control
                 name='Cs_Concern'
@@ -82,11 +118,15 @@ export default function Contact() {
                 rows={5}
                 placeholder="Leave a comment"
               />
+              </Form.Group>
+
             </Form.Group>
 
-            <Button id="startButton" style={{width:"100%", backgroundColor:"#3a9bdc", border:"none"}} variant="primary" type="submit">
+            <Button className="bg_anim" id="startButton" style={{width:"100%", border:"none"}} variant="primary" type="submit">
               Submit
             </Button>
+            <Alert variant={Atclr} show={Smsg} style={{width:"87%",margin:"1em auto 0 auto", textAlign:"center"}}>{Altmsg}</Alert>
+
             
           </Form>
         </Col>

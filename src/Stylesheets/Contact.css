@@ -29,6 +29,14 @@
     
 }
 
+.bg_anim {
+    background-color: #3a9bdc ;
+  transition:  cubic-bezier(0.17, 0.57, 0.31, 0.85) 0.5s;
+}
+
+.bg_anim:hover {
+    background-color: #0CAFFF;
+}
 
 @media (min-width:1201px) {
     .Media_1{
