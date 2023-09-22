@@ -15,6 +15,7 @@
 }
 
 .error-code {
+    cursor: default;
     background-image: url(../images/4042.jpg);
     background-clip: text;
     -webkit-background-clip: text;
@@ -35,7 +36,7 @@
     margin: auto;
     border-width: 0 0 0 5px;
     border-color: #2980b9;
-    border-style: dotted;
+    border-style:dashed;
     width: fit-content;
     height: 120px;
 }
