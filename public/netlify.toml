@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "./src/components/PgeNotFnd.js"
+to = "./404.html"
 status = 404
