@@ -6,7 +6,7 @@ export default function NavMenu(props) {
     const listitems = [
         {
           Item : "Home",
-          Link : "/TravelerApp"
+          Link : "/"
         },
         {
           Item : "Services",

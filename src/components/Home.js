@@ -1,8 +1,11 @@
 import '../Stylesheets/Home.css'
 import "animate.css/animate.min.css";
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function BnerContent(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <main>
@@ -25,7 +28,7 @@ export default function BnerContent(props) {
             </div>
             <div className='BW_Data-right'>
             <span className="Item__4">
-              <img src={props.logo} alt=":)" />
+              <img src={props.logo} alt=":)"/>
             </span>
             </div>
           </div>

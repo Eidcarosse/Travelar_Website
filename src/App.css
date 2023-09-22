@@ -4,6 +4,7 @@
 }
 
 body {
+    caret-color: #3a9bdc;
     font-family: Inter;
     background-color: #fff;
     scroll-behavior: smooth;

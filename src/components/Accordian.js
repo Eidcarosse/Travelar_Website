@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 export default function Accordian() {
   return (
-    <div>
+    <>
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>How do I book a ride?</Accordion.Header>
@@ -50,6 +50,6 @@ export default function Accordian() {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-    </div>
+    </>
   );
 }
