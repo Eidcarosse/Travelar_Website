@@ -9,6 +9,7 @@ import About from './components/About';
 import Services from './components/Services';
 import AboutMain from './components/AboutMain';
 import Contact from './components/Contact';
+import PgeNotFnd from './components/PgeNotFnd';
 import Footer from './components/Footer';
 import hme_logo from './SVGs/OdRd.svg'
 import React, { useState } from 'react'
@@ -49,6 +50,7 @@ function App() {
       <Route path='/Services' element={<Services/>}/>
       <Route path='/AboutUs' element={<AboutMain top_function={Scroll_Top}/>}/>
       <Route path='/Contact' element={<Contact/>}/>
+      <Route path='*' element={<PgeNotFnd/>}/>
     </Routes>
     <Footer/>
     </DataProvider>  
