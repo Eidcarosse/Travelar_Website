@@ -10,7 +10,64 @@
         <title></title>
         <meta name="404 - Error" content="Page Not Found">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./404.css">
+        <style>
+            .thisbody {
+    font-family: Inter;
+    margin: 5em 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    text-align: center;
+}
+
+.error-code {
+    cursor: default;
+    background-image: url(../images/4042.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: repeat;
+    font-size: 8em;
+    font-weight: bold;
+    color: #333;
+}
+
+.error-message {
+    font-size: 1.5em;
+    color: #666;
+}
+
+.NavLine {
+    width: fit-content;
+    margin: auto;
+    border-width: 0 0 0 5px;
+    border-color: #2980b9;
+    border-style:dashed;
+    width: fit-content;
+    height: 120px;
+}
+
+.back-button {
+    margin-top: 5em;
+    background: #3498db;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+}
+        </style>
     </head>
     <body>
         <div className="thisbody">
