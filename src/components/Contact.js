@@ -21,10 +21,10 @@ export default function Contact() {
   const[Atclr, setAtclr] = useState(null);
 
   const RenderedStrings = [
-    "Queries",
-    "Concerns",
-    "Suggestions",
-    "Thanks !"
+    "Queries.",
+    "Concerns.",
+    "Suggestions.",
+    "Feedback."
   ];
 
    
@@ -42,6 +42,7 @@ export default function Contact() {
 
     if (Subject && Country && Name && Email && CommentV() !== null)
     {
+      emailjs.sendForm(process.env.REACT_APP_ServiceID, process.env.REACT_APP_TemplateID, e.target, process.env.REACT_APP_ApiID)
       setAtclr("success");
       setSmsg("show");
       setAltmsg("Submitted Successfully, Thank you !")
@@ -61,7 +62,6 @@ export default function Contact() {
 
   const sendEmail = (e)=>{
     e.preventDefault();
-    emailjs.sendForm(process.env.REACT_APP_ServiceID, process.env.REACT_APP_TemplateID, e.target, process.env.REACT_APP_ApiID)
   } 
 
   return (

@@ -11,6 +11,7 @@
     bottom: 0;
     left: 0;
     z-index: 100;
+    background-color: #F4F4F4;
 }
 
 #nav_footer{
@@ -33,7 +34,7 @@
 
 
 .FR_Sec1 h6 {
-    background: -webkit-linear-gradient(bottom,#3a9bdc, #0072bb);
+    background-color: #00A896;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;

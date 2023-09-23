@@ -15,7 +15,7 @@
     column-gap: 5vw;
     align-items:center;
     justify-content:center;
-    background: var(--Info_Grad );
+    background: var(--Info_Grad);
     border-radius: 1em;
 }
 
@@ -30,7 +30,7 @@
 
 .description h3 {
      font-size : 2em;
-     color : #3a9bdc;
+     color : #fff;
 }
 
 div.Info_Banner_Wrapr span img{
@@ -40,7 +40,7 @@ div.Info_Banner_Wrapr span img{
 }
 
 .mb_img{
-    background-color: #7CB9E8;
+    background-color: #7FB800;
     width: 30%;
     height: 65%;
     border-radius: 30px;
