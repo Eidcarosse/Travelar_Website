@@ -29,6 +29,7 @@
 }
 
 .description h3 {
+    font-family: Carme;
      font-size : 2em;
      color : #fff;
 }
@@ -40,7 +41,7 @@ div.Info_Banner_Wrapr span img{
 }
 
 .mb_img{
-    background-color: #7FB800;
+    background-color: #fff;
     width: 30%;
     height: 65%;
     border-radius: 30px;
@@ -60,11 +61,6 @@ div.Info_Banner_Wrapr span img{
 
 .description { 
     font-size: 1em;
-}
-
-.description h3 {
-     font-family: Carme;
-     color : #3a9bdc;
 }
 
 .mb_img{
@@ -92,8 +88,6 @@ div.Info_Banner_Wrapr span img{
     }
     
     .description h3 {
-         font-family: Carme;
-         color : #3a9bdc;
          padding-top: 0.5em;
          padding-left: 1vw;
 

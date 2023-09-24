@@ -11,6 +11,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import CountriesList from './CountriesList';
 import '../Stylesheets/Contact.css'
 import { useState } from 'react';
+import "animate.css/animate.min.css";
 
 
 
@@ -21,10 +22,10 @@ export default function Contact() {
   const[Atclr, setAtclr] = useState(null);
 
   const RenderedStrings = [
-    "Queries.",
-    "Concerns.",
-    "Suggestions.",
-    "Feedback."
+    "Queries",
+    "Concerns",
+    "Suggestions",
+    "Feedback"
   ];
 
    
@@ -38,7 +39,7 @@ export default function Contact() {
       let Comment = document.querySelector("#Fm_Cmnt").value;
       if (Comment == '') return null;
     } 
-    console.log(CommentV.value)
+
 
     if (Subject && Country && Name && Email && CommentV() !== null)
     {
@@ -68,7 +69,7 @@ export default function Contact() {
     <>
     <div className='Contact_Sec_1'>
       <h2 style={{marginBottom:"0em"}} className="head_style highlight">Contact us</h2>
-      <p className='head_style_def'>Your <Typed className='highlight_def' strings={RenderedStrings} typeSpeed={50} backSpeed={50} loop/></p>
+     <p className='head_style_def'>Your <Typed className='highlight_def' strings={RenderedStrings} typeSpeed={130} backSpeed={20} cursorChar='&nbsp;_' loopCount={1}/></p>
       
     </div>
     <Container className="Media_1">
@@ -122,7 +123,7 @@ export default function Contact() {
 
             </Form.Group>
 
-            <Button className="bg_anim" id="startButton" style={{width:"100%", border:"none"}} variant="primary" type="submit">
+            <Button className="bg_anim"  style={{width:"100%", border:"none"}} type="submit">
               Submit
             </Button>
             <Alert variant={Atclr} show={Smsg} style={{width:"87%",margin:"1em auto 0 auto", textAlign:"center"}}>{Altmsg}</Alert>

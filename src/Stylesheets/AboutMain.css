@@ -50,7 +50,7 @@
 .Cotn_Btn {
   font-family: Inter;
   color: #fff !important;
-  background-color: #3a9bdc;
+  background-color: var(--Prim);
   border-radius: 1em;
   margin: auto;
   padding: 1em;

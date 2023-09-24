@@ -180,9 +180,9 @@ a:link, a:visited, a:active {
     }
 
     .btn-nav {
-        color: #3a9bdc ;
+        color: #00A896 ;
         padding-left: 0em;
-        padding-right: 0em;
+        padding-right: 0.5em;
     }
 
     .Btn_Aniim {
@@ -209,7 +209,7 @@ a:link, a:visited, a:active {
         overflow: hidden;
     }
     .Main_Logo a {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
 

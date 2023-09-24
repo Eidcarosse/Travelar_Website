@@ -61,20 +61,23 @@
   animation-duration: 2s;
   overflow: hidden;
   padding: 2vh 3vw;
-  color : #007c78;
+  color : #fff;
   font-family: Carme;
   font-size: larger;
   font-weight: bold; 
-  background : #fff;
-  background-image: linear-gradient(to right, #007c78 10%, #fff 90%);
+  background : #007c78;
+  background-image: linear-gradient(to right, #fff 50%, #007c78 50%);
+  background-image: -webkit-linear-gradient(to right, #fff 50%, #007c78 50%);;
   background-size: 200%;
-  background-position: left;
-  transition: background-position 0.5s ease-in-out;
-  border-radius: 0.5em;
+  background-position: right;
+  transition: background-position 0.3s ease-out;
+  outline: 1px solid #fff;
 }
 
 .BANR_INF_BTN:hover{
-  background-position: right;
+  background-position: left;
+  color: #007c78;
+  outline: none;
 }
 
 .BW_Data-right {

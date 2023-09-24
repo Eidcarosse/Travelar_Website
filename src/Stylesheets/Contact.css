@@ -19,7 +19,7 @@
     content: '';
     height: 8px;
     width: 100%;
-    background-color: #3a9bdc;
+    background-color: #00A896;
     left: 0;
     bottom: 0;
     position: absolute;
@@ -30,12 +30,17 @@
 }
 
 .bg_anim {
-    background-color: #3a9bdc ;
+    background-color: #00A896 ;
   transition:  cubic-bezier(0.17, 0.57, 0.31, 0.85) 0.5s;
 }
 
+.bg_anim:focus {
+    background-color: none !important;
+}
+
+
 .bg_anim:hover {
-    background-color: #0CAFFF;
+    background-color: #007c78;
 }
 
 @media (min-width:1201px) {
