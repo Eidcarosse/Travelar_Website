@@ -56,7 +56,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <hr className='FR_Middle'/>
+        <hr className='FR_Middle' style={{backgroundColor : "black", color:"black", height:"1px"}}/>
         <div className='FR_Sec2'>
           <div className='FR_Sec2_a'><span>All rights reserved. Travelar @ 2023</span></div>
           <div className='FR_Sec2_b'>

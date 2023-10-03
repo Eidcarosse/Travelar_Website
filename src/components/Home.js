@@ -1,6 +1,7 @@
 import '../Stylesheets/Home.css'
 import "animate.css/animate.min.css";
 import React, { useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function BnerContent(props) {
   useEffect(() => {
@@ -22,7 +23,7 @@ export default function BnerContent(props) {
             </span>
             <span className="Item__3">
               <a href="" target="_blank">
-                <button className="BANR_INF_BTN">Download App</button>
+                <button className="BANR_INF_BTN"><FontAwesomeIcon icon='car-side'/> &nbsp;,&nbsp;Let's Go</button>
               </a>
             </span>
             </div>

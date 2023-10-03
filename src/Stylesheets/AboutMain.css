@@ -63,6 +63,10 @@
   height: 13em;
 }
 
+.Abt_Sb_Inherit_Txt {
+  height: 2.2em;
+}
+
 
 .About_Main2 {
   height: fit-content;
@@ -134,10 +138,11 @@
 
   .Abt_Main_Teams_Cards {
     width: 100%;
-    height: 15em !important;
+    height: 16em !important;
   }
 
   .Abt_Inherit_Txt {
+    height: 2.2em;
     font-size: medium;
   }
 
@@ -179,6 +184,10 @@
     text-align: center;
     width: 100%;
     height: fit-content !important;
+  }
+
+  .Abt_Sb_Inherit_Txt {
+    height: fit-content;
   }
 
   .Avatr_Ds {

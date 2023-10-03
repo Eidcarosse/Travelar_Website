@@ -16,8 +16,8 @@ import React, { useState } from 'react'
 import { DataProvider } from './components/DataContext';
 import ABT from './SVGs/Gift.svg'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faBars, faX, faShareFromSquare, faGlobe } from '@fortawesome/free-solid-svg-icons'
-library.add(faBars, faX, faShareFromSquare, faGlobe)
+import {faBars, faX, faShareFromSquare, faGlobe, faCarSide } from '@fortawesome/free-solid-svg-icons'
+library.add(faBars, faX, faShareFromSquare, faGlobe, faCarSide)
 
 
 function App() {

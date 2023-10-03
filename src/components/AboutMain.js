@@ -45,6 +45,7 @@ export default function AboutMain(props) {
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
           <h3 className="head_style highlight">Teams</h3>
+          <hr />
           <Row>
             <Col md={4}>
               <Card className="mt-3 Abt_Main_Teams_Cards">
@@ -75,6 +76,7 @@ export default function AboutMain(props) {
               </Card>
             </Col>
           </Row>
+          <hr />
         </div>
       </div>
       <InfoBanner

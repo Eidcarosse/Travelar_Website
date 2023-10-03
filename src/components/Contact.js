@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Typed from 'react-typed';
 import Alert from 'react-bootstrap/Alert';
@@ -10,14 +10,17 @@ import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import CountriesList from './CountriesList';
 import '../Stylesheets/Contact.css'
-import { useState } from 'react';
 import "animate.css/animate.min.css";
 
 
 
 
 export default function Contact() {
-  const[Smsg, setSmsg] = useState(null);
+  useEffect(()=>{
+    document.title = "Works"
+    window.scrollTo(0, 0)
+  }, [])
+    const[Smsg, setSmsg] = useState(null);
   const[Altmsg, setAltmsg] = useState(null);
   const[Atclr, setAtclr] = useState(null);
 
@@ -37,7 +40,7 @@ export default function Contact() {
     let Email = document.querySelector("#Fm_Email").value;
     let CommentV = () => {
       let Comment = document.querySelector("#Fm_Cmnt").value;
-      if (Comment == '') return null;
+      if (Comment === '') return null;
     } 
 
 
@@ -61,10 +64,6 @@ export default function Contact() {
     }
   }
 
-  const sendEmail = (e)=>{
-    e.preventDefault();
-  } 
-
   return (
     <>
     <div className='Contact_Sec_1'>
@@ -84,12 +83,13 @@ export default function Contact() {
                 controlId="Fm_Subject"
                 label="Enter Subject"
                 className="mb-3"
+                
               >
-              <Form.Control type="text" name='Cs_Subject' placeholder="Enter Subject" />
+              <Form.Control type="text" name='Cs_Subject' />
               </FloatingLabel>
 
               <Form.Label>Country</Form.Label>
-              <Form.Select aria-label="Country/Residence" name='Cs_Country' id='Fm_Country'>
+              <Form.Select aria-label="Country/Residence" name='Cs_Country' id='Fm_Country' style={{marginBottom:"1em"}}>
                 <CountriesList/>     
               </Form.Select>
               
@@ -99,7 +99,7 @@ export default function Contact() {
                 label="Enter Name"
                 className="mb-3"
               >
-              <Form.Control type="text" name='Cs_Name' placeholder="Enter Name" />
+              <Form.Control type="text" name='Cs_Name'/>
               </FloatingLabel>
 
               <Form.Label>Email address</Form.Label>
@@ -108,7 +108,7 @@ export default function Contact() {
                 label="Enter email"
                 className="mb-3"
               >
-              <Form.Control type="email" name='Cs_Mail' placeholder="name@gmail.com" />
+              <Form.Control type="email" name='Cs_Mail'/>
               </FloatingLabel>
 
               <Form.Group controlId='Fm_Cmnt'>
