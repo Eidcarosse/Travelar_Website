@@ -13,6 +13,20 @@
 
 .highlight_def {
     position: relative;
+} 
+
+.hidden {
+    display: none;
+}
+
+.entryanim {
+    animation-name: fadeInDown;
+    animation-duration: 0.5s;
+}
+
+.exitanim {
+    animation-name: fadeOutLeftBig;
+    animation-duration: 0.5s;
 }
 
 .highlight_def::before {

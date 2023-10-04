@@ -1,60 +1,51 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useContext, useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css/animate.min.css";
-import '../Stylesheets/Navbar.css';
-import { Link } from 'react-router-dom';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import DataContext from './DataContext';
-import NavMenu from './NavMenu';
-
+import "../Stylesheets/Navbar.css";
+import { Link } from "react-router-dom";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import DataContext from "./DataContext";
+import NavMenu from "./NavMenu";
 
 export default function Navbar(props) {
-  
+  useEffect(() => {
+    document.getElementById("Menu_BTN").addEventListener("click", (e) => {
+      e.target.classList.remove("Btn_Aniim");
+      setTimeout(() => {
+        e.target.classList.add("Btn_Aniim");
+      });
+    });
+  }, []);
+
   const Scroll_Top = useContext(DataContext);
   const [NavMn, setNavMenu] = useState("none");
   const [MenuIcon, setMenIc] = useState("bars");
-  const btn = document.getElementById("Menu_BTN");
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     const nav = document.querySelector("#nav_wrapper");
-    if(window.scrollY>0)
-    nav.classList.add("Scroll_border");
-    else
-    nav.classList.remove("Scroll_border");
-    });
-
-    
-  btn?.addEventListener('click', ()=>{
-    btn.classList.remove("Btn_Aniim");
-    setTimeout(()=> {
-    btn.classList.add("Btn_Aniim");
-    });
+    if (window.scrollY > 0) nav.classList.add("Scroll_border");
+    else nav.classList.remove("Scroll_border");
   });
 
-
-  let ToggleIcon = () =>{
-   
-   if (NavMn == "none")
-   {
-     setNavMenu("block");
-     setMenIc('x');
-   }
-   else
-    {
-     setNavMenu("none");
-     setMenIc("bars")
-   }
-  
- };
-      
+  const ToggleIcon = () => {
+    if (NavMn == "none") {
+      setNavMenu("block");
+      setMenIc("x");
+    } else {
+      setNavMenu("none");
+      setMenIc("bars");
+    }
+  };
 
   return (
     <>
-      <header id="nav_wrapper" className='nav_wrapper'>
+      <header id="nav_wrapper" className="nav_wrapper">
         <nav id="nav">
           <div className="nav left">
             <span className="Main_Logo">
-              <Link to="/" onClick={Scroll_Top}>Travel|\r</Link>
+              <Link to="/" onClick={Scroll_Top}>
+                Travel|\r
+              </Link>
             </span>
             <span className="nav-link">
               <Link to="/" onClick={Scroll_Top} className="Lst_Anim">
@@ -84,11 +75,15 @@ export default function Navbar(props) {
                 <FontAwesomeIcon icon={`${MenuIcon}`} size="lg" />
               </button>
             </span>
-            <span className='Res_dropdown'>
-            <FontAwesomeIcon style={{margin:"3.2vh 0 0 0"}} icon="globe" size="xl" />
+            <span className="Res_dropdown">
+              <FontAwesomeIcon
+                style={{ margin: "3.2vh 0 0 0" }}
+                icon="globe"
+                size="xl"
+              />
               <NavDropdown title="Languages" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1" onClick={props.showalert}
-                >German
+                <NavDropdown.Item href="#action/3.1" onClick={props.showalert}>
+                  German
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" onClick={props.showalert}>
                   French
@@ -106,9 +101,8 @@ export default function Navbar(props) {
             </span>
           </div>
         </nav>
-        <NavMenu MenuDisplay={NavMn}/>
+        <NavMenu MenuDisplay={NavMn} ToggleIcon={ToggleIcon}/>
       </header>
     </>
   );
 }
-

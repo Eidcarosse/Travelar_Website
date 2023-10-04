@@ -11,8 +11,17 @@
         overflow: hidden; 
         height: 100%;
         width: 100%;
+    }
+    .ent_anim {
         animation: slideInDown;
         animation-duration: 0.5s;
+    }
+
+    .ext_anim {
+        background-color: red;
+        animation: slideInRight;
+        animation-duration: 0.5s;
+        
     }
     
 }

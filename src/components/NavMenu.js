@@ -31,9 +31,9 @@ export default function NavMenu(props) {
 
   return (
     <>
-    <div style={{ display: `${props.MenuDisplay}` }} className="Nav_Menu">
+    <div style={{ display: props.MenuDisplay }} className={`Nav_Menu ${props.MenuDisplay == 'block' ? 'ent_anim' : ''} ${props.MenuDisplay == 'none' && 'ext_anim'}`}>
           {listitems.map((li) => {
-            return <ListItem key={li.id} linked={li.Link} title={li.Item} />;
+            return <ListItem key={li.id} linked={li.Link} title={li.Item} ToggleIcon={props.ToggleIcon} />;
           })}
     </div>
     </>
