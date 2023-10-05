@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Typed from "react-typed";
 import Alert from "react-bootstrap/Alert";
@@ -11,18 +11,45 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import CountriesList from "./CountriesList";
 import "../Stylesheets/Contact.css";
 import "animate.css/animate.min.css";
+import lottie from 'lottie-web';
+import tickAnim from '../Animations/tickanim.json'
+import crossanim from '../Animations/crossanim.json'
 
 export default function Contact() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  const RenderedStrings = ["Queries", "Concerns", "Suggestions", "Feedback"];
   const [isVisible, setIsVisible] = useState(false);
-  const [Altmsg, setAltmsg] = useState(null);
+  const [sbmsg, setSbmsg] = useState(null);
   const [Atclr, setAtclr] = useState(null);
+  const [smstatus, setSmstatus] = useState(null);
+  let animContainer = React.createRef();
+  const RenderedStrings = ["Queries", "Concerns", "Suggestions", "Feedback"];
+  useEffect(() => {
+    lottie.destroy();
+    if((isVisible) && (smstatus == 'failed'))  
+    {
+      lottie.loadAnimation({
+      container : animContainer.current,
+      animationData : crossanim,
+      loop : false
+    })
+    }
+    else if((isVisible) && (smstatus == 'submitted'))  
+    {
+      
+      lottie.destroy()
+      lottie.loadAnimation({
+      container : animContainer.current,
+      animationData : tickAnim,
+      loop: false
+    })
+    }
+    
+  }, [isVisible, smstatus]);
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   
-
+ 
   const Sbmit_Mail = (e) => {
     e.preventDefault();
     const Subject = document.querySelector("#Fm_Subject").value;
@@ -33,27 +60,37 @@ export default function Contact() {
       let Comment = document.querySelector("#Fm_Cmnt").value;
       if (Comment === "") return null;
     };
+    const cleanup = ()=> {
+      document.querySelector("#Fm_Subject").value = null;
+      document.querySelector("#Fm_Country").value = '';
+      document.querySelector("#Fm_Name").value = null;
+      document.querySelector("#Fm_Email").value = null;
+      document.querySelector("#Fm_Cmnt").value = '';
+    }
 
     if (Subject && Country && Name && Email && CommentV() !== null) {
-      emailjs.sendForm(
+      {/*emailjs.sendForm(
         process.env.REACT_APP_ServiceID,
         process.env.REACT_APP_TemplateID,
         e.target,
         process.env.REACT_APP_ApiID
-      );
+      );*/}
+      cleanup()
       setIsVisible(true)
-      setAtclr("success");
-      setAltmsg("Submitted Successfully, Thank you !");
+      setSmstatus('submitted')
+      //setAtclr('success');
+      setSbmsg("Submitting, One Moment !");
       setTimeout(() => {
         setIsVisible(false);
-      }, 2500);
+      }, 3500);
     } else {
       setIsVisible(true);
-      setAtclr("danger");
-      setAltmsg("All fields must be field");
+      setSmstatus('failed')
+      //setAtclr('danger');
+      setSbmsg("All fields must be field");
        setTimeout(() => {
         setIsVisible(false);
-      }, 2500);
+      }, 1600);
     }
   };
 
@@ -128,7 +165,6 @@ export default function Contact() {
                   />
                 </Form.Group>
               </Form.Group>
-
               <Button
                 className="bg_anim"
                 id="showButton"
@@ -137,19 +173,26 @@ export default function Contact() {
               >
                 Submit
               </Button>
-              <Alert
-                id='animatedelement'
+              <div style={{display: `${isVisible ? 'block' : 'none'}`}} className={`${isVisible ? 'entryanim' : ''} ${!isVisible && 'exitanim'}`}>
+              <div ref={animContainer} className='animContainer'></div>
+              <p style={{color : `${smstatus == 'submitted' ? 'green' : 'red'}`, width:"fit-content", margin:"0 auto 1em auto", fontFamily : 'Carme'}}>{sbmsg}</p>
+              </div>
+              
+             {/* { <Alert
                 className={`${isVisible ? 'entryanim' : ''} ${!isVisible && 'exitanim'}`}
                 variant={Atclr}
                 show={isVisible}
                 style={{
                   width: "87%",
                   margin: "1em auto 1em auto",
-                  textAlign: "center",
+                  textAlign: "center"
                 }}
               >
-                {Altmsg}
-              </Alert>
+                
+                asdasd
+                
+                
+              </Alert>} */}
             </Form>
           </Col>
         </Row>

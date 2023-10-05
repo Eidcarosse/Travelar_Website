@@ -22,6 +22,8 @@ body {
     font-family: Inter;
     background-color: #fff;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
 }
 
 ul {
@@ -69,6 +71,7 @@ ul {
 }
 
 .Lst_Anim {
+    color: #3d4853;
     position: relative;
     transition: all 0.35s;
 }
@@ -81,16 +84,24 @@ ul {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:  #007c78;
+    background-color:  #00c1a2;
     transform-origin: bottom right;
     transition: transform 0.35s cubic-bezier(0.45, 0.58, 0.85, 0.85);
 }
 
 .Lst_Anim:hover{
-    color: #007c78;
+    color: #00c1a2;
 }   
   
 .Lst_Anim:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 } 
+
+.Lst_Anim2 {
+    color: #63727e;
+}
+
+.Lst_Anim2:hover {
+    color : #00c1a2
+}

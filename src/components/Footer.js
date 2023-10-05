@@ -22,37 +22,37 @@ export default function Footer() {
           <div className='FR_Sec1_b Dimensions'>
             <h6>Services</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Eat</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Get</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Pay</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Travelar Plus</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Eat</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Get</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Pay</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Travelar Plus</a></li>
             </ul>
           </div>
           <div className='FR_Sec1_c Dimensions'>
             <h6>Parters</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Corporate packages</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Restaurant Delivery</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">B2B delivery</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Pay merchant solution</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Corporate packages</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Restaurant Delivery</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">B2B delivery</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Pay merchant solution</a></li>
             </ul>
           </div>
           <div className='FR_Sec1_d Dimensions'>
             <h6>Join our Team</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">About us</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Enginerring at Travelar</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Careers</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Explore roles</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Why Travelar</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">About us</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Enginerring at Travelar</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Careers</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Explore roles</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Why Travelar</a></li>
             </ul>
           </div>
           <div className='FR_Sec1_e Dimensions'>
             <h6>About Us</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Our Social Impact</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Information security</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim' href="">Blog</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Our Social Impact</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Information security</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Blog</a></li>
             </ul>
           </div>
         </div>

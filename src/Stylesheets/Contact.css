@@ -4,6 +4,13 @@
     margin-top: 7em;
 }
 
+.animContainer {
+    width: fit-content;
+    aspect-ratio: 1/0.3;
+    margin: auto;
+   
+}
+
 .head_style_def {
     font-size: 35px;
     width: fit-content;
@@ -55,6 +62,10 @@
 
 .bg_anim:hover {
     background-color: #007c78;
+}
+
+.Media_1 {
+    height: 100vh;
 }
 
 @media (min-width:1201px) {

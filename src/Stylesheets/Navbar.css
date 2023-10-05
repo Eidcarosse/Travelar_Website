@@ -81,12 +81,6 @@ a {
     text-decoration: none;
 }
 
-a:link, a:visited, a:active {
-    text-decoration: none;
-    color: rgb(45, 46, 46);
-}
-
-
 .nav.right {
     display: flex;
     width: auto;

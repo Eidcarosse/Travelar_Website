@@ -5,6 +5,7 @@ import "../Stylesheets/Navbar.css";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from "./DataContext";
+import {StProvider} from './StateContext'
 import NavMenu from "./NavMenu";
 
 export default function Navbar(props) {
@@ -81,7 +82,7 @@ export default function Navbar(props) {
                 icon="globe"
                 size="xl"
               />
-              <NavDropdown title="Languages" id="basic-nav-dropdown">
+              <NavDropdown  id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1" onClick={props.showalert}>
                   German
                 </NavDropdown.Item>
@@ -101,7 +102,9 @@ export default function Navbar(props) {
             </span>
           </div>
         </nav>
-        <NavMenu MenuDisplay={NavMn} ToggleIcon={ToggleIcon}/>
+        <StProvider value={ToggleIcon}>
+        <NavMenu MenuDisplay={NavMn} />
+        </StProvider>
       </header>
     </>
   );
