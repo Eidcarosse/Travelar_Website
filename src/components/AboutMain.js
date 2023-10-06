@@ -51,9 +51,9 @@ export default function AboutMain(props) {
               <Card className="mt-3 Abt_Main_Teams_Cards">
                 <Card.Body>
                   <Card.Title className='Abt_Inherit_Txt'>Support Team</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#00A896", border:"none"}} href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt"  href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
                   <Card.Title className='Abt_Inherit_Txt'>Policy and Government Relations</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#00A896", border:"none"}} href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt"  href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -61,9 +61,9 @@ export default function AboutMain(props) {
               <Card className="mt-3 Abt_Main_Teams_Cards" style={{width: "100%", height:"13em" }}>
                 <Card.Body>
                   <Card.Title className='Abt_Inherit_Txt'>Collaboration and Advertising</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#00A896", border:"none"}} href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt" href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
                   <Card.Title className='Abt_Inherit_Txt'>PR department</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt" style={{backgroundColor:"#00A896", border:"none"}} href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt" href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -89,7 +89,7 @@ export default function AboutMain(props) {
         <div className="Abt_Main_Wrapper2">
           <h3 className="head_style highlight">Leadership</h3>
           <Card>
-            <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: "#00A896", color: "#fff" }}>
+            <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: "#00905E", color: "#fff" }}>
               Our Leadership statement
             </Card.Header>
             <Card.Body>
@@ -110,7 +110,7 @@ export default function AboutMain(props) {
                     <Card.Title className='Abt_Inherit_Txt'>Chandler</Card.Title>
                     <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder and CEO</Card.Text>
                     <Button className='try_trans'
-                      style={{ backgroundColor: "#00A896", color: "#fff", border:"none" }}
+                      style={{ backgroundColor: "#00E784", color: "#2D2E2E",fontWeight:"bold", border:"none" }}
                       href="/"
                       target="_blank"
                     >
@@ -126,7 +126,7 @@ export default function AboutMain(props) {
                     <Card.Title className='Abt_Inherit_Txt'>Monica</Card.Title>
                     <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder</Card.Text>
                     <Button  className='try_trans'
-                      style={{ backgroundColor: "#00A896", color: "#fff", border:"none"}}
+                      style={{ backgroundColor: "#00E784", color: "#2D2E2E", fontWeight:"bold", border:"none"}}
                       href="/"
                       target="_blank"
                     >
@@ -142,7 +142,7 @@ export default function AboutMain(props) {
                     <Card.Title className='Abt_Inherit_Txt'>Jannice</Card.Title>
                     <Card.Text className='Abt_Sb_Inherit_Txt'>Chief Product Architect</Card.Text>
                     <Button className='try_trans'
-                      style={{ backgroundColor: "#00A896", color: "#fff", border:"none" }}
+                      style={{ backgroundColor: "#00E784", color: "#2D2E2E",fontWeight:"bold", border:"none" }}
                       href="/"
                       target="_blank"
                     >

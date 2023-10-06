@@ -1,14 +1,15 @@
 :root{
-    --Main_Grad : linear-gradient(100deg, #007c78 50%, #00A896 100%);
-    --Info_Grad : linear-gradient(100deg,  #00A896 40%, #007c78 100%);
-    --Prim : #00A896;
-    --Sec : #007c78;
+    --Main_Grad : radial-gradient(circle, #2AE8A0 50%, #9EEDED 100%);
+    --Info_Grad : linear-gradient(90deg,  #00493E 40%, #00905E 100%);
+    --Info_Grad2 : linear-gradient(120deg,  #00493E 5%, #00905E 100%);
+    --Prim : #2AE8A0;
+    --Sec : #D6FFEA;/*0#D2FFD5*/
 
 }
 
 hr {
-    color: #007c78;
-    background-color: #007c78;
+    color: #00493E;
+    background-color: #00493E;
     height: 5px;
 }
 
@@ -57,7 +58,7 @@ ul {
     bottom: 0;
     height: 14px;
     width:100%;
-    background-color: #00A896;
+    background-color: #00E784;
     transform: translateY(-98%);
     z-index: -1;
   }

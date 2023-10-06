@@ -30,7 +30,7 @@
 }
 
 .Item__1 h1{
-  color: #fff;
+  color: #2D2E2E;
   font-family: Carme;
   font-weight: bold;
   font-size: 2.9em;
@@ -45,7 +45,7 @@
 }
 
 .Item__2 p{
-  color : #fff;
+  color : #2D2E2E;
   font-size: 1.1em;
   font-family: Inter;
   text-align: justify;
@@ -62,12 +62,13 @@
   animation-duration: 2s;
   overflow: hidden;
   padding: 2vh 3vw;
-  color : #fff;
+  color : #007c78;
   font-family: Carme;
+  border-radius: 0.5em;
   font-size: larger;
   font-weight: bold; 
-  background : #007c78;
-  background-image: linear-gradient(to right, #fff 50%, #007c78 50%);
+  background : #00EB79;
+  background-image: linear-gradient(to right, #00c1a2 50%, #fff 50%);
   background-image: -webkit-linear-gradient(to right, #fff 50%, #007c78 50%);;
   background-size: 200%;
   background-position: right;

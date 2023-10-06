@@ -3,7 +3,7 @@ import '../Stylesheets/ServicesInfo.css'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import bnrimg from '../images/Home_Banner.jpeg'
+import bnrimg from '../images/Home_Banner.jpg'
 
 export default function ServicesInfo() {
   const ar_icon = <FontAwesomeIcon icon="share-from-square" size="xs"/>

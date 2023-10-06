@@ -60,7 +60,7 @@ button:focus, input:focus {
 .Main_Logo a {
     cursor: default;
     font-family: Logo_Font;
-    color: #00A896 !important;
+    color: #00c1a2 !important;
     font-size: 2.5em;
 }
 
@@ -101,12 +101,12 @@ a {
     font-family: Inter;
     font-size: 0.9em;
     font-weight: 400;
-    background-color: #00A896;
+    background-color: #00E784;
 }
 
 .App_Downld a{
     padding: 1em;
-    color: #FFFFFF ;
+    color: #2D2E2E ;
     font-weight:bold;
 }
 

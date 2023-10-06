@@ -32,9 +32,10 @@
 
 
 .FR_Sec1 h6 {
-    background-color: #00A896;
+    background : linear-gradient(to top,#00905E 5%,#00E784 100%);
     background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color:transparent;
     font-family: TKL;
     text-align: left;

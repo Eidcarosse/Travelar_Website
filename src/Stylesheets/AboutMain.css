@@ -49,8 +49,9 @@
 
 .Cotn_Btn {
   font-family: Inter;
-  color: #fff !important;
-  background-color: var(--Prim);
+  font-weight: bold;
+  color: #2D2E2E !important;
+  background-color: #00E784 ;
   border-radius: 1em;
   margin: auto;
   padding: 1em;
@@ -64,7 +65,11 @@
 }
 
 .Abt_Sb_Inherit_Txt {
+  background-color: #00E784 ;
+  font-weight: bold;
+  border: none;
   height: 2.2em;
+  color : #2D2E2E;
 }
 
 
