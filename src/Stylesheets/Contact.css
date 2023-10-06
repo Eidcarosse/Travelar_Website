@@ -32,8 +32,8 @@
 }
 
 .exitanim {
-    animation-name: fadeOutLeftBig;
-    animation-duration: 0.5s;
+    animation-name: flipOutY;
+    animation-duration: 0.4s;
 }
 
 .highlight_def::before {
@@ -64,9 +64,6 @@
     background-color: #007c78;
 }
 
-.Media_1 {
-    height: 100vh;
-}
 
 @media (min-width:1201px) {
     .Media_1{

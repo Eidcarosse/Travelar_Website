@@ -4,7 +4,7 @@ import "animate.css/animate.min.css";
 import ABT from '../SVGs/ABt_Us.svg'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
-import DataContext from './DataContext';
+import DataContext from '../Contexts/DataContext';
 
 
 export default function About() {

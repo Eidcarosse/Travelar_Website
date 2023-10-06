@@ -13,7 +13,7 @@ import PgeNotFnd from './components/PgeNotFnd';
 import Footer from './components/Footer';
 import hme_logo from './SVGs/OdRd.svg'
 import React, { useState } from 'react'
-import { DataProvider } from './components/DataContext';
+import { DataProvider } from './Contexts/DataContext';
 import ABT from './SVGs/Gift.svg'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faBars, faX, faShareFromSquare, faGlobe, faCarSide } from '@fortawesome/free-solid-svg-icons'

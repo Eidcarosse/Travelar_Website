@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import '../Stylesheets/Listitem.css'
 import { Link } from 'react-router-dom'
-import DataContext from './DataContext'
-import StCntxt from './StateContext'
+import DataContext from '../Contexts/DataContext'
+import StCntxt from '../Contexts/StateContext'
 
 export default function ListItem(props) {
   const Scroll_Top = useContext(DataContext);

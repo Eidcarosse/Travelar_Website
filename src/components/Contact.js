@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Typed from "react-typed";
-import Alert from "react-bootstrap/Alert";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -12,19 +11,19 @@ import CountriesList from "./CountriesList";
 import "../Stylesheets/Contact.css";
 import "animate.css/animate.min.css";
 import lottie from 'lottie-web';
-import tickAnim from '../Animations/tickanim.json'
+import tickAnim from '../Animations/tickanim3.json'
 import crossanim from '../Animations/crossanim.json'
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
   const [sbmsg, setSbmsg] = useState(null);
-  const [Atclr, setAtclr] = useState(null);
   const [smstatus, setSmstatus] = useState(null);
   let animContainer = React.createRef();
   const RenderedStrings = ["Queries", "Concerns", "Suggestions", "Feedback"];
+
   useEffect(() => {
     lottie.destroy();
-    if((isVisible) && (smstatus == 'failed'))  
+    if(isVisible && smstatus == 'failed')  
     {
       lottie.loadAnimation({
       container : animContainer.current,
@@ -32,10 +31,8 @@ export default function Contact() {
       loop : false
     })
     }
-    else if((isVisible) && (smstatus == 'submitted'))  
+    else if(isVisible && smstatus == 'submitted')  
     {
-      
-      lottie.destroy()
       lottie.loadAnimation({
       container : animContainer.current,
       animationData : tickAnim,
@@ -52,23 +49,23 @@ export default function Contact() {
  
   const Sbmit_Mail = (e) => {
     e.preventDefault();
-    const Subject = document.querySelector("#Fm_Subject").value;
-    const Country = document.querySelector("#Fm_Country").value;
-    const Name = document.querySelector("#Fm_Name").value;
-    const Email = document.querySelector("#Fm_Email").value;
+    let Subject = document.querySelector("#Fm_Subject");
+    let Country = document.querySelector("#Fm_Country");
+    let Name = document.querySelector("#Fm_Name");
+    let Email = document.querySelector("#Fm_Email");
+    let Comment = document.querySelector("#Fm_Cmnt");
     const CommentV = () => {
-      let Comment = document.querySelector("#Fm_Cmnt").value;
-      if (Comment === "") return null;
+      if (Comment.value === "") return null;
     };
     const cleanup = ()=> {
-      document.querySelector("#Fm_Subject").value = null;
-      document.querySelector("#Fm_Country").value = '';
-      document.querySelector("#Fm_Name").value = null;
-      document.querySelector("#Fm_Email").value = null;
-      document.querySelector("#Fm_Cmnt").value = '';
+      Subject.value = null;
+      Country.value = '';
+      Name.value = null;
+      Email.value = null;
+      Comment.value = '';
     }
-
-    if (Subject && Country && Name && Email && CommentV() !== null) {
+    
+    if (Subject.value && Country.value && Name.value && Email.value && CommentV() !== null) {
       {/*emailjs.sendForm(
         process.env.REACT_APP_ServiceID,
         process.env.REACT_APP_TemplateID,
@@ -78,19 +75,31 @@ export default function Contact() {
       cleanup()
       setIsVisible(true)
       setSmstatus('submitted')
-      //setAtclr('success');
-      setSbmsg("Submitting, One Moment !");
+      setSbmsg('Submitted !');
+      const Ani_Kntnr = document.querySelector('#Ani_Kntnr')
+      setTimeout(() => {
+        Ani_Kntnr.classList.remove('entryanim')
+        Ani_Kntnr.classList.add('exitanim')
+        
+        
+      }, 2000);
       setTimeout(() => {
         setIsVisible(false);
-      }, 3500);
-    } else {
+      }, 2350);
+    }
+    else {
       setIsVisible(true);
       setSmstatus('failed')
-      //setAtclr('danger');
-      setSbmsg("All fields must be field");
+      setSbmsg("Please fill all fields !");
+      const Ani_Kntnr = document.querySelector("#Ani_Kntnr")
+      setTimeout(() => {
+        Ani_Kntnr.classList.remove('entryanim')
+        Ani_Kntnr.classList.add('exitanim')  
+        
+      }, 2400);
        setTimeout(() => {
         setIsVisible(false);
-      }, 1600);
+      }, 2750);
     }
   };
 
@@ -120,6 +129,7 @@ export default function Contact() {
               <Form.Group className="mb-3" controlId="ContactForm">
                 <Form.Label>Subject</Form.Label>
                 <FloatingLabel
+                  aria-label="Subject"
                   controlId="Fm_Subject"
                   label="Enter Subject"
                   className="mb-3"
@@ -139,6 +149,7 @@ export default function Contact() {
 
                 <Form.Label>Name</Form.Label>
                 <FloatingLabel
+                 aria-label="Name"
                   controlId="Fm_Name"
                   label="Enter Name"
                   className="mb-3"
@@ -148,6 +159,7 @@ export default function Contact() {
 
                 <Form.Label>Email address</Form.Label>
                 <FloatingLabel
+                  aria-label="Email Address"
                   controlId="Fm_Email"
                   label="Enter email"
                   className="mb-3"
@@ -156,7 +168,7 @@ export default function Contact() {
                 </FloatingLabel>
 
                 <Form.Group controlId="Fm_Cmnt">
-                  <Form.Label>Comment</Form.Label>
+                  <Form.Label  aria-label="Suggestion/ Comment">Comment</Form.Label>
                   <Form.Control
                     name="Cs_Concern"
                     as="textarea"
@@ -173,26 +185,10 @@ export default function Contact() {
               >
                 Submit
               </Button>
-              <div style={{display: `${isVisible ? 'block' : 'none'}`}} className={`${isVisible ? 'entryanim' : ''} ${!isVisible && 'exitanim'}`}>
+              <div id='Ani_Kntnr' style={{display: `${isVisible ? 'block' : 'none'}`}} className={`${isVisible ? 'entryanim' : ''}`}>
               <div ref={animContainer} className='animContainer'></div>
               <p style={{color : `${smstatus == 'submitted' ? 'green' : 'red'}`, width:"fit-content", margin:"0 auto 1em auto", fontFamily : 'Carme'}}>{sbmsg}</p>
               </div>
-              
-             {/* { <Alert
-                className={`${isVisible ? 'entryanim' : ''} ${!isVisible && 'exitanim'}`}
-                variant={Atclr}
-                show={isVisible}
-                style={{
-                  width: "87%",
-                  margin: "1em auto 1em auto",
-                  textAlign: "center"
-                }}
-              >
-                
-                asdasd
-                
-                
-              </Alert>} */}
             </Form>
           </Col>
         </Row>

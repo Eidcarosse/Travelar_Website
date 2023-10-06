@@ -4,8 +4,8 @@ import "animate.css/animate.min.css";
 import "../Stylesheets/Navbar.css";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import DataContext from "./DataContext";
-import {StProvider} from './StateContext'
+import DataContext from "../Contexts/DataContext";
+import {StProvider} from '../Contexts/StateContext'
 import NavMenu from "./NavMenu";
 
 export default function Navbar(props) {
