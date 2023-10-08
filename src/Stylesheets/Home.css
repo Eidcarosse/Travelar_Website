@@ -30,7 +30,7 @@
 }
 
 .Item__1 h1{
-  color: #2D2E2E;
+  color: #00493E;
   font-family: Carme;
   font-weight: bold;
   font-size: 2.9em;
@@ -58,28 +58,31 @@
 }
 
 .BANR_INF_BTN{
-  animation: flipInX;
+  animation: bounceIn;
   animation-duration: 2s;
   overflow: hidden;
   padding: 2vh 3vw;
-  color : #007c78;
+  border-style: solid;
+  border-width: 1.5px 1px 1.5px 1px;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  color : #00493E;
   font-family: Carme;
-  border-radius: 0.5em;
   font-size: larger;
   font-weight: bold; 
-  background : #00EB79;
-  background-image: linear-gradient(to right, #00c1a2 50%, #fff 50%);
-  background-image: -webkit-linear-gradient(to right, #fff 50%, #007c78 50%);;
-  background-size: 200%;
-  background-position: right;
-  transition: background-position 0.3s ease-out, color 0.3s ease-out;
-  outline: 1px solid #fff;
+  background : transparent;
+  transition: border-radius 0.2s ease-in;
 }
 
+
+
 .BANR_INF_BTN:hover{
-  background-position: left;
-  color: #007c78;
-  outline: none;
+  border-width: 1.5px 0px 1.5px 1px;
+  border-top-right-radius: 0em;
+  border-bottom-right-radius: 0em;
+  
 }
 
 .BW_Data-right {

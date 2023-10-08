@@ -31,6 +31,11 @@ ul {
     padding: 0;
 }
 
+.btn-cstm {
+   
+    font-weight: bold ;
+}
+
 @font-face {
     font-family: Logo_Font;
     src: url(/src/Fonts/TakeLooks.otf);
@@ -85,13 +90,13 @@ ul {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:  #00c1a2;
+    background-color:  #00E784;
     transform-origin: bottom right;
     transition: transform 0.35s cubic-bezier(0.45, 0.58, 0.85, 0.85);
 }
 
 .Lst_Anim:hover{
-    color: #00c1a2;
+    color: #00E784;
 }   
   
 .Lst_Anim:hover::after {

@@ -2,17 +2,18 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
 ::-webkit-scrollbar-thumb {
-  background-color: #007c78; /* Change the color to your desired color */
-  border-radius: 5px;
+  background-color: #00E784; 
 
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent /* Change the color to your desired background color */
+  background-color: transparent;
 }
 
-::-webkit-scrollbar {
-  width: 8px; /* You can adjust the width as needed */
-}
+
 

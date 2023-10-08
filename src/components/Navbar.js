@@ -95,7 +95,7 @@ export default function Navbar(props) {
                 </NavDropdown.Item>
               </NavDropdown>
             </span>
-            <span className="App_Downld try_trans">
+            <span className="btn-cstm App_Downld try_trans">
               <a href="" target="_blank">
                 Download App
               </a>

@@ -10,7 +10,7 @@
     height: 100%;
     margin : auto;
     display: flex;
-    flex-direction: row;  
+    flex-direction: row-reverse;  
     align-items:center;
     justify-content:space-around;
     border-radius: 1em;
@@ -113,7 +113,7 @@ div.Abt_img img{
     .Abt_Wrapper {
         height: fit-content;
         flex-direction: column-reverse;
-        row-gap: 3vh;
+        row-gap: 6vh;
     }
 
     .Abt_description {
