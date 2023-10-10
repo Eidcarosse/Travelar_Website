@@ -7,8 +7,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from "../Contexts/DataContext";
 import {StProvider} from '../Contexts/StateContext'
 import NavMenu from "./NavMenu";
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Navbar(props) {
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     document.getElementById("Menu_BTN").addEventListener("click", (e) => {
       e.target.classList.remove("Btn_Aniim");
@@ -38,6 +40,11 @@ export default function Navbar(props) {
     }
   };
 
+  const lngs = {
+    en: { nativeName: 'English' },
+    fr: { nativeName: 'French' }
+  };
+
   return (
     <>
       <header id="nav_wrapper" className="nav_wrapper">
@@ -45,7 +52,7 @@ export default function Navbar(props) {
           <div className="nav left">
             <span className="Main_Logo">
               <Link to="/" onClick={Scroll_Top}>
-                Travel|\r
+                {t('Titles.Logo')}
               </Link>
             </span>
             <span className="nav-link">
@@ -82,19 +89,14 @@ export default function Navbar(props) {
                 icon="globe"
                 size="xl"
               />
-              <NavDropdown  id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1" onClick={props.showalert}>
-                  German
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" onClick={props.showalert}>
-                  French
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4" onClick={props.showalert}>
-                  Italic
-                </NavDropdown.Item>
-              </NavDropdown>
-            </span>
+        <NavDropdown  id="basic-nav-dropdown">
+            {Object.keys(lngs).map((lng)=> (
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();i18n.changeLanguage(lng)}}>
+              {lngs[lng].nativeName}
+              </NavDropdown.Item>
+            ))}
+         </NavDropdown>
+     </span>
             <span className="btn-cstm App_Downld try_trans">
               <a href="" target="_blank">
                 Download App

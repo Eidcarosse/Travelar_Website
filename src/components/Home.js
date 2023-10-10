@@ -14,6 +14,7 @@ export default function BnerContent(props) {
           <div className="Banner_Wrapper">
             <div className='BW_Data-left'>
             <span className="Item__1">
+              
               <h1>{props.title}</h1>
             </span>
             <span className="Item__2">
@@ -23,7 +24,7 @@ export default function BnerContent(props) {
             </span>
             <span className="Item__3">
               <a href="" target="_blank">
-                <button className="BANR_INF_BTN">Let's Go &nbsp;&nbsp;<FontAwesomeIcon icon='car-side'/></button>
+                <button className="BANR_INF_BTN AddcC">Let's Go &nbsp;&nbsp;<FontAwesomeIcon icon='car-side'/></button>
               </a>
             </span>
             </div>

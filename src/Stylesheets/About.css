@@ -40,12 +40,12 @@
 .Read_Mr_Dn{
     width: fit-content;
     padding: 0.5em 1em;
-    color: #2D2E2E !important;
+    color: var(--Fc);
     border-radius: 0.5em;
     font-family: Inter;
     font-weight: bold;
     font-size: small;
-    background-color: #00E784;
+    background-color: var(--Prim);
     outline : 1px solid transparent;
     transition: all 0.35s;
     

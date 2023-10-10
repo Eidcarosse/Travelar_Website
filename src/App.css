@@ -2,9 +2,14 @@
     --Main_Grad : radial-gradient(circle, #2AE8A0 50%, #9EEDED 100%);
     --Info_Grad : linear-gradient(90deg,  #00493E 40%, #00905E 100%);
     --Info_Grad2 : linear-gradient(120deg,  #00493E 5%, #00905E 100%);
-    --Prim : #2AE8A0;
-    --Sec : #D6FFEA;/*0#D2FFD5*/
+    --Prim : #00E784;
+    --Sec : #00493E;
+    --Fc : #2D2E2E;
 
+}
+
+a {
+    text-decoration: none;
 }
 
 hr {
@@ -19,7 +24,7 @@ label {
 }
 
 body {
-    caret-color: #00A896;
+    caret-color: var(--Prim);
     font-family: Inter;
     background-color: #fff;
     scroll-behavior: smooth;
@@ -45,7 +50,7 @@ ul {
     text-align: center;
     margin: 1em auto;
     width: fit-content;
-    color: #000000;
+    color: var(--Sec);
     font-family: Carme;
     font-weight: bold;
     font-size: 54px;
@@ -63,7 +68,7 @@ ul {
     bottom: 0;
     height: 14px;
     width:100%;
-    background-color: #00E784;
+    background-color: var(--Prim);
     transform: translateY(-98%);
     z-index: -1;
   }
@@ -90,13 +95,13 @@ ul {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:  #00E784;
+    background-color:  var(--Prim);
     transform-origin: bottom right;
     transition: transform 0.35s cubic-bezier(0.45, 0.58, 0.85, 0.85);
 }
 
 .Lst_Anim:hover{
-    color: #00E784;
+    color: var(--Prim);
 }   
   
 .Lst_Anim:hover::after {

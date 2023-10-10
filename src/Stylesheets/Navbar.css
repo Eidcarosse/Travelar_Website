@@ -60,7 +60,10 @@ button:focus, input:focus {
 .Main_Logo a {
     cursor: default;
     font-family: Logo_Font;
-    color: #00c1a2 !important;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(185deg, var(--Prim), #00493E);
     font-size: 2.5em;
 }
 
@@ -75,10 +78,6 @@ button:focus, input:focus {
 
 .nav-link:nth-child(2){
     margin-left: 8em;
-}
-
-a {
-    text-decoration: none;
 }
 
 .nav.right {
@@ -101,12 +100,12 @@ a {
     font-family: Inter;
     font-size: 0.9em;
     font-weight: 400;
-    background-color: #00E784;
+    background-color: var(--Prim);
 }
 
 .App_Downld a{
     padding: 1em;
-    color: #2D2E2E ;
+    color: var(--Fc) ;
     font-weight:bold;
 }
 

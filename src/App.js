@@ -14,6 +14,8 @@ import Footer from './components/Footer';
 import hme_logo from './SVGs/OdRd.svg'
 import React, { useState } from 'react'
 import { DataProvider } from './Contexts/DataContext';
+import './components/i18nxt';
+import {useTranslation, Trans} from 'react-i18next'
 import ABT from './SVGs/Gift.svg'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faBars, faX, faShareFromSquare, faGlobe, faCarSide } from '@fortawesome/free-solid-svg-icons'
@@ -34,19 +36,15 @@ function App() {
     document.documentElement.scrollTop = active;
     document.body.scrollTop = active;
   }
+  const {t} = useTranslation();
 
   return (
     <>
     <DataProvider value={Scroll_Top}>
     <Navbar showalert={setAlert}/>
-    <Alert show={Show} style={{width:"87%",margin:"5em auto -5em", textAlign:"center"}} variant="info">Language changed successfull!</Alert>
+    <Alert show={Show} style={{width:"87%",margin:"5em auto -5em", textAlign:"center"}} variant="info">Language Changed!</Alert>
     <Routes>
-      <Route path='/' element={[<Home key="UndApp" title="Travel with us" description=" Your ultimate destination for seamless car booking experiences!
-                Whether you're planning a road trip, a business venture, or a
-                leisurely escape, Travelar is here to redefine the way you embark
-                on your journeys. With a vast network of trusted rental
-                providers and a user-friendly interface, we bring you a world of
-                convenience at your fingertips." logo={hme_logo} />, <ServicesInfo key='Index_Svcs'/>, <InfoBanner key='IIB01' Title="Travelar" description="Enjoy 30% discount on your first Rides !" Image={ABT}/>, <About key='IA01'/>]}/>
+      <Route path='/' element={[<Home key="UndApp" title={t('Titles.Home')} description={t('Descriptions.Home')} logo={hme_logo} />, <ServicesInfo key='Index_Svcs'/>, <InfoBanner key='IIB01' Title="Travelar" description="Enjoy 30% discount on your first Rides !" Image={ABT}/>, <About key='IA01'/>]}/>
       <Route path='/Services' element={<Services/>}/>
       <Route path='/AboutUs' element={<AboutMain top_function={Scroll_Top}/>}/>
       <Route path='/Contact' element={<Contact/>}/>

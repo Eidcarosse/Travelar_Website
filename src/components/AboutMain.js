@@ -14,19 +14,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import {useTranslation} from 'react-i18next'
 
 
 
 export default function AboutMain(props) {
+  const {t} = useTranslation();
  
   return (
     <>
-      <Home key="New1" title="About us" description="Traveler is led by a powerful purpose to
-            simplify and improve the lives of people and build an awesome
-            organisation that inspires. Since 2023, Traveler has built a platform
-            for the region’s best talent to thrive and for entrepreneurs to
-            scale their businesses. Careem operates in over 70 cities across 10
-            countries, from Morocco to Pakistan." logo={logo2}
+      <Home key="New1" title={t("Titles.Aboutus")} description={t("Descriptions.Aboutus")} logo={logo2}
       />
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
@@ -51,9 +48,9 @@ export default function AboutMain(props) {
               <Card className="mt-3 Abt_Main_Teams_Cards">
                 <Card.Body>
                   <Card.Title className='Abt_Inherit_Txt'>Support Team</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt"  href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn"  href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
                   <Card.Title className='Abt_Inherit_Txt'>Policy and Government Relations</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt"  href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn"  href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -61,9 +58,9 @@ export default function AboutMain(props) {
               <Card className="mt-3 Abt_Main_Teams_Cards" style={{width: "100%", height:"13em" }}>
                 <Card.Body>
                   <Card.Title className='Abt_Inherit_Txt'>Collaboration and Advertising</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt" href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn" href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
                   <Card.Title className='Abt_Inherit_Txt'>PR department</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt" href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn" href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -71,7 +68,7 @@ export default function AboutMain(props) {
               <Card className="mt-3 Abt_Main_Teams_Cards" style={{ width: "100%", height:"13em" }}>
                 <Card.Body>
                   <Card.Title className='Abt_Inherit_Txt'>Cyber Security</Card.Title>
-                  <Card.Text className="mb-2 Abt_Sb_Inherit_Txt">We accept vulerablity reports through the HackerOne platform</Card.Text>
+                  <Card.Text className='mb-2'>We accept vulerablity reports through the HackerOne platform</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -89,7 +86,7 @@ export default function AboutMain(props) {
         <div className="Abt_Main_Wrapper2">
           <h3 className="head_style highlight">Leadership</h3>
           <Card>
-            <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: "#00905E", color: "#fff" }}>
+            <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: '#00493E', color: "#fff" }}>
               Our Leadership statement
             </Card.Header>
             <Card.Body>

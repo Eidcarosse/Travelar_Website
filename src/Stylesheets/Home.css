@@ -85,6 +85,14 @@
   
 }
 
+.AddcC {
+  position: relative;
+}
+.AddcC:hover::after {
+  content: '____';
+  position: absolute;
+ 
+}
 .BW_Data-right {
   width: fit-content;
   display: flex;

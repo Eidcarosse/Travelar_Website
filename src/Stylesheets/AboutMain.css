@@ -19,7 +19,7 @@
   text-align: center;
   margin: 1em auto 0em auto;
   width: fit-content;
-  color: black;
+  color: var(--Sec);
   font-family: Carme;
   font-weight: bold;
   font-size: 54px;
@@ -31,7 +31,7 @@
   text-align: center;
   margin: 0em auto;
   width: fit-content;
-  color: black;
+  color: var(--Sec);
   font-family: Carme;
   font-weight: bold;
   font-size: 54px;
@@ -65,13 +65,20 @@
 }
 
 .Abt_Sb_Inherit_Txt {
-  background-color: #00E784 ;
   font-weight: bold;
   border: none;
   height: 2.2em;
-  color : #2D2E2E;
 }
 
+.btn_Bs_Stn {
+  color : #2D2E2E;
+  background-color: #00E784;
+}
+
+.btn_Bs_Stn:hover {
+  background-color: #00E784;
+  color: #fff;
+}
 
 .About_Main2 {
   height: fit-content;
