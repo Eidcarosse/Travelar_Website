@@ -13,8 +13,10 @@ import "animate.css/animate.min.css";
 import lottie from 'lottie-web';
 import tickAnim from '../Animations/tickanim3.json'
 import crossanim from '../Animations/crossanim.json'
+import {useTranslation} from 'react-i18next'
 
 export default function Contact() {
+  const {t} = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [sbmsg, setSbmsg] = useState(null);
   const [smstatus, setSmstatus] = useState(null);
@@ -44,6 +46,10 @@ export default function Contact() {
 
   useEffect(()=>{
     window.scrollTo(0, 0);
+    const element = document.getElementById('myElement');
+    const contentHeight = element.scrollHeight;
+    const additionalHeight = 50; // Adjust this value as needed
+    element.style.height = `calc(${contentHeight}px + ${additionalHeight}px)`;
   },[])
   
  
@@ -107,7 +113,7 @@ export default function Contact() {
     <>
       <div className="Contact_Sec_1">
         <h2 style={{ marginBottom: "0em" }} className="head_style highlight">
-          Contact us
+          {t('Titles.Contactus')}
         </h2>
         <p className="head_style_def">
           Your{" "}
@@ -121,7 +127,7 @@ export default function Contact() {
           />
         </p>
       </div>
-      <Container className="Media_1">
+      <Container id='myElement' className="Media_1">
         <Row>
           <Col xs={12}>
             <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>

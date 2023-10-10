@@ -5,10 +5,12 @@ import ABT from '../SVGs/ABt_Us.svg'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 import DataContext from '../Contexts/DataContext';
+import { useTranslation } from 'react-i18next'
 
 
 export default function About() {
   const Scroll_Top = useContext(DataContext)
+  const {t} = useTranslation();
 
   return (
     <>
@@ -16,8 +18,8 @@ export default function About() {
         <section id="About">
           <div className="Abt_Wrapper">
             <div className="Abt_description">
-              <h3>About us</h3>
-              <p>Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services.</p>
+              <h3>{t("About.Titles.Home")}</h3>
+              <p>{t("About.Descriptions.Home")}</p>
               <Link to='/AboutUs' onClick={Scroll_Top} className='Read_Mr_Dn try_trans'>Read More</Link>
             </div>
       

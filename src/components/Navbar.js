@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from "../Contexts/DataContext";
 import {StProvider} from '../Contexts/StateContext'
 import NavMenu from "./NavMenu";
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar(props) {
   const { t, i18n } = useTranslation();
@@ -41,8 +41,8 @@ export default function Navbar(props) {
   };
 
   const lngs = {
-    en: { nativeName: 'English' },
-    fr: { nativeName: 'French' }
+    en: { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
+    fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' }
   };
 
   return (
@@ -52,27 +52,27 @@ export default function Navbar(props) {
           <div className="nav left">
             <span className="Main_Logo">
               <Link to="/" onClick={Scroll_Top}>
-                {t('Titles.Logo')}
+                {t('Navbar.Titles.Logo')}
               </Link>
             </span>
             <span className="nav-link">
               <Link to="/" onClick={Scroll_Top} className="Lst_Anim">
-                Home
+              {t('Navbar.Titles.Home')}
               </Link>
             </span>
             <span className="nav-link">
               <Link to="/Services" onClick={Scroll_Top} className="Lst_Anim">
-                Services
+              {t('Navbar.Titles.Services')}
               </Link>
             </span>
             <span className="nav-link">
               <Link to="/AboutUs" onClick={Scroll_Top} className="Lst_Anim">
-                About us
+              {t('Navbar.Titles.About')}
               </Link>
             </span>
             <span className="nav-link">
               <Link to="/Contact" onClick={Scroll_Top} className="Lst_Anim">
-                Contact
+              {t('Navbar.Titles.Contact')}
               </Link>
             </span>
           </div>
@@ -92,7 +92,7 @@ export default function Navbar(props) {
         <NavDropdown  id="basic-nav-dropdown">
             {Object.keys(lngs).map((lng)=> (
               <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();i18n.changeLanguage(lng)}}>
-              {lngs[lng].nativeName}
+              <img src={lngs[lng].flag} alt="Flag" width='25px' />&nbsp;{lngs[lng].nativeName}
               </NavDropdown.Item>
             ))}
          </NavDropdown>
