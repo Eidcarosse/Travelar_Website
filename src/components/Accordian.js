@@ -1,9 +1,11 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import '../Stylesheets/Accordian.css'
 
 export default function Accordian() {
   return (
     <>
+    <div className="Cr_Container">
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>How do I book a ride?</Accordion.Header>
@@ -50,6 +52,7 @@ export default function Accordian() {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
+      </div>
     </>
   );
 }

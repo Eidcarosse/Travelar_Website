@@ -98,7 +98,7 @@ export default function AboutMain(props) {
               </blockquote>
             </Card.Body>
           </Card>
-          <Container fluid>
+          <Container fluid style={{marginBottom:"135px"}}>
             <Row className='Card_rw'>
               <Col className='Card_clm' md={4}>
                 <Card className='Card_bdy'>

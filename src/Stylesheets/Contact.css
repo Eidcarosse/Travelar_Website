@@ -66,12 +66,14 @@
 @media (min-width:1201px) {
     .Media_1{
         width: 50% !important;
+        overflow: hidden;
     }
 }
 
 @media (max-width: 1200px) {
     .Media_1 {
         width: 87% !important;
+        overflow: hidden;
     }
 
     .head_style_def {
