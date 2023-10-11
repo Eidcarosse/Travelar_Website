@@ -37,10 +37,12 @@
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color:transparent;
-    font-family: TKL;
+    font-family: Carme;
+    font-weight: bolder;
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 1.2em;
+    cursor: default;
 }
 
 .FR_Sec1_a {

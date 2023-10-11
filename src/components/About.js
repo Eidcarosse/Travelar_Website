@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import '../Stylesheets/About.css'
 import "animate.css/animate.min.css";
-import ABT from '../SVGs/ABt_Us.svg'
+import AboutImg from '../SVGs/AboutImg.svg'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 import DataContext from '../Contexts/DataContext';
@@ -25,7 +25,7 @@ export default function About() {
       
             <div className="Abt_img">
             <ScrollAnimation animateIn="animate__bounceInDown" animateOnce={true} style={{padding: '0%', width:"100%", height:"95%", animationIterationCount:"1" }}> 
-              <img src={ABT} alt="IMG" />
+              <img src={AboutImg} alt="IMG" />
              </ScrollAnimation> 
             </div>
             

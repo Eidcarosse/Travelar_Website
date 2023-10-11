@@ -73,6 +73,22 @@ ul {
     z-index: -1;
   }
 
+  .highlight2{
+    position: relative;
+  }
+  
+  .highlight2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    width:100%;
+    background-color: var(--Prim);
+    transform: translateY(-98%);
+    z-index: -1;
+  }
+
   .try_trans {
     transition: transform 0.35s;
 }

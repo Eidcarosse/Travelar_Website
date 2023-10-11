@@ -13,3 +13,45 @@
     width: 87%;
 }
 
+.Stcky_Stl {
+    position: -webkit-sticky;
+    position: sticky;
+    height: fit-content;
+    width: 100%;  
+    left: 0px;
+    top: 77px; 
+    z-index: 2;
+}
+.MD_Details {
+    width: 87%;
+    margin: auto;
+    font-family: Inter;
+    border-style: dashed;
+    border-width: 0px 2px 2px 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-color: var(--Sec);
+    overflow: hidden;
+}
+
+.MD_Details p {
+    text-align: center;
+}
+.MD_Details h4 {
+    font-size: 35px;
+    font-family: Carme;
+    font-weight: bold;
+    width: fit-content;
+    margin : 35px auto 35px auto;
+    color:var(--Sec);
+}
+
+.MD_Details h5 {
+    overflow: hidden;
+    color: var(--Sec);
+    margin: 15px auto;
+
+}
+

@@ -71,7 +71,16 @@ i18n
             Descriptions : {
               Home : "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services.",
             },
-          }
+          },
+          Footer : {
+            Titles : {
+              Travelar : "Travelar",
+              Services : "Services",
+              Partners : "Partners",
+              JoinTeam : "Join our Teams",
+              Aboutus : "About us",
+            }
+          },
                        
         }
       },
@@ -127,6 +136,15 @@ i18n
             Descriptions : {
               Home : "L’objectif de Travelar est de simplifier et d’améliorer la vie des gens et de construire une organisation formidable et inspirante. Apprenez-en davantage sur notre objectif, nos personnes et nos services.",
             },
+          },
+          Footer : {
+            Titles : {
+              Travelar : "Voyageur",
+              Services : "Prestations de service",
+              Partners : "Les partenaires",
+              JoinTeam : "Rejoignez nos équipes",
+              Aboutus : "À propos de nous",
+            }
           },
             
         }
