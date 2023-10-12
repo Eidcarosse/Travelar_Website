@@ -23,6 +23,9 @@
     z-index: 2;
 }
 .MD_Details {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 87%;
     margin: auto;
     font-family: Inter;
@@ -37,9 +40,8 @@
 }
 
 .MD_Details p {
-    margin: auto;  
-    width: 90%;
-    text-align: center;
+    margin: auto; 
+    text-align: justify;
      
 }
 .MD_Details h4 {
@@ -67,7 +69,7 @@
 @media (max-width: 1200px) {
     
     .MD_Details h4 {
-        font-size: 30px;
+        font-size: 28px;
     }
     .MD_Details h5 {
         font-size: 18px;    

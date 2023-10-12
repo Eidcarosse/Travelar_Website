@@ -61,91 +61,89 @@ export default function Services() {
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
           <h4 className="highlight2">Key Features of Traveler</h4>
           </ScrollAnimation>
-          <p>
             Traveler offers a range of features designed to make your medicine
             delivery experience as smooth as possible:
-          </p>
           <ul style={{listStyleType: "none", textAlign:"center"}}>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Easy Prescription Upload:</strong></h5>
               </ScrollAnimation>
-              <p>Simply upload a
+              Simply upload a
               photo of your prescription, and Traveler's partner pharmacies will
-              process it promptly.</p>
+              process it promptly.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Pharmacy Locator:</strong></h5>
               </ScrollAnimation>
-              <p>Find nearby pharmacies that
+              Find nearby pharmacies that
               are part of the Traveler network, ensuring that you have access to
-              a wide range of medicines.</p>
+              a wide range of medicines.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Secure Payment:</strong></h5>
               </ScrollAnimation>
-              <p>Traveler supports secure
-              payment options, providing peace of mind for every transaction.</p>
+              Traveler supports secure
+              payment options, providing peace of mind for every transaction.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Real-time Order Tracking:</strong></h5>
               </ScrollAnimation>
-              <p>Keep track of your
+              Keep track of your
               order from the moment it's placed until it arrives at your
-              doorstep.</p> 
+              doorstep
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5 style={{height:"fit-content"}}><strong>Customer Support:</strong></h5>
               </ScrollAnimation>
-              <p>Traveler's dedicated
+              Traveler's dedicated
               customer support team is available to assist you with any
-              questions or concerns.</p>
+              questions or concerns.
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
           <h4 className="highlight2">Benefits of Traveler</h4>
           </ScrollAnimation>
-          <p>Traveler offers numerous advantages, including:</p>
+          Traveler offers numerous advantages, including:
           <ul style={{listStyleType: "none", textAlign:"center"}}>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Convenience:</strong></h5>
               </ScrollAnimation>
-              <p>Order your medications from the
-              comfort of your home, office, or even while traveling.</p>
+              Order your medications from the
+              comfort of your home, office, or even while traveling.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Time-Saving:</strong></h5>
               </ScrollAnimation>
-              <p>No more time wasted in pharmacy
-              queues; Traveler ensures your medicines are delivered on time.</p>
+              No more time wasted in pharmacy
+              queues; Traveler ensures your medicines are delivered on time.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Accessibility:</strong></h5>
               </ScrollAnimation>
-              <p>Traveler partners with a vast
-              network of pharmacies, so you have access to a wide range of medicines.</p>
+              Traveler partners with a vast
+              network of pharmacies, so you have access to a wide range of medicines.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Healthcare on the Go:</strong></h5>
               </ScrollAnimation>
-              <p>For frequent travelers,
-              having access to medicines from any location is invaluable.</p>
+              For frequent travelers,
+              having access to medicines from any location is invaluable.
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5 style={{height:"fit-content"}}><strong>Customer Support:</strong></h5>
               </ScrollAnimation>
-              <p>Traveler's dedicated
+              Traveler's dedicated
               customer support team is available to assist you with any
-              questions or concerns.</p> 
+              questions or concerns.
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
@@ -189,72 +187,69 @@ export default function Services() {
   <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
     <h4 className="highlight2">Key Features of Car Booking</h4>
   </ScrollAnimation>
-  <p>
+  
     Our car booking app offers a range of features designed to make your transportation experience as smooth as possible:
-  </p>
+
   <ul style={{ listStyleType: "none", textAlign: "center" }}>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Secure and Efficient Rides:</strong></h5>
       </ScrollAnimation>
-      <p>Enjoy secure and efficient rides with our trusted drivers.</p>
+      Enjoy secure and efficient rides with our trusted drivers.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Real-time Ride Tracking:</strong></h5>
       </ScrollAnimation>
-      <p>Track your ride in real-time, ensuring safety and transparency.</p>
+      Track your ride in real-time, ensuring safety and transparency.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Driver Ratings:</strong></h5>
       </ScrollAnimation>
-      <p>Rate your drivers and provide feedback for continuous improvement.</p>
+      Rate your drivers and provide feedback for continuous improvement.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Secure Payment:</strong></h5>
       </ScrollAnimation>
-      <p>Enjoy secure payment options, making your transactions hassle-free.</p>
+      Enjoy secure payment options, making your transactions hassle-free.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Customer Support:</strong></h5>
       </ScrollAnimation>
-      <p>Our dedicated customer support team is here to assist you with any questions or concerns.</p>
+      Our dedicated customer support team is here to assist you with any questions or concerns.
     </li>
   </ul>
   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
     <h4 className="highlight2">Benefits of Car Booking</h4>
   </ScrollAnimation>
-  <p>
     Our car booking service offers numerous advantages, including:
-  </p>
-
   <ul style={{ listStyleType: "none", textAlign: "center" }}>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Security:</strong></h5>
       </ScrollAnimation>
-      <p>Your safety is our top priority.</p>
+      Your safety is our top priority.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Efficiency:</strong></h5>
       </ScrollAnimation>
-      <p>Save time and energy with our efficient rides.</p>
+      Save time and energy with our efficient rides.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Transparency:</strong></h5>
       </ScrollAnimation>
-     <p>We provide transparent, fully tracked rides for your peace of mind.</p> 
+     We provide transparent, fully tracked rides for your peace of mind.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>24/7 Accessibility:</strong></h5>
       </ScrollAnimation>
-      <p>Our services are available whenever you need them.</p>
+      Our services are available whenever you need them.
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
@@ -262,7 +257,7 @@ export default function Services() {
           <strong>Customer Support:</strong>
         </h5>
       </ScrollAnimation>
-      <p>Our dedicated customer support team is available to assist you with any questions or concerns.</p>
+      Our dedicated customer support team is available to assist you with any questions or concerns.
     </li>
   </ul>
   <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
@@ -271,10 +266,10 @@ export default function Services() {
   <p>
     Join the car booking community and experience a new level of convenience when it comes to your transportation needs. Download our car booking app today and enjoy secure, efficient, and fully tracked rides for a stress-free commute.
   </p>
-
   <p style={{padding:"1.5em 0em 1.5em 0em", color : "#00493E"}}>
-    <em>Car Booking: Where Security Meets Efficiency.</em>
+  <em>Car Booking: Where Security Meets Efficiency.</em>
   </p>
+  
 </div>
       </div>
       <div className="SS_Section2">
