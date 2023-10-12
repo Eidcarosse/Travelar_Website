@@ -3,9 +3,9 @@ import Home from "./Home";
 import ServicesInfo from "./ServicesInfo";
 import InfoBanner from "./InfoBanner";
 import Accordian from "./Accordian";
-import React from "react";
+import React, { useEffect } from "react";
 import Svcs_Logo from "../SVGs/Svcs_Logo.svg";
-import MDDY from "../SVGs/Src_1.svg";
+import Md_Dlvry from "../SVGs/Md_Dlvry.svg";
 import Cty_Dvr from "../SVGs/Cty_Dvr.svg";
 import { useTranslation } from "react-i18next";
 import "animate.css/animate.min.css";
@@ -31,12 +31,12 @@ export default function Services() {
           <InfoBanner
             Title={t("InfoBanner.Titles.Svcs1")}
             description={t("InfoBanner.Descriptions.Svcs1")}
-            Image={MDDY}
+            Image={Md_Dlvry}
           />
         </div>
         <div className="MD_Details">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-          <h4 className="highlight2">Traveler: Your Convenient Medicine Delivery App</h4>
+          <h4 className="highlight2">Convenient Medicine Delivery App</h4>
           </ScrollAnimation>
           <p>
             In today's fast-paced world, where our lives are constantly on the
@@ -49,7 +49,7 @@ export default function Services() {
             delivery.
           </p>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-          <h4 className="highlight2">The Traveler Experience</h4>
+          <h4 id='abd1' className="highlight2">The Traveler Experience</h4>
           </ScrollAnimation>
           <p>
             Traveler simplifies the process of ordering and receiving your
@@ -70,85 +70,82 @@ export default function Services() {
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Easy Prescription Upload:</strong></h5>
               </ScrollAnimation>
-              Simply upload a
+              <p>Simply upload a
               photo of your prescription, and Traveler's partner pharmacies will
-              process it promptly.
+              process it promptly.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Pharmacy Locator:</strong></h5>
               </ScrollAnimation>
-               Find nearby pharmacies that
+              <p>Find nearby pharmacies that
               are part of the Traveler network, ensuring that you have access to
-              a wide range of medicines.
+              a wide range of medicines.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Secure Payment:</strong></h5>
               </ScrollAnimation>
-               Traveler supports secure
-              payment options, providing peace of mind for every transaction.
+              <p>Traveler supports secure
+              payment options, providing peace of mind for every transaction.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Real-time Order Tracking:</strong></h5>
               </ScrollAnimation>
-               Keep track of your
+              <p>Keep track of your
               order from the moment it's placed until it arrives at your
-              doorstep.
+              doorstep.</p> 
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5 style={{height:"fit-content"}}><strong>Customer Support:</strong></h5>
               </ScrollAnimation>
-               Traveler's dedicated
+              <p>Traveler's dedicated
               customer support team is available to assist you with any
-              questions or concerns.
+              questions or concerns.</p>
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
           <h4 className="highlight2">Benefits of Traveler</h4>
           </ScrollAnimation>
           <p>Traveler offers numerous advantages, including:</p>
-
-
           <ul style={{listStyleType: "none", textAlign:"center"}}>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Convenience:</strong></h5>
               </ScrollAnimation>
-              Order your medications from the
-              comfort of your home, office, or even while traveling.
+              <p>Order your medications from the
+              comfort of your home, office, or even while traveling.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Time-Saving:</strong></h5>
               </ScrollAnimation>
-              No more time wasted in pharmacy
-              queues; Traveler ensures your medicines are delivered on time.
+              <p>No more time wasted in pharmacy
+              queues; Traveler ensures your medicines are delivered on time.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Accessibility:</strong></h5>
               </ScrollAnimation>
-              Traveler partners with a vast
-              network of pharmacies, so you have access to a wide range of
-              medicines.
+              <p>Traveler partners with a vast
+              network of pharmacies, so you have access to a wide range of medicines.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5><strong>Healthcare on the Go:</strong></h5>
               </ScrollAnimation>
-              For frequent travelers,
-              having access to medicines from any location is invaluable.
+              <p>For frequent travelers,
+              having access to medicines from any location is invaluable.</p>
             </li>
             <li>
               <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
               <h5 style={{height:"fit-content"}}><strong>Customer Support:</strong></h5>
               </ScrollAnimation>
-               Traveler's dedicated
+              <p>Traveler's dedicated
               customer support team is available to assist you with any
-              questions or concerns.
+              questions or concerns.</p> 
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
@@ -162,7 +159,7 @@ export default function Services() {
             your life easier, one prescription at a time.
           </p>
 
-          <p>
+          <p style={{padding:"1.5em 0em 1.5em 0em", color : "#00493E"}}>
             <em>Traveler: Where convenience meets healthcare.</em>
           </p>
         </div>
@@ -178,7 +175,7 @@ export default function Services() {
         </div>
         <div className="MD_Details">
   <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-    <h4 className="highlight2">Car Booking: Secure and Fully Tracked Rides</h4>
+    <h4 className="highlight2">Fully Tracked and Secure Rides</h4>
   </ScrollAnimation>
   <p>
     In today's fast-paced world, where getting around efficiently and securely is crucial, car booking services have revolutionized the way we commute. Our car booking app is designed to provide you with secure and fully tracked rides, ensuring peace of mind during your journeys.
@@ -200,31 +197,31 @@ export default function Services() {
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Secure and Efficient Rides:</strong></h5>
       </ScrollAnimation>
-      Enjoy secure and efficient rides with our trusted drivers.
+      <p>Enjoy secure and efficient rides with our trusted drivers.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Real-time Ride Tracking:</strong></h5>
       </ScrollAnimation>
-      Track your ride in real-time, ensuring safety and transparency.
+      <p>Track your ride in real-time, ensuring safety and transparency.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Driver Ratings:</strong></h5>
       </ScrollAnimation>
-      Rate your drivers and provide feedback for continuous improvement.
+      <p>Rate your drivers and provide feedback for continuous improvement.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Secure Payment:</strong></h5>
       </ScrollAnimation>
-      Enjoy secure payment options, making your transactions hassle-free.
+      <p>Enjoy secure payment options, making your transactions hassle-free.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Customer Support:</strong></h5>
       </ScrollAnimation>
-      Our dedicated customer support team is here to assist you with any questions or concerns.
+      <p>Our dedicated customer support team is here to assist you with any questions or concerns.</p>
     </li>
   </ul>
   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
@@ -239,25 +236,25 @@ export default function Services() {
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Security:</strong></h5>
       </ScrollAnimation>
-      Your safety is our top priority.
+      <p>Your safety is our top priority.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Efficiency:</strong></h5>
       </ScrollAnimation>
-      Save time and energy with our efficient rides.
+      <p>Save time and energy with our efficient rides.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>Transparency:</strong></h5>
       </ScrollAnimation>
-      We provide transparent, fully tracked rides for your peace of mind.
+     <p>We provide transparent, fully tracked rides for your peace of mind.</p> 
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <h5><strong>24/7 Accessibility:</strong></h5>
       </ScrollAnimation>
-      Our services are available whenever you need them.
+      <p>Our services are available whenever you need them.</p>
     </li>
     <li>
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
@@ -265,7 +262,7 @@ export default function Services() {
           <strong>Customer Support:</strong>
         </h5>
       </ScrollAnimation>
-      Our dedicated customer support team is available to assist you with any questions or concerns.
+      <p>Our dedicated customer support team is available to assist you with any questions or concerns.</p>
     </li>
   </ul>
   <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
@@ -275,7 +272,7 @@ export default function Services() {
     Join the car booking community and experience a new level of convenience when it comes to your transportation needs. Download our car booking app today and enjoy secure, efficient, and fully tracked rides for a stress-free commute.
   </p>
 
-  <p>
+  <p style={{padding:"1.5em 0em 1.5em 0em", color : "#00493E"}}>
     <em>Car Booking: Where Security Meets Efficiency.</em>
   </p>
 </div>

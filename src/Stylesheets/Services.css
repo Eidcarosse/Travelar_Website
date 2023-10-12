@@ -37,7 +37,10 @@
 }
 
 .MD_Details p {
+    margin: auto;  
+    width: 90%;
     text-align: center;
+     
 }
 .MD_Details h4 {
     font-size: 35px;
@@ -50,8 +53,41 @@
 
 .MD_Details h5 {
     overflow: hidden;
-    color: var(--Sec);
+    color: teal;
     margin: 15px auto;
 
 }
+
+@media (max-width: 1400px) {
+    .MD_Details {
+        width: 97%;
+      }  
+}
+
+@media (max-width: 1200px) {
+    
+    .MD_Details h4 {
+        font-size: 30px;
+    }
+    .MD_Details h5 {
+        font-size: 18px;    
+    }  
+    
+}
+
+@media (max-width: 768px) {
+    
+    .MD_Details h4 {
+        font-size: 20px;
+    }
+
+    .highlight2::before {
+        transform: translateY(-40%)
+    }
+    .MD_Details h5 {
+        font-size: 15px;    
+    }     
+}
+
+
 

@@ -5,9 +5,9 @@ import InfoBanner from './InfoBanner';
 import avatar1 from '../SVGs/Avatar1.svg'
 import avatar2 from '../SVGs/Avatar2.svg'
 import avatar3 from '../SVGs/Avatar3.svg'
-import logo2 from '../SVGs/OdRd2.svg'
+import AboutUsImg from '../SVGs/AboutUsImg.svg'
 import Missn_Img from '../SVGs/OdRd4.svg'
-import Missn_Img2 from '../SVGs/Shared_Goals.svg'
+import ShredGoals from '../SVGs/ShredGoals.svg'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -23,7 +23,7 @@ export default function AboutMain(props) {
  
   return (
     <>
-      <Home key="New1" title={t("Titles.Aboutus")} description={t("Descriptions.Aboutus")} logo={logo2}
+      <Home key="New1" title={t("Titles.Aboutus")} description={t("Descriptions.Aboutus")} logo={AboutUsImg}
       />
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
@@ -80,7 +80,7 @@ export default function AboutMain(props) {
         key='AM02'
         Title="Shared Goals"
         description="Innovation, Convenience, and Reliability :) "
-        Image={Missn_Img2}
+        Image={ShredGoals}
       />
       <div className="About_Main2">
         <div className="Abt_Main_Wrapper2">
