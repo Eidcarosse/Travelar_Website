@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Stylesheets/Footer.css'
 import badge1 from '../images/apple-badge.png';
 import badge2 from '../images/google-badge.png';
@@ -7,10 +7,20 @@ import scl2 from '../images/twtr_icon.png'
 import scl3 from '../images/lin_icon.png'
 import scl4 from '../images/ig_icon.png'
 import { useTranslation } from 'react-i18next'
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 
 export default function Footer() {
-  const {t} = useTranslation(); 
+  const lngs = {
+    en: { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
+    fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' },
+    ara : {nativeName: 'Arabic', flag : "https://www.worldometers.info/img/flags/sa-flag.gif"}
+  };
+  const {t, i18n} = useTranslation(); 
+  
+  const R_Page = () => {
+    window.location.href = window.location.href;
+  }
   return (
     <footer id="footer_wrapper">
       <nav id="nav_footer">
@@ -56,6 +66,15 @@ export default function Footer() {
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Information security</a></li>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="">Blog</a></li>
             </ul>
+          </div>
+          <div className='FR_Sec1_f Dimensions'>
+            <h6>{t('Footer.Titles.Langes')}</h6>
+            {Object.keys(lngs).map((lng)=> (
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{i18n.changeLanguage(lng);R_Page();}}>{/**/ }
+              <img src={lngs[lng].flag} alt="Flag" width='25px' />&nbsp;{lngs[lng].nativeName}
+              </NavDropdown.Item>
+            ))}
+            
           </div>
         </div>
         <hr className='FR_Middle' style={{backgroundColor : "black", color:"black", height:"1px"}}/>

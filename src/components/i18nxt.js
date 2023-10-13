@@ -79,6 +79,7 @@ i18n
               Partners : "Partners",
               JoinTeam : "Join our Teams",
               Aboutus : "About us",
+              Langes : "Languages"
             }
           },
                        
@@ -199,16 +200,16 @@ i18n
               Home : "في ما يخصنا",
             },
             Descriptions : {
-              Home : "L’objectif de Travelar est de simplifier et d’améliorer la vie des gens et de construire une organisation formidable et inspirante. Apprenez-en davantage sur notre objectif, nos personnes et nos services.",
+              Home : "هدف مسافر هو تبسيط وتحسين حياة الناس وبناء منظمة رائعة وملهمة. تعرف على المزيد حول هدفنا وموظفينا وخدماتنا.",
             },
           },
           Footer : {
             Titles : {
-              Travelar : "Voyageur",
-              Services : "Prestations de service",
-              Partners : "Les partenaires",
-              JoinTeam : "Rejoignez nos équipes",
-              Aboutus : "À propos de nous",
+              Travelar : "مسافر",
+              Services : "تقديم خدمة",
+              Partners : "الشركاء",
+              JoinTeam : "انضم إلى فرقنا",
+              Aboutus : "في ما يخصنا",
             }
           },
             
