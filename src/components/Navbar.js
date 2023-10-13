@@ -42,7 +42,8 @@ export default function Navbar(props) {
 
   const lngs = {
     en: { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
-    fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' }
+    fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' },
+    ara : {nativeName: 'Arabic', flag : "https://www.worldometers.info/img/flags/sa-flag.gif"}
   };
 
   return (
@@ -91,7 +92,7 @@ export default function Navbar(props) {
               />
         <NavDropdown  id="basic-nav-dropdown">
             {Object.keys(lngs).map((lng)=> (
-              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();i18n.changeLanguage(lng)}}>
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();i18n.changeLanguage(lng)}}>{/**/ }
               <img src={lngs[lng].flag} alt="Flag" width='25px' />&nbsp;{lngs[lng].nativeName}
               </NavDropdown.Item>
             ))}

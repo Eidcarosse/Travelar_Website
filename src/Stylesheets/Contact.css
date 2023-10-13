@@ -52,9 +52,9 @@
 }
 
 .bg_anim {
-    color: #fff;
+    color: #2D2E2E;
     font-weight: bold;
-    background-color: #007c78;
+    background-color: var(--Prim);
   transition:  cubic-bezier(0.17, 0.57, 0.31, 0.85) 0.5s;
 }
 
