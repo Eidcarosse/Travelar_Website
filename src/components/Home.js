@@ -3,9 +3,11 @@ import "animate.css/animate.min.css";
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 export default function BnerContent(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
+    const Home_Content = document.querySelector("#Home_Content");
   }, []);
   return (
     <>

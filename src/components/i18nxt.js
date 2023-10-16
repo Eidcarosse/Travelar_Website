@@ -27,6 +27,7 @@ i18n
               Services : "Services",
               About : "About us",
               Contact : "Contact",
+              Dapp : "Download App"
             },
             
           },
@@ -94,6 +95,7 @@ i18n
               Services : "Prestations de service",
               About : "À propos de nous",
               Contact : "Contact",
+              Dapp : "Télécharger l'application",
             }
           },
           Titles : {
@@ -150,70 +152,71 @@ i18n
             
         }
       },
-      ara : {
+      ger : {
         translation : {
           Navbar : {
             Titles : {
-              Logo : "مسافر",
-              Home : "بيت",
-              Services : "خدمات",
-              About : "معلومات عنا",
-              Contact : "اتصال",
+              Logo : "Reisen",
+              Home : "Haus",
+              Services : " Dienstleistungen",
+              About : "über uns",
+              Contact : "Kommunikation",
+              Dapp : "Lade App herunter"
             }
           },
           Titles : {
-            Home : "سافر معنا",
-            Services : "تقديم خدمة",
-            Aboutus : "في ما يخصنا",
-            Contactus : "اتصل بنا",
+            Home : "Reisen Sie mit uns",
+            Services : "Bereitstellung von Dienstleistungen",
+            Aboutus : "Soweit wir betroffen sind",
+            Contactus : "rufen Sie uns an",
           },
           Descriptions : {
-            Home : "وجهتك النهائية لتجارب حجز السيارات السلسة! سواء كنت تخطط لرحلة برية، أو عمل، أو لقضاء عطلة ممتعة، فإن مسافر هنا لإعادة تعريف الطريقة التي تشرع بها في رحلاتك. بفضل شبكة واسعة من موفري خدمات التأجير الموثوقين وواجهة سهلة الاستخدام، نقدم لك عالمًا من الراحة في متناول يدك.",
-            Services : " المبتكر تجربة سلسة للمستخدمين من خلال توفير خدمتين أساسيتين: توصيل الأدوية وحجز السيارات. يمكنك بسهولة طلب الأدوية الموصوفة طبيًا وأنت مرتاح في منزلك. يضمن التطبيق تسليمًا سريعًا وآمنًا، مما يجعل الرعاية الصحية أكثر سهولة من أي وقت مضى. بالإضافة إلى ذلك، تتيح لك خدمة حجز سيارات المسافر ترتيب وسائل النقل لرحلاتك بسهولة. يقدم مسافر حلاً موثوقًا وفعالاً، مما يضمن وصول المستخدمين إلى وجهتهم بسهولة. يعد Traveler حقًا منصة فريدة من نوعها، تخدم احتياجات الرعاية الصحية والنقل.",
-            Aboutus : "المسافر مدفوع بهدف قوي: تبسيط وتحسين حياة الناس وبناء مؤسسة عظيمة وملهمة. منذ عام 2023، قامت شركة مسافر ببناء منصة لأفضل المواهب في المنطقة لتزدهر ورواد الأعمال لتنمية أعمالهم. تعمل كريم في أكثر من 70 مدينة في 10 دول، من المغرب إلى باكستان.",
+            Home : "Ihr ultimatives Ziel für nahtlose Autobuchungserlebnisse! Egal, ob Sie einen Roadtrip, eine Geschäftsreise oder einen unterhaltsamen Urlaub planen, Mosafer ist hier, um die Art und Weise, wie Sie Ihre Reisen antreten, neu zu definieren. Mit einem umfangreichen Netzwerk zuverlässiger Vermietungsanbieter und einer benutzerfreundlichen Oberfläche bieten wir Ihnen eine Welt voller Komfort zum Greifen nah.",
+            Services : "Das innovative Unternehmen bietet Benutzern ein nahtloses Erlebnis, indem es zwei grundlegende Dienste bereitstellt: Medikamentenlieferung und Autoreservierung. Sie können Ihre verschreibungspflichtigen Medikamente bequem von zu Hause aus bestellen. Die App gewährleistet eine schnelle und sichere Lieferung und macht die Gesundheitsversorgung zugänglicher als je zuvor. Darüber hinaus können Sie mit dem Autobuchungsservice von Almosafer ganz einfach den Transport für Ihre Reisen organisieren. Mosafer bietet eine zuverlässige und effiziente Lösung, die dafür sorgt, dass Benutzer ihr Ziel problemlos erreichen. Traveler ist wirklich eine einzigartige Plattform, die Ihre Gesundheits- und Transportbedürfnisse erfüllt.",
+            Aboutus : "Traveler wird von einem starken Ziel angetrieben: das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Seit 2023 baut Musafir eine Plattform auf, auf der die besten Talente der Region gedeihen und Unternehmer ihr Geschäft ausbauen können. Careem ist in mehr als 70 Städten in 10 Ländern tätig, von Marokko bis Pakistan.",
           },
           ServicesInfo : {
-            Heading : "نحن نقدم",
-            Li1 : "السائقين المعتمدين",
-            Li2 : "تسليم الدواء",
-            Li3 : "حجز السيارة",
-            Li4 : "تتبع في الوقت الحقيقي",
-            Li5 : "المشاركة في حالات الطوارئ",
-            Li6 : "راحة البال",
-            Li7 : "تعزيز الأمن",
-            Li8 : "اختيارات شخصية",
+            Heading : "Wir bieten",
+            Li1 : "Zertifizierte Fahrer",
+            Li2 : "Lieferung von Medikamenten",
+            Li3 : "Autoreservierung",
+            Li4 : "Echtzeitverfolgung",
+            Li5 : "Teilnahme an Notfallsituationen",
+            Li6 : "Seelenfrieden",
+            Li7 : "Erhöhen Sie die Sicherheit",
+            Li8 : "Persönliche Entscheidungen",
           },
           InfoBanner : {
             Titles : {
-              Home : "مسافر",
-              Svcs1 : "تسليم الدواء",
-              Svcs2 : "حجز السيارة"
+              Home : "Reisen",
+              Svcs1 : "Lieferung von Medikamenten",
+              Svcs2 : "Autoreservierung"
             },
             Descriptions : {
-              Home : "استمتع بخصم 30% على رحلاتك الأولى!",
-              Svcs1 : "توصيل الدواء بشكل مريح وخالي من المتاعب",
-              Svcs2 : "رحلات آمنة ومراقبة بالكامل"
+              Home : "Genießen Sie 30 % Rabatt auf Ihre ersten Fahrten!",
+              Svcs1 : "Bequeme und problemlose Medikamentenlieferung",
+              Svcs2 : "Sichere und vollständig überwachte Reisen"
             }
           },
           About : {
             Titles : {
-              Home : "في ما يخصنا",
+              Home : "Soweit wir betroffen sind",
             },
             Descriptions : {
-              Home : "هدف مسافر هو تبسيط وتحسين حياة الناس وبناء منظمة رائعة وملهمة. تعرف على المزيد حول هدفنا وموظفينا وخدماتنا.",
+              Home : "Das Ziel von Musafer ist es, das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Erfahren Sie mehr über unseren Zweck, unsere Mitarbeiter und unsere Dienstleistungen.",
             },
           },
           Footer : {
             Titles : {
-              Travelar : "مسافر",
-              Services : "تقديم خدمة",
-              Partners : "الشركاء",
-              JoinTeam : "انضم إلى فرقنا",
-              Aboutus : "في ما يخصنا",
+              Travelar : "Reisen",
+              Services : "Bereitstellung von Dienstleistungen",
+              Partners : "Partner",
+              JoinTeam : "Treten Sie unseren Teams bei",
+              Aboutus : "Soweit wir betroffen sind",
             }
           },
             
-        }
+        },
       }
     }
   });

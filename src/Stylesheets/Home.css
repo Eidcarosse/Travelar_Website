@@ -63,11 +63,8 @@
   overflow: hidden;
   padding: 2vh 3vw;
   border-style: solid;
+  border-radius: 0.9em;
   border-width: 1.5px 1px 1.5px 1px;
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  border-top-left-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
   color : #00493E;
   font-family: Carme;
   font-size: larger;
@@ -89,7 +86,7 @@
   position: relative;
 }
 .AddcC:hover::after {
-  content: '____';
+  content: ':::::::::';
   position: absolute;
  
 }

@@ -40,19 +40,14 @@
 
 .Read_Mr_Dn{
     width: fit-content;
-    padding: 0.5em 1em;
+    padding: 1em 3em;
     color: var(--Fc);
-    border-radius: 0.5em;
+    border-radius: 0.9em;
     font-family: Inter;
     font-weight: bold;
     font-size: small;
-    background-color: var(--Prim);
-    outline : 1px solid transparent;
-    transition: all 0.35s;
-    
+    background-color: var(--Prim); 
 }
-
-
 
 .Abt_img{
     width: 35%;
@@ -87,7 +82,8 @@ div.Abt_img img{
     }
         
     .Read_Mr_Dn{
-        width: fit-content; 
+        padding: 1em 1.5em;
+
     }
     
     .Abt_img{

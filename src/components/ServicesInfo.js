@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function ServicesInfo() {
   const {t} = useTranslation();
-  const ar_icon = <FontAwesomeIcon icon="share-from-square" size="xs"/>
+  const ar_icon = <FontAwesomeIcon icon="share-from-square" size="xs" color='#00E784'/>
  
   return (
     <>
@@ -21,31 +21,31 @@ export default function ServicesInfo() {
             </div>
             <div className='Hme_info'>
               <span><h3>{t('ServicesInfo.Heading')}</h3></span>
-              <span>          
+              <span className='efi2'>          
                   <ul>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li1')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li1')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={100}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li2')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li2')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={200}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li3')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li3')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={300}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li4')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li4')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={400}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li5')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li5')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={500}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li6')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li6')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={600}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li7')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li7')}</li>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={700}>  
-                  <li>{ar_icon} {t('ServicesInfo.Li8')}</li>
+                  <li className='bf_li'>{ar_icon} {t('ServicesInfo.Li8')}</li>
                   </ScrollAnimation>
                   </ul>
             </span>

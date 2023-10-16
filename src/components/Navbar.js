@@ -43,7 +43,7 @@ export default function Navbar(props) {
   const lngs = {
     en: { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
     fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' },
-    ara : {nativeName: 'Arabic', flag : "https://www.worldometers.info/img/flags/sa-flag.gif"}
+    ger : {nativeName: 'German', flag : "https://www.worldometers.info/img/flags/gm-flag.gif"}
   };
 
   return (
@@ -92,15 +92,15 @@ export default function Navbar(props) {
               />
         <NavDropdown  id="basic-nav-dropdown">
             {Object.keys(lngs).map((lng)=> (
-              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();i18n.changeLanguage(lng)}}>{/**/ }
-              <img src={lngs[lng].flag} alt="Flag" width='25px' />&nbsp;{lngs[lng].nativeName}
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();}}>{/*i18n.changeLanguage(lng)*/ }
+              <img src={lngs[lng].flag} alt="Flag" width='25px' height='15px' />&nbsp;{lngs[lng].nativeName}
               </NavDropdown.Item>
             ))}
          </NavDropdown>
      </span>
             <span className="btn-cstm App_Downld try_trans">
               <a href="" target="_blank">
-                Download App
+                {t('Navbar.Titles.Dapp')}
               </a>
             </span>
           </div>
