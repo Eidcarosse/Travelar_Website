@@ -41,10 +41,21 @@ export default function Navbar(props) {
   };
 
   const lngs = {
-    en: { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
-    fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' },
-    ger : {nativeName: 'German', flag : "https://www.worldometers.info/img/flags/gm-flag.gif"}
+    ur : { nativeName : 'Urdu', flag : 'https://www.worldometers.info/img/flags/pk-flag.gif'},
+    en : { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
+    fr : { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' },
+    ger : { nativeName: 'German', flag : "https://www.worldometers.info/img/flags/gm-flag.gif"},
+    ara : { nativeName: 'Arabic', flag : "https://www.worldometers.info/img/flags/sa-flag.gif"},
+    ja : { nativeName: 'Japanese', flag : "https://www.worldometers.info/img/flags/ja-flag.gif"},
+    ru : { nativeName: 'Russian', flag : "https://www.worldometers.info/img/flags/rs-flag.gif"},
+
+
   };
+
+  const Tgle_LngChng = () => {
+    props.setSpner();
+    Scroll_Top();
+  }
 
   return (
     <>
@@ -92,7 +103,9 @@ export default function Navbar(props) {
               />
         <NavDropdown  id="basic-nav-dropdown">
             {Object.keys(lngs).map((lng)=> (
-              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{props.showalert();}}>{/*i18n.changeLanguage(lng)*/ }
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{Tgle_LngChng();setTimeout(() => {
+                i18n.changeLanguage(lng)
+              }, 1200);}}>
               <img src={lngs[lng].flag} alt="Flag" width='25px' height='15px' />&nbsp;{lngs[lng].nativeName}
               </NavDropdown.Item>
             ))}

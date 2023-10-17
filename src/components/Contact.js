@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
@@ -15,7 +15,10 @@ import tickAnim from '../Animations/tickanim3.json'
 import crossanim from '../Animations/crossanim.json'
 import {useTranslation} from 'react-i18next'
 
+
+
 export default function Contact() {
+
   const {t} = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [sbmsg, setSbmsg] = useState(null);

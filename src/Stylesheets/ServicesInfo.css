@@ -36,11 +36,22 @@
 }
 
 .efi2 {
+    overflow: hidden;
     height: fit-content;
     border-style: solid;
     border-color: #00E784;
     border-width: 0px 0px 0px 2px;
-    padding: 1.5em;
+    padding: 1.5em; 
+}
+
+[dir = "rtl"].efi2 {
+    overflow: hidden;
+    height: fit-content;
+    border-style: solid;
+    border-color: #00E784;
+    border-width: 0px 2px 0px 0px;
+    padding: 1.5em; 
+
 }
 
 
@@ -59,12 +70,14 @@ div.Hme_info h3 {
     content: "";
     position: absolute;
     background-color: #00E784;
-    width: 25px;
+    width: 27px;
     height: 2px;
     margin-inline-start: -25px;
     margin-block-start: 20px;
    
 }
+
+
 div.Hme_info li {
     padding-top: 5px;
     font-family: Inter;
@@ -123,7 +136,7 @@ div.Hme_info li {
         content: "";
         position: absolute;
         background-color: #00E784;
-        width: 25px;
+        width: 26.5px;
         height: 2px;
         margin-inline-start: -25px;
         margin-block-start: 15px;

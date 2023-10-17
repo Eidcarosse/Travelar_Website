@@ -1,0 +1,64 @@
+{
+      "Navbar": {
+          "Titles": {
+             "Logo": "Travelar",
+             "Home": "Home",
+             "Services": "Services",
+             "About": "About us",
+             "Contact": "Contact",
+             "Dapp": "Download App"
+          }
+       },
+       "Titles": {
+          "Home": "Travel with us",
+          "Services": "Services",
+          "Aboutus": "About us",
+          "Contactus": "Contact us"
+       },
+       "Descriptions": {
+          "Home": "Your ultimate destination for seamless car booking experiences! Whether you're planning a road trip, a business venture, or a leisurely escape, Travelar is here to redefine the way you embark on your journeys. With a vast network of trusted rental providers and a user-friendly interface, we bring you a world of convenience at your fingertips.",
+          "Services": "Traveler, the innovative app, offers a seamless experience for users by providing two essential services - medicine delivery and car booking. You can conveniently order prescription medications from the comfort of their homes. The app ensures timely and safe delivery, making healthcare more accessible than ever. Additionally, Traveler's car booking service enables you to effortlessly arrange transportation for your journeys. Traveler offers a reliable and efficient solution, ensuring users reach their destinations with ease. Traveler is truly a one-stop platform, catering to both healthcare and transportation needs.",
+          "Aboutus": "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Careem operates in over 70 cities across 10 countries, from Morocco to Pakistan."
+       },
+       "ServicesInfo": {
+          "Heading": "We Provide",
+          "Li1": "Certified Drivers",
+          "Li2": "Medicine Delivery",
+          "Li3": "Car Booking",
+          "Li4": "Real-Time Tracking",
+          "Li5": "Emergency Sharing",
+          "Li6": "Peace of Mind",
+          "Li7": "Enhanced Security",
+          "Li8": "Customized Choices"
+       },
+       "InfoBanner": {
+          "Titles": {
+             "Home": "Travelar",
+             "Svcs1": "Medicine Delivery",
+             "Svcs2": "Car Booking"
+          },
+          "Descriptions": {
+             "Home": "Enjoy 30% discount on your first Rides !",
+             "Svcs1": "Convinient hassle-free medicine delivery",
+             "Svcs2": "Secure and fully tracked rides"
+          }
+       },
+       "About": {
+          "Titles": {
+             "Home": "About us"
+          },
+          "Descriptions": {
+             "Home": "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services."
+          }
+       },
+       "Footer": {
+          "Titles": {
+             "Travelar": "Travelar",
+             "Services": "Services",
+             "Partners": "Partners",
+             "JoinTeam": "Join our Teams",
+             "Aboutus": "About us",
+             "Langes": "Languages"
+          }
+       }
+ }

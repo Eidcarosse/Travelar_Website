@@ -2,221 +2,43 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+
+const loadTranslations = async (lang) => {
+  return await import(`../Languages/${lang}.json`);
+}
 i18n
-  // detect user language
-  // learn more: https://github.com/i18next/i18next-browser-languageDetector
+  // Detects user language
   .use(LanguageDetector)
-  // pass the i18n instance to react-i18next.
+  // Pass the i18n instance to react-i18next.
   .use(initReactI18next)
   // init i18next
-  // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false,
     },
     resources: {
       en: {
-        translation: {
-          // here we will place our translations...
-          Navbar : {
-            Titles : {
-              Logo : "Travelar",
-              Home : "Home",
-              Services : "Services",
-              About : "About us",
-              Contact : "Contact",
-              Dapp : "Download App"
-            },
-            
-          },
-          Titles : {
-            Home : "Travel with us",
-            Services : "Services",
-            Aboutus : "About us",
-            Contactus : "Contact us"
-            },
-          Descriptions : {
-            Home : "Your ultimate destination for seamless car booking experiences! Whether you're planning a road trip, a business venture, or a leisurely escape, Travelar is here to redefine the way you embark on your journeys. With a vast network of trusted rental providers and a user-friendly interface, we bring you a world of convenience at your fingertips.",
-            Services : "Traveler, the innovative app, offers a seamless experience for users by providing two essential services - medicine delivery and car booking. You can conveniently order prescription medications from the comfort of their homes. The app ensures timely and safe delivery, making healthcare more accessible than ever. Additionally, Traveler's car booking service enables you to effortlessly arrange transportation for your journeys. Traveler offers a reliable and efficient solution, ensuring users reach their destinations with ease. Traveler is truly a one-stop platform, catering to both healthcare and transportation needs.",
-            Aboutus : "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Careem operates in over 70 cities across 10 countries, from Morocco to Pakistan.",
-          },
-          ServicesInfo : {
-            Heading : "We Provide",
-            Li1 : "Certified Drivers",
-            Li2 : "Medicine Delivery",
-            Li3 : "Car Booking",
-            Li4 : "Real-Time Tracking",
-            Li5 : "Emergency Sharing",
-            Li6 : "Peace of Mind",
-            Li7 : "Enhanced Security",
-            Li8 : "Customized Choices",
-          },
-          InfoBanner : {
-            Titles : {
-              Home : "Travelar",
-              Svcs1 : "Medicine Delivery",
-              Svcs2 : "Car Booking",
-            },
-            Descriptions : {
-              Home : "Enjoy 30% discount on your first Rides !",
-              Svcs1 : "Convinient hassle-free medicine delivery",
-              Svcs2 : "Secure and fully tracked rides",
-            },
-          },
-          About : {
-            Titles : {
-              Home : "About us",
-            },
-            Descriptions : {
-              Home : "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services.",
-            },
-          },
-          Footer : {
-            Titles : {
-              Travelar : "Travelar",
-              Services : "Services",
-              Partners : "Partners",
-              JoinTeam : "Join our Teams",
-              Aboutus : "About us",
-              Langes : "Languages"
-            }
-          },
-                       
-        }
+        translation : await loadTranslations('en')
       },
       fr : {
-        translation : {
-          Navbar : {
-            Titles : {
-              Logo : "Voyageur",
-              Home : "Maison",
-              Services : "Prestations de service",
-              About : "À propos de nous",
-              Contact : "Contact",
-              Dapp : "Télécharger l'application",
-            }
-          },
-          Titles : {
-            Home : "Voyagez avec nous",
-            Services : "Prestations de service",
-            Aboutus : "À propos de nous",
-            Contactus : "Contactez-nous",
-          },
-          Descriptions : {
-            Home : "Votre destination ultime pour des expériences de réservation de voiture fluides ! Que vous planifiiez un road trip, une entreprise ou une escapade tranquille, Travelar est là pour redéfinir la façon dont vous embarquez dans vos voyages. Avec un vaste réseau de prestataires de location de confiance et une interface conviviale, nous vous apportons un monde de commodité à portée de main.",
-            Services : "Traveler, l'application innovante, offre une expérience transparente aux utilisateurs en fournissant deux services essentiels : la livraison de médicaments et la réservation de voiture. Vous pouvez facilement commander des médicaments sur ordonnance dans le confort de votre foyer. L'application garantit une livraison rapide et sûre, rendant les soins de santé plus accessibles que jamais. De plus, le service de réservation de voiture de Traveler vous permet d'organiser sans effort le transport pour vos voyages. Traveler offre une solution fiable et efficace, garantissant aux utilisateurs d'atteindre facilement leur destination. Traveler est véritablement une plateforme unique, répondant à la fois aux besoins en matière de soins de santé et de transport.",
-            Aboutus : "Traveler est dirigé par un objectif puissant : simplifier et améliorer la vie des gens et construire une organisation formidable et inspirante. Depuis 2023, Traveler a construit une plateforme permettant aux meilleurs talents de la région de s’épanouir et aux entrepreneurs de développer leur entreprise. Careem opère dans plus de 70 villes à travers 10 pays, du Maroc au Pakistan.",
-          },
-          ServicesInfo : {
-            Heading : "Nous fournissons",
-            Li1 : "Chauffeurs certifiés",
-            Li2 : "Livraison de médicaments",
-            Li3 : "Réservation de voiture",
-            Li4 : "Suivi en temps réel",
-            Li5 : "Partage d'urgence",
-            Li6 : "Tranquillité d'esprit",
-            Li7 : "Sécurité renforcée",
-            Li8 : "Choix personnalisés",
-          },
-          InfoBanner : {
-            Titles : {
-              Home : "Voyageur",
-              Svcs1 : "Livraison de médicaments",
-              Svcs2 : "Réservation de voiture"
-            },
-            Descriptions : {
-              Home : "Profitez de 30% de réduction sur vos premiers Rides !",
-              Svcs1 : "Livraison de médicaments pratique et sans tracas",
-              Svcs2 : "Des trajets sécurisés et entièrement suivis"
-            }
-          },
-          About : {
-            Titles : {
-              Home : "À propos de nous",
-            },
-            Descriptions : {
-              Home : "L’objectif de Travelar est de simplifier et d’améliorer la vie des gens et de construire une organisation formidable et inspirante. Apprenez-en davantage sur notre objectif, nos personnes et nos services.",
-            },
-          },
-          Footer : {
-            Titles : {
-              Travelar : "Voyageur",
-              Services : "Prestations de service",
-              Partners : "Les partenaires",
-              JoinTeam : "Rejoignez nos équipes",
-              Aboutus : "À propos de nous",
-            }
-          },
-            
-        }
+        translation : await loadTranslations('fr')
       },
       ger : {
-        translation : {
-          Navbar : {
-            Titles : {
-              Logo : "Reisen",
-              Home : "Haus",
-              Services : " Dienstleistungen",
-              About : "über uns",
-              Contact : "Kommunikation",
-              Dapp : "Lade App herunter"
-            }
-          },
-          Titles : {
-            Home : "Reisen Sie mit uns",
-            Services : "Bereitstellung von Dienstleistungen",
-            Aboutus : "Soweit wir betroffen sind",
-            Contactus : "rufen Sie uns an",
-          },
-          Descriptions : {
-            Home : "Ihr ultimatives Ziel für nahtlose Autobuchungserlebnisse! Egal, ob Sie einen Roadtrip, eine Geschäftsreise oder einen unterhaltsamen Urlaub planen, Mosafer ist hier, um die Art und Weise, wie Sie Ihre Reisen antreten, neu zu definieren. Mit einem umfangreichen Netzwerk zuverlässiger Vermietungsanbieter und einer benutzerfreundlichen Oberfläche bieten wir Ihnen eine Welt voller Komfort zum Greifen nah.",
-            Services : "Das innovative Unternehmen bietet Benutzern ein nahtloses Erlebnis, indem es zwei grundlegende Dienste bereitstellt: Medikamentenlieferung und Autoreservierung. Sie können Ihre verschreibungspflichtigen Medikamente bequem von zu Hause aus bestellen. Die App gewährleistet eine schnelle und sichere Lieferung und macht die Gesundheitsversorgung zugänglicher als je zuvor. Darüber hinaus können Sie mit dem Autobuchungsservice von Almosafer ganz einfach den Transport für Ihre Reisen organisieren. Mosafer bietet eine zuverlässige und effiziente Lösung, die dafür sorgt, dass Benutzer ihr Ziel problemlos erreichen. Traveler ist wirklich eine einzigartige Plattform, die Ihre Gesundheits- und Transportbedürfnisse erfüllt.",
-            Aboutus : "Traveler wird von einem starken Ziel angetrieben: das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Seit 2023 baut Musafir eine Plattform auf, auf der die besten Talente der Region gedeihen und Unternehmer ihr Geschäft ausbauen können. Careem ist in mehr als 70 Städten in 10 Ländern tätig, von Marokko bis Pakistan.",
-          },
-          ServicesInfo : {
-            Heading : "Wir bieten",
-            Li1 : "Zertifizierte Fahrer",
-            Li2 : "Lieferung von Medikamenten",
-            Li3 : "Autoreservierung",
-            Li4 : "Echtzeitverfolgung",
-            Li5 : "Teilnahme an Notfallsituationen",
-            Li6 : "Seelenfrieden",
-            Li7 : "Erhöhen Sie die Sicherheit",
-            Li8 : "Persönliche Entscheidungen",
-          },
-          InfoBanner : {
-            Titles : {
-              Home : "Reisen",
-              Svcs1 : "Lieferung von Medikamenten",
-              Svcs2 : "Autoreservierung"
-            },
-            Descriptions : {
-              Home : "Genießen Sie 30 % Rabatt auf Ihre ersten Fahrten!",
-              Svcs1 : "Bequeme und problemlose Medikamentenlieferung",
-              Svcs2 : "Sichere und vollständig überwachte Reisen"
-            }
-          },
-          About : {
-            Titles : {
-              Home : "Soweit wir betroffen sind",
-            },
-            Descriptions : {
-              Home : "Das Ziel von Musafer ist es, das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Erfahren Sie mehr über unseren Zweck, unsere Mitarbeiter und unsere Dienstleistungen.",
-            },
-          },
-          Footer : {
-            Titles : {
-              Travelar : "Reisen",
-              Services : "Bereitstellung von Dienstleistungen",
-              Partners : "Partner",
-              JoinTeam : "Treten Sie unseren Teams bei",
-              Aboutus : "Soweit wir betroffen sind",
-            }
-          },
-            
-        },
+        translation : await loadTranslations('ger')
+      },
+      ara : {
+        translation : await loadTranslations('ara')
+      },
+      ja : {
+        translation : await loadTranslations('ja')
+      },
+      ru : {
+        translation : await loadTranslations('ru')
+      },
+      ur : {
+        translation : await loadTranslations('ur')
       }
     }
   });

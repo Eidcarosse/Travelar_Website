@@ -70,7 +70,7 @@ export default function Footer() {
           <div className='FR_Sec1_f Dimensions'>
             <h6>{t('Footer.Titles.Langes')}</h6>
             {Object.keys(lngs).map((lng)=> (
-              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} >{/*onClick={()=>{i18n.changeLanguage(lng);R_Page();}}*/ }
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{i18n.changeLanguage(lng);R_Page();}}>
               <img src={lngs[lng].flag} alt="Flag" width='25px' />&nbsp;{lngs[lng].nativeName}
               </NavDropdown.Item>
             ))}

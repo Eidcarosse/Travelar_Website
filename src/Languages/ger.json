@@ -1,0 +1,63 @@
+{
+    "Navbar": {
+       "Titles": {
+          "Logo": "Reisen",
+          "Home": "Haus",
+          "Services": " Dienstleistungen",
+          "About": "über uns",
+          "Contact": "Kommunikation",
+          "Dapp": "Lade App herunter"
+       }
+    },
+    "Titles": {
+       "Home": "Reisen Sie mit uns",
+       "Services": "Bereitstellung von Dienstleistungen",
+       "Aboutus": "Soweit wir betroffen sind",
+       "Contactus": "rufen Sie uns an"
+    },
+    "Descriptions": {
+       "Home": "Ihr ultimatives Ziel für nahtlose Autobuchungserlebnisse! Egal, ob Sie einen Roadtrip, eine Geschäftsreise oder einen unterhaltsamen Urlaub planen, Mosafer ist hier, um die Art und Weise, wie Sie Ihre Reisen antreten, neu zu definieren. Mit einem umfangreichen Netzwerk zuverlässiger Vermietungsanbieter und einer benutzerfreundlichen Oberfläche bieten wir Ihnen eine Welt voller Komfort zum Greifen nah.",
+       "Services": "Das innovative Unternehmen bietet Benutzern ein nahtloses Erlebnis, indem es zwei grundlegende Dienste bereitstellt: Medikamentenlieferung und Autoreservierung. Sie können Ihre verschreibungspflichtigen Medikamente bequem von zu Hause aus bestellen. Die App gewährleistet eine schnelle und sichere Lieferung und macht die Gesundheitsversorgung zugänglicher als je zuvor. Darüber hinaus können Sie mit dem Autobuchungsservice von Almosafer ganz einfach den Transport für Ihre Reisen organisieren. Mosafer bietet eine zuverlässige und effiziente Lösung, die dafür sorgt, dass Benutzer ihr Ziel problemlos erreichen. Traveler ist wirklich eine einzigartige Plattform, die Ihre Gesundheits- und Transportbedürfnisse erfüllt.",
+       "Aboutus": "Traveler wird von einem starken Ziel angetrieben: das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Seit 2023 baut Musafir eine Plattform auf, auf der die besten Talente der Region gedeihen und Unternehmer ihr Geschäft ausbauen können. Careem ist in mehr als 70 Städten in 10 Ländern tätig, von Marokko bis Pakistan."
+    },
+    "ServicesInfo": {
+       "Heading": "Wir bieten",
+       "Li1": "Zertifizierte Fahrer",
+       "Li2": "Lieferung von Medikamenten",
+       "Li3": "Autoreservierung",
+       "Li4": "Echtzeitverfolgung",
+       "Li5": "Teilnahme an Notfallsituationen",
+       "Li6": "Seelenfrieden",
+       "Li7": "Erhöhen Sie die Sicherheit",
+       "Li8": "Persönliche Entscheidungen"
+    },
+    "InfoBanner": {
+       "Titles": {
+          "Home": "Reisen",
+          "Svcs1": "Lieferung von Medikamenten",
+          "Svcs2": "Autoreservierung"
+       },
+       "Descriptions": {
+          "Home": "Genießen Sie 30 % Rabatt auf Ihre ersten Fahrten!",
+          "Svcs1": "Bequeme und problemlose Medikamentenlieferung",
+          "Svcs2": "Sichere und vollständig überwachte Reisen"
+       }
+    },
+    "About": {
+       "Titles": {
+          "Home": "Soweit wir betroffen sind"
+       },
+       "Descriptions": {
+          "Home": "Das Ziel von Musafer ist es, das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Erfahren Sie mehr über unseren Zweck, unsere Mitarbeiter und unsere Dienstleistungen."
+       }
+    },
+    "Footer": {
+       "Titles": {
+          "Travelar": "Reisen",
+          "Services": "Bereitstellung von Dienstleistungen",
+          "Partners": "Partner",
+          "JoinTeam": "Treten Sie unseren Teams bei",
+          "Aboutus": "Soweit wir betroffen sind"
+       }
+    }
+ }
