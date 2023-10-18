@@ -6,10 +6,10 @@
 }
 
 .Info_Banner_Wrapr {
-    width: 87%;
-    overflow:hidden;
     height: 36.4vh;
+    width: 87%;
     margin : auto;
+    overflow:hidden;
     display: flex;
     flex-direction: row;
     column-gap: 5vw;
@@ -29,6 +29,7 @@
 }
 
 .description h3 {
+
     font-family: Carme;
      font-size : 2em;
      color : #00E784;
@@ -89,12 +90,13 @@ div.Info_Banner_Wrapr span img{
     
     .description h3 {
          padding-top: 0.5em;
-         padding-left: 1vw;
-
+         padding-left: 2vw;
+         padding-right: 2vw;
     }
 
     .description p {
         padding-left: 2vw;
+        padding-right: 2vw;
     }
     
     .mb_img{

@@ -20,6 +20,9 @@
        "Services": "Traveler, l'application innovante, offre une expérience transparente aux utilisateurs en fournissant deux services essentiels : la livraison de médicaments et la réservation de voiture. Vous pouvez facilement commander des médicaments sur ordonnance dans le confort de votre foyer. L'application garantit une livraison rapide et sûre, rendant les soins de santé plus accessibles que jamais. De plus, le service de réservation de voiture de Traveler vous permet d'organiser sans effort le transport pour vos voyages. Traveler offre une solution fiable et efficace, garantissant aux utilisateurs d'atteindre facilement leur destination. Traveler est véritablement une plateforme unique, répondant à la fois aux besoins en matière de soins de santé et de transport.",
        "Aboutus": "Traveler est dirigé par un objectif puissant : simplifier et améliorer la vie des gens et construire une organisation formidable et inspirante. Depuis 2023, Traveler a construit une plateforme permettant aux meilleurs talents de la région de s’épanouir et aux entrepreneurs de développer leur entreprise. Careem opère dans plus de 70 villes à travers 10 pays, du Maroc au Pakistan."
     },
+    "Button" : {
+      "Lsgo" : "Allons-y"
+    },
     "ServicesInfo": {
        "Heading": "Nous fournissons",
        "Li1": "Chauffeurs certifiés",

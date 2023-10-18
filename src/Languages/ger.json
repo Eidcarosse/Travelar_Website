@@ -20,6 +20,9 @@
        "Services": "Das innovative Unternehmen bietet Benutzern ein nahtloses Erlebnis, indem es zwei grundlegende Dienste bereitstellt: Medikamentenlieferung und Autoreservierung. Sie können Ihre verschreibungspflichtigen Medikamente bequem von zu Hause aus bestellen. Die App gewährleistet eine schnelle und sichere Lieferung und macht die Gesundheitsversorgung zugänglicher als je zuvor. Darüber hinaus können Sie mit dem Autobuchungsservice von Almosafer ganz einfach den Transport für Ihre Reisen organisieren. Mosafer bietet eine zuverlässige und effiziente Lösung, die dafür sorgt, dass Benutzer ihr Ziel problemlos erreichen. Traveler ist wirklich eine einzigartige Plattform, die Ihre Gesundheits- und Transportbedürfnisse erfüllt.",
        "Aboutus": "Traveler wird von einem starken Ziel angetrieben: das Leben der Menschen zu vereinfachen und zu verbessern und eine großartige und inspirierende Organisation aufzubauen. Seit 2023 baut Musafir eine Plattform auf, auf der die besten Talente der Region gedeihen und Unternehmer ihr Geschäft ausbauen können. Careem ist in mehr als 70 Städten in 10 Ländern tätig, von Marokko bis Pakistan."
     },
+    "Button" : {
+      "Lsgo" : "Lass uns gehen"
+    },
     "ServicesInfo": {
        "Heading": "Wir bieten",
        "Li1": "Zertifizierte Fahrer",

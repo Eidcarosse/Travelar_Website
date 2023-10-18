@@ -17,12 +17,7 @@ export default function ServicesInfo() {
 
   const[ddir, setDdir] = useState('ltr')
   useEffect(() => {
-    if (Slng == "ur") {
-      setDdir('rtl')
-      
-    } else {
-      setDdir('ltr')
-    }
+    Slng == 'ara'|| Slng == 'ur' ? setDdir('rtl') : setDdir('ltr');
   }, [Slng]);
 
   return (

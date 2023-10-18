@@ -101,20 +101,29 @@
 }
 
 .Item__4{
-  aspect-ratio: 1/.5;
+  overflow: hidden;
+  width: 26vw;
+  aspect-ratio: 1/0.9;  
   border-top-left-radius: 2.5em;
   border-bottom-left-radius: 2.5em;
   background-color: #fff;
-  margin-left: 2vw;
-  
+  margin-left: 2vw; 
+}
+
+[dir = 'rtl'].Item__4 {
+  margin-left: 0;
+  border-top-left-radius: 0em;
+  border-bottom-left-radius: 0em;
+  border-top-right-radius: 2.5em;
+  border-bottom-right-radius: 2.5em;
 }
 
 .Item__4 img{
   animation: bounceInRight;
   animation-duration: 1.5s;
-  margin: 20px;
-  height: 39vh;
-  width: 26vw;
+  padding: 8px;
+  height: 100%;
+  width: 100%;
   }
 
 @media (max-width:1400px) {
@@ -170,7 +179,7 @@
   }
   
 .Banner_Wrapper{
-  max-width: 97%;
+  width: 97%;
   height: fit-content;
   flex-direction: column;
 }
@@ -195,12 +204,20 @@
   justify-content: right;
 }
 
+[dir = 'rtl'].BW_Data-right {
+  justify-content: left;
+}
+
 .Item__4{
   border-top-left-radius: 5em;
   border-bottom-left-radius: 0em;
   width: fit-content;
   height: fit-content;
   
+}
+
+[dir = 'rtl'].Item__4{
+  border-bottom-right-radius: 0;
 }
 
 .Item__4 img{

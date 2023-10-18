@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import '../Stylesheets/About.css'
 import "animate.css/animate.min.css";
 import AboutImg from '../SVGs/AboutImg.svg'
@@ -6,18 +6,24 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 import DataContext from '../Contexts/DataContext';
 import { useTranslation } from 'react-i18next'
+import i18next from 'i18next';
 
 
 export default function About() {
   const Scroll_Top = useContext(DataContext)
   const {t} = useTranslation();
+  const Slng = i18next.language;
+  const[idir, setIdir] = useState('ltr')
+  useEffect(()=>{
+    Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
+  },[Slng])
 
   return (
     <>
     <main>
         <section id="About">
           <div className="Abt_Wrapper">
-            <div className="Abt_description">
+            <div className="Abt_description" dir={idir}>
               <h3>{t("About.Titles.Home")}</h3>
               <p>{t("About.Descriptions.Home")}</p>
               <Link to='/AboutUs' onClick={Scroll_Top} className='Read_Mr_Dn try_trans'>Read More</Link>

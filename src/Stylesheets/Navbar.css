@@ -57,6 +57,7 @@ button:focus, input:focus {
     width: fit-content;
 }
 
+
 .Main_Logo a {
     cursor: default;
     font-family: Logo_Font;
@@ -78,6 +79,11 @@ button:focus, input:focus {
 
 .nav-link:nth-child(2){
     margin-left: 8em;
+}
+
+[dir = 'rtl'].nav-link:nth-child(2){
+    margin-left: 0em;
+    margin-right: 8em;
 }
 
 .nav.right {
@@ -206,23 +212,3 @@ button:focus, input:focus {
         font-size: 1.8em;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-

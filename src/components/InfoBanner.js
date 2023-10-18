@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Stylesheets/InfoBanner.css'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import i18next from 'i18next';
 
 
 export default function InfoBanner(props) {
+  const Slng = i18next.language;
+  const[idir, setIdir] = useState('ltr')
+  useEffect(()=>{
+    Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
+  },[Slng])
   return (
     <>
     <main>
         <section id="Info_Banner">
-          <div className="Info_Banner_Wrapr">
+          <div className="Info_Banner_Wrapr" dir={idir}>
             <span className="description">
                 <h3>{props.Title}</h3>
                 <p>{props.description}</p>

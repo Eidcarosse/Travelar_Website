@@ -30,13 +30,10 @@ library.add(faBars, faX, faCheckDouble, faGlobe, faCarSide);
 
 function App() {
   let [loading, setLoading] = useState(false);
-  const [Show, setShow] = useState(null);
   const setSpner = () => {
     setLoading(true)
-    setShow("show");
     setTimeout(() => {
       setLoading(false)
-      setShow(false);
     }, 1500);
   };
 
@@ -92,7 +89,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<PgeNotFnd />} />
         </Routes>
-        <Footer />
+        <Footer setSpner={setSpner}/>
       </DataProvider>
     </>
   );

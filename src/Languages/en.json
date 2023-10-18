@@ -20,6 +20,9 @@
           "Services": "Traveler, the innovative app, offers a seamless experience for users by providing two essential services - medicine delivery and car booking. You can conveniently order prescription medications from the comfort of their homes. The app ensures timely and safe delivery, making healthcare more accessible than ever. Additionally, Traveler's car booking service enables you to effortlessly arrange transportation for your journeys. Traveler offers a reliable and efficient solution, ensuring users reach their destinations with ease. Traveler is truly a one-stop platform, catering to both healthcare and transportation needs.",
           "Aboutus": "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Careem operates in over 70 cities across 10 countries, from Morocco to Pakistan."
        },
+       "Button" : {
+         "Lsgo" : "Let's Go"
+       },
        "ServicesInfo": {
           "Heading": "We Provide",
           "Li1": "Certified Drivers",

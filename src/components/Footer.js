@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useContext } from 'react'
 import '../Stylesheets/Footer.css'
 import badge1 from '../images/apple-badge.png';
 import badge2 from '../images/google-badge.png';
@@ -8,18 +8,23 @@ import scl3 from '../images/lin_icon.png'
 import scl4 from '../images/ig_icon.png'
 import { useTranslation } from 'react-i18next'
 import NavDropdown from "react-bootstrap/NavDropdown";
+import DataContext from '../Contexts/DataContext';
 
 
-export default function Footer() {
+export default function Footer(props) {
   const lngs = {
     en: { nativeName: 'English', flag : 'https://www.worldometers.info/img/flags/uk-flag.gif', },
     fr: { nativeName: 'French', flag : 'https://www.worldometers.info/img/flags/fr-flag.gif' },
     ara : {nativeName: 'Arabic', flag : "https://www.worldometers.info/img/flags/sa-flag.gif"}
   };
   const {t, i18n} = useTranslation(); 
-  
+  const Scroll_Top = useContext(DataContext);
   const R_Page = () => {
-    window.location.href = window.location.href;
+    Scroll_Top();
+    props.setSpner();
+    setTimeout(() => {
+      window.location.href = window.location.href;
+    }, 400);
   }
   return (
     <footer id="footer_wrapper">
