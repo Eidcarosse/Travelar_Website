@@ -16,7 +16,7 @@ export default function Navbar(props) {
   const Scroll_Top = useContext(DataContext);
   const [NavMn, setNavMenu] = useState("none");
   const [MenuIcon, setMenIc] = useState("bars");
-  const [idir, setIdir] = useState();
+  const [idir, setIdir] = useState('ltr');
 
   useEffect(() => {
     document.getElementById("Menu_BTN").addEventListener("click", (e) => {
@@ -29,7 +29,7 @@ export default function Navbar(props) {
 
   useEffect(() => {
     Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
-  }, []);
+  }, [Slng]);
 
   window.addEventListener("scroll", () => {
     const nav = document.querySelector("#nav_wrapper");
@@ -44,10 +44,6 @@ export default function Navbar(props) {
   };
 
   const lngs = {
-    ur: {
-      nativeName: "Urdu",
-      flag: "https://www.worldometers.info/img/flags/pk-flag.gif",
-    },
     en: {
       nativeName: "English",
       flag: "https://www.worldometers.info/img/flags/uk-flag.gif",
@@ -60,26 +56,30 @@ export default function Navbar(props) {
       nativeName: "German",
       flag: "https://www.worldometers.info/img/flags/gm-flag.gif",
     },
-    ara: {
-      nativeName: "Arabic",
-      flag: "https://www.worldometers.info/img/flags/sa-flag.gif",
-    },
-    ja: {
-      nativeName: "Japanese",
-      flag: "https://www.worldometers.info/img/flags/ja-flag.gif",
-    },
     ru: {
       nativeName: "Russian",
       flag: "https://www.worldometers.info/img/flags/rs-flag.gif",
     },
+    ara: {
+      nativeName: "Arabic",
+      flag: "https://www.worldometers.info/img/flags/sa-flag.gif",
+    },
+    ur: {
+      nativeName: "Urdu",
+      flag: "https://www.worldometers.info/img/flags/pk-flag.gif",
+    },
+    ja: {
+      nativeName: "Japanese",
+      flag: "https://www.worldometers.info/img/flags/ja-flag.gif",
+    },  
   };
 
-  const Tgle_LngChng = (lng) => {
+  const Tgle_LngChng = async (lng) => {
     props.setSpner();
     Scroll_Top();
-    setTimeout(() => {
+    setTimeout( async () => {  
+      await i18n.changeLanguage(lng);
       window.location.reload();
-      i18n.changeLanguage(lng);
     }, 1500);
   };
 

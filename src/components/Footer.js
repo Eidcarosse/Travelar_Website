@@ -1,4 +1,7 @@
 import React, { useContext } from 'react'
+import { useTranslation } from 'react-i18next'
+import NavDropdown from "react-bootstrap/NavDropdown";
+import DataContext from '../Contexts/DataContext';
 import '../Stylesheets/Footer.css'
 import badge1 from '../images/apple-badge.png';
 import badge2 from '../images/google-badge.png';
@@ -6,9 +9,6 @@ import scl1 from '../images/fb_icon.png'
 import scl2 from '../images/twtr_icon.png'
 import scl3 from '../images/lin_icon.png'
 import scl4 from '../images/ig_icon.png'
-import { useTranslation } from 'react-i18next'
-import NavDropdown from "react-bootstrap/NavDropdown";
-import DataContext from '../Contexts/DataContext';
 
 
 export default function Footer(props) {
@@ -19,13 +19,15 @@ export default function Footer(props) {
   };
   const {t, i18n} = useTranslation(); 
   const Scroll_Top = useContext(DataContext);
-  const R_Page = () => {
-    Scroll_Top();
+  const Tgle_LngChng = async (lng) => {
     props.setSpner();
-    setTimeout(() => {
-      window.location.href = window.location.href;
-    }, 400);
-  }
+    Scroll_Top();
+    setTimeout( async () => {  
+      await i18n.changeLanguage(lng);
+      window.location.reload();
+    }, 1500);
+  };
+
   return (
     <footer id="footer_wrapper">
       <nav id="nav_footer">
@@ -75,7 +77,7 @@ export default function Footer(props) {
           <div className='FR_Sec1_f Dimensions'>
             <h6>{t('Footer.Titles.Langes')}</h6>
             {Object.keys(lngs).map((lng)=> (
-              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{i18n.changeLanguage(lng);R_Page();}}>
+              <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{Tgle_LngChng(lng);}}>
               <img src={lngs[lng].flag} alt="Flag" width='25px' />&nbsp;{lngs[lng].nativeName}
               </NavDropdown.Item>
             ))}
