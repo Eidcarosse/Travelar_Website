@@ -151,7 +151,7 @@ export default function Navbar(props) {
               </NavDropdown>
             </span>
             <span className="btn-cstm App_Downld try_trans">
-              <a href="" target="_blank">
+              <a href="/" target="_blank">
                 {t("Navbar.Titles.Dapp")}
               </a>
             </span>

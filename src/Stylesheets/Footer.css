@@ -39,11 +39,20 @@
     -webkit-text-fill-color:transparent;
     font-family: Carme;
     font-weight: bolder;
-    text-align: left;
     font-size: 1.5em;
     margin-bottom: 1.2em;
     cursor: default;
+    
 }
+
+[dir = 'rtl'].FR_Sec1 h6 {
+    text-align: right;
+}
+
+[dir = 'rtl'].FR_Sec1 li {
+    text-align: right;
+}
+
 
 .FR_Sec1_a {
     display: flex;
@@ -112,6 +121,13 @@
     } 
 }
 
+@media (min-width : 1201px) {
+    .FR_Sec1_f {
+        display: none;
+    }
+    
+}
+
 @media (max-width: 1200px) {
 
 #nav_footer{
@@ -172,6 +188,10 @@
 .FR_Sec2_c img {
     height: 20px;
     width: 19px;
+}
+
+.FR_Sec1_f {
+    display: block;
 }
 }
 

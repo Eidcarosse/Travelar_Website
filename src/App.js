@@ -29,6 +29,7 @@ import {
 library.add(faBars, faX, faCheckDouble, faGlobe, faCarSide);
 
 function App() {
+  const { t } = useTranslation();
   let [loading, setLoading] = useState(false);
   const setSpner = () => {
     setLoading(true)
@@ -38,25 +39,24 @@ function App() {
   };
 
   const Scroll_Top = () => {
-    const active = 0;
-    document.documentElement.scrollTop = active;
-    document.body.scrollTop = active;
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
   };
-  const { t } = useTranslation();
-
+  
   return (
     <>
       <DataProvider value={Scroll_Top}>
         <Navbar setSpner={setSpner} />
         <HashLoader
           style={{
+            zIndex: "3",
             width: "fit-content",
-            margin: "5em 50% 0 50%",
+            margin: "15% 50% 0 50%",
             position: "fixed",
           }}
-          color="#00493E"
           loading={loading}
-          size={80}
+          color="#004225"
+          size={85}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
@@ -71,7 +71,7 @@ function App() {
                 logo={hme_logo}
               />,
               <ServicesInfo key="Index_Svcs" />,
-              <MwBtn />,
+              <MwBtn key='MWB1122'/>,
               <InfoBanner
                 key="IIB01"
                 Title={t("InfoBanner.Titles.Home")}
