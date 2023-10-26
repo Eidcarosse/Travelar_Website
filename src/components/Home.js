@@ -36,7 +36,7 @@ export default function BnerContent(props) {
             </span>
             <span className="Item__3">
               <a href="" target="_blank">
-                <button className="BANR_INF_BTN AddcC">{t('Button.Lsgo')} &nbsp;&nbsp;<FontAwesomeIcon icon='car-side'/></button>
+                <button className="BANR_INF_BTN">{t('Button.Lsgo')} &nbsp;&nbsp;<FontAwesomeIcon icon='car-side'/></button>
               </a>
             </span>
             </div>

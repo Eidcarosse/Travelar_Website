@@ -49,27 +49,27 @@ export default function Navbar(props) {
       flag: "https://www.worldometers.info/img/flags/uk-flag.gif",
     },
     fr: {
-      nativeName: "French",
+      nativeName: "Français",
       flag: "https://www.worldometers.info/img/flags/fr-flag.gif",
     },
     ger: {
-      nativeName: "German",
+      nativeName: "Deutsch",
       flag: "https://www.worldometers.info/img/flags/gm-flag.gif",
     },
     ru: {
-      nativeName: "Russian",
+      nativeName: "Русский",
       flag: "https://www.worldometers.info/img/flags/rs-flag.gif",
     },
     ara: {
-      nativeName: "Arabic",
+      nativeName: "عربي",
       flag: "https://www.worldometers.info/img/flags/sa-flag.gif",
     },
     ur: {
-      nativeName: "Urdu",
+      nativeName: "اردو",
       flag: "https://www.worldometers.info/img/flags/pk-flag.gif",
     },
     ja: {
-      nativeName: "Japanese",
+      nativeName: "日本語",
       flag: "https://www.worldometers.info/img/flags/ja-flag.gif",
     },  
   };
@@ -88,27 +88,27 @@ export default function Navbar(props) {
       <header id="nav_wrapper" className="nav_wrapper">
         <nav id="nav" dir={idir}>
           <div className="nav left">
-            <span className="Main_Logo">
+            <span className="Main_Logo" S_language={Slng}>
               <Link to="/" onClick={Scroll_Top}>
                 <strong>{t("Navbar.Titles.Logo")}</strong>
               </Link>
             </span>
-            <span className="nav-link" dir={idir}>
+            <span className="nav-link" dir={idir} S_language={Slng}>
               <Link to="/" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Home")}
               </Link>
             </span>
-            <span className="nav-link">
+            <span className="nav-link" S_language={Slng}>
               <Link to="/Services" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Services")}
               </Link>
             </span>
-            <span className="nav-link">
+            <span className="nav-link" S_language={Slng}>
               <Link to="/AboutUs" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.About")}
               </Link>
             </span>
-            <span className="nav-link">
+            <span className="nav-link" S_language={Slng}>
               <Link to="/Contact" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Contact")}
               </Link>

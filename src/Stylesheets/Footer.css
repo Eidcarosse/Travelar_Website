@@ -2,6 +2,10 @@
     font-family: TKL;
     src: url(../Fonts/TakeLooks.otf);
 }
+.Bototma {
+    background-image: linear-gradient(139deg, #00E784, #00493E,#00493E, #00E784);
+    height: 10px;
+}
 #footer_wrapper
 {
     overflow: hidden;
@@ -37,7 +41,7 @@
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color:transparent;
-    font-family: Carme;
+    font-family: Agbalumo;
     font-weight: bolder;
     font-size: 1.5em;
     margin-bottom: 1.2em;

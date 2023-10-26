@@ -132,7 +132,9 @@ export default function Footer(props) {
               <span><a href="/" rel='noreferrer'><img src={lin_icon}  alt="LI" /></a></span>
               <span><a href="/" rel='noreferrer'><img src={ig_icon}  alt="IG" /></a></span>
           </div>
-        </div></nav>
+        </div>
+        </nav>
+        <div className='Bototma'></div>
     </footer>
   )
 }

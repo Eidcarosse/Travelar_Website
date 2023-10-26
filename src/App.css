@@ -23,6 +23,7 @@ label {
     font-weight: bold;
 }
 
+
 body {
     caret-color: var(--Prim);
     font-family: Inter;
@@ -41,6 +42,14 @@ ul {
    
     font-weight: bold ;
 }
+
+.txt_deco {
+    text-decoration-style:solid;
+    text-decoration-skip-ink:all;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
 
 @font-face {
     font-family: Logo_Font;

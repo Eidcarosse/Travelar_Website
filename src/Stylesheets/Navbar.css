@@ -30,8 +30,6 @@ button:focus, input:focus {
     margin: auto;
     width: 86%;
     overflow: visible;
-    box-shadow: 0px 3px 10px rgba(0, 0. 0, 0.1);
-    font-family: Poppins;
     height: 5em;
 } 
 
@@ -55,12 +53,17 @@ button:focus, input:focus {
     margin: auto 0;
     text-align: left;
     width: fit-content;
+    font-family: Agbalumo;
 }
 
+[S_language = 'ur'].Main_Logo {
+    font-family: Noto Kufi Arabic;
+
+}
 
 .Main_Logo a {
     cursor: default;
-    font-family: Logo_Font;
+   
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -72,9 +75,13 @@ button:focus, input:focus {
     text-align: center;
     line-height: 4.5em;
     padding: 0 1em;
-    font-family: Inter;
+    font-family: Carme;
     font-weight: bold;
     
+}
+
+[S_language = 'ur'].nav-link {
+    font-family: Noto Kufi Arabic;
 }
 
 .nav-link:nth-child(2){

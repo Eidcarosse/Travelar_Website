@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";

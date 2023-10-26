@@ -64,35 +64,24 @@
   animation: bounceIn;
   animation-duration: 2s;
   overflow: hidden;
-  padding: 2vh 3vw;
+  padding: 1vh 1vw 1vh 1vw;
   border-style: solid;
-  border-radius: 0.9em;
-  border-width: 1.5px 1px 1.5px 1px;
+  border-width: 0px 0px 1.5px 0px;
   color : #00493E;
   font-family: Carme;
-  font-size: larger;
-  font-weight: bold; 
+  font-size: 30px;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent; 
   background : transparent;
-  transition: border-radius 0.2s ease-in;
+  transition: border-width 0.1s ease-in;
 }
-
 
 
 .BANR_INF_BTN:hover{
-  border-width: 1.5px 0px 1.5px 1px;
-  border-top-right-radius: 0em;
-  border-bottom-right-radius: 0em;
-  
+  -webkit-text-fill-color :#fff;
+  border-width: 0px 0px 2.5px 0px;
 }
 
-.AddcC {
-  position: relative;
-}
-.AddcC:hover::after {
-  content: ':::::::::';
-  position: absolute;
- 
-}
 .BW_Data-right {
   width: fit-content;
   display: flex;
@@ -168,7 +157,7 @@
     }
     
     .BANR_INF_BTN{
-      font-size: large;
+      font-size: 26px;
     }
     
   }
@@ -196,7 +185,7 @@
 }
 
 .BANR_INF_BTN{
-  font-size: medium;
+  font-size: 24px;
 }
 
 .BW_Data-right {
