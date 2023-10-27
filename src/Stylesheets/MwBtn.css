@@ -7,6 +7,9 @@
     flex-direction: column;
     justify-content: center;
 }
+
+
+
 .MWStyle {
     width: fit-content;
     height: fit-content;
@@ -17,6 +20,7 @@
     padding: 1em 2em;
     border-radius: 1em;
 }
+
 
 @media (max-width: 1400px) {
     .MWB_Container {

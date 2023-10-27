@@ -26,19 +26,20 @@
   margin-top: 7vh;
   margin-right: 2vw;
   margin-left: 2vw;
+  font-family: Carme;
   width: auto;
   height: auto;
 }
 
 .Item__1 h1{
   color: #00493E;
-  font-family: Carme;
   font-weight: bold;
   font-size: 2.9em;
   
 }
 
 .Item__2{
+  font-family: Inter;
   margin-top: 4vh;
   margin-left: 2.3vw;
   margin-right: 2.3vw;
@@ -49,7 +50,6 @@
 .Item__2 p{
   color : #2D2E2E;
   font-size: 1.1em;
-  font-family: Inter;
   text-align: justify;
 }
 
@@ -58,6 +58,7 @@
   margin-left : 2vw;
   margin-right: 2vw;
   border: 1px ;
+  font-family: Carme;
 }
 
 .BANR_INF_BTN{
@@ -67,8 +68,7 @@
   padding: 1vh 1vw 1vh 1vw;
   border-style: solid;
   border-width: 0px 0px 1.5px 0px;
-  color : #00493E;
-  font-family: Carme;
+  color : #00493E; 
   font-size: 30px;
   -webkit-text-stroke: 1.5px;
   -webkit-text-fill-color: transparent; 
@@ -99,13 +99,6 @@
   margin-left: 2vw; 
 }
 
-[dir = 'rtl'].Item__4 {
-  margin-left: 0;
-  border-top-left-radius: 0em;
-  border-bottom-left-radius: 0em;
-  border-top-right-radius: 2.5em;
-  border-bottom-right-radius: 2.5em;
-}
 
 .Item__4 img{
   animation: bounceInRight;
@@ -193,9 +186,6 @@
   justify-content: right;
 }
 
-[dir = 'rtl'].BW_Data-right {
-  justify-content: left;
-}
 
 .Item__4{
   border-top-left-radius: 5em;

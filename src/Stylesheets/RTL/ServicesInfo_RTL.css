@@ -1,0 +1,25 @@
+[dir = "rtl"].efi2 {
+    overflow: hidden;
+    height: fit-content;
+    border-style: solid;
+    border-color: #00E784;
+    border-width: 0px 2px 0px 0px;
+    padding: 1.5em; 
+
+}
+
+[S_language = 'ara'].H_info_h3 {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ur'].H_info_h3 {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ara'].H_info_li {
+    font-family: Noto Sans Arabic;
+}
+
+[S_language = 'ur'].H_info_li {
+    font-family: Noto Sans Arabic;
+}

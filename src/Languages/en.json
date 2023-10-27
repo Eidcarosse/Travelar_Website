@@ -34,6 +34,10 @@
           "Li7": "Enhanced Security",
           "Li8": "Customized Choices"
        },
+       "MwBtn" : {
+         "Heading" : "Explore Services",
+         "Btn" : "Read More"
+       },
        "InfoBanner": {
           "Titles": {
              "Home": "Travelar",
@@ -52,7 +56,8 @@
           },
           "Descriptions": {
              "Home": "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services."
-          }
+          },
+          "RMore" : "Read More"
        },
        "Footer": {
           "Titles": {

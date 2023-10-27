@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
-import '../Stylesheets/About.css'
+import '../Stylesheets/About.css';
+import '../Stylesheets/RTL/About_RTL.css';
 import "animate.css/animate.min.css";
 import AboutImg from '../SVGs/AboutImg.svg'
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -24,9 +25,9 @@ export default function About() {
         <section id="About">
           <div className="Abt_Wrapper">
             <div className="Abt_description" dir={idir}>
-              <h3>{t("About.Titles.Home")}</h3>
-              <p>{t("About.Descriptions.Home")}</p>
-              <Link to='/AboutUs' onClick={Scroll_Top} className='Read_Mr_Dn try_trans'>Read More</Link>
+              <h3 className='Abt_descrp_h3' S_language={Slng}>{t("About.Titles.Home")}</h3>
+              <p className='Abt_descrp_p' S_language={Slng}>{t("About.Descriptions.Home")}</p>
+              <Link to='/AboutUs' onClick={Scroll_Top} className='Read_Mr_Dn try_trans' S_language={Slng}>{t('About.RMore')}</Link>
             </div>
       
             <div className="Abt_img">

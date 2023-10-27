@@ -1,47 +1,50 @@
-
-#Info_Banner{
+#Info_Banner {
     margin-top: 3rem;
     height: fit-content;
-    background-color: #fff;  
+    background-color: #fff;
 }
 
 .Info_Banner_Wrapr {
     height: 36.4vh;
     width: 87%;
-    margin : auto;
-    overflow:hidden;
+    margin: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     column-gap: 5vw;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     background: var(--Info_Grad);
     border-radius: 1em;
 }
 
-.description { 
+.description {
     color: #fff;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: Inter;
     width: 50%;
     height: auto;
 }
 
-.description h3 {
+.descp_h3 {
 
     font-family: Carme;
-     font-size : 2em;
-     color : #00E784;
+    font-size: 2em;
+    color: #00E784;
 }
 
-div.Info_Banner_Wrapr span img{
+.descp_p {
+
+    font-family: Inter;
+}
+
+div.Info_Banner_Wrapr span img {
     padding: 4%;
     width: 100%;
     height: 95%;
 }
 
-.mb_img{
+.mb_img {
     background-color: #fff;
     width: 30%;
     height: 65%;
@@ -49,32 +52,32 @@ div.Info_Banner_Wrapr span img{
 }
 
 @media (max-width: 1400px) {
-    .Info_Banner_Wrapr {     
+    .Info_Banner_Wrapr {
         width: 97%;
-    }  
+    }
 }
 
 @media (max-width: 1200px) {
 
-.Info_Banner_Wrapr {
-    height: 34.4vh;
-}
+    .Info_Banner_Wrapr {
+        height: 34.4vh;
+    }
 
-.description { 
-    font-size: 1em;
-}
+    .description {
+        font-size: 1em;
+    }
 
-.mb_img{
-    width: 25%;
-    height: 60%;
-}
+    .mb_img {
+        width: 25%;
+        height: 60%;
+    }
 
-div.Info_Banner_Wrapr span img{
-    padding: 5%;
-    width: 100%;
-    height: 99%;
-}
-    
+    div.Info_Banner_Wrapr span img {
+        padding: 5%;
+        width: 100%;
+        height: 99%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -82,33 +85,33 @@ div.Info_Banner_Wrapr span img{
         height: 38.4vh;
         flex-direction: column;
     }
-    
-    .description { 
+
+    .description {
         width: 100%;
         height: fit-content;
     }
-    
+
     .description h3 {
-         padding-top: 0.5em;
-         padding-left: 2vw;
-         padding-right: 2vw;
+        padding-top: 0.5em;
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 
     .description p {
         padding-left: 2vw;
         padding-right: 2vw;
     }
-    
-    .mb_img{
+
+    .mb_img {
         width: 50%;
         height: fit-content;
         padding-bottom: 1em;
     }
-    
-    div.Info_Banner_Wrapr span img{
+
+    div.Info_Banner_Wrapr span img {
         padding: 6%;
         width: 100%;
         height: 130px;
     }
-    
+
 }

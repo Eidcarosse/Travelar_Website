@@ -1,0 +1,29 @@
+[S_language = 'ur'].Main_Logo {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ara'].Main_Logo {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ur'].nav-link {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ara'].nav-link {
+    font-family: Noto Kufi Arabic;
+}
+
+[dir = 'rtl'].nav-link:nth-child(2){
+    margin-left: 0em;
+    margin-right: 8em;
+}
+
+[S_language = 'ara'].App_Downld {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ur'].App_Downld {
+    font-family: Noto Kufi Arabic;
+}
+

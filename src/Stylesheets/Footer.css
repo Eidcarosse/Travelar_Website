@@ -1,8 +1,4 @@
-@font-face {
-    font-family: TKL;
-    src: url(../Fonts/TakeLooks.otf);
-}
-.Bototma {
+.Grad_Btm {
     background-image: linear-gradient(139deg, #00E784, #00493E,#00493E, #00E784);
     height: 10px;
 }
@@ -35,7 +31,7 @@
 }
 
 
-.FR_Sec1 h6 {
+.FR_Sec1_h6 {
     background : linear-gradient(to top,#00905E 5%,#00E784 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -47,14 +43,6 @@
     margin-bottom: 1.2em;
     cursor: default;
     
-}
-
-[dir = 'rtl'].FR_Sec1 h6 {
-    text-align: right;
-}
-
-[dir = 'rtl'].FR_Sec1 li {
-    text-align: right;
 }
 
 

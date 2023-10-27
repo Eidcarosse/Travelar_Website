@@ -1,0 +1,23 @@
+[S_language = 'ara'].Abt_descrp_h3 {
+   font-family: Noto Kufi Arabic ;
+}
+
+[S_language = 'ara'].Abt_descrp_p {
+    font-family: Noto Sans Arabic;
+}
+
+[S_language = 'ara'].Read_Mr_Dn{
+    font-family: Noto Sans Arabic;
+}
+
+[S_language = 'ur'].Abt_descrp_h3 {
+    font-family: Noto Kufi Arabic ;
+ }
+ 
+ [S_language = 'ur'].Abt_descrp_p {
+     font-family: Noto Sans Arabic;
+ }
+ 
+ [S_language = 'ur'].Read_Mr_Dn{
+     font-family: Noto Sans Arabic;
+ }

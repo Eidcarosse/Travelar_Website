@@ -41,19 +41,11 @@
     padding: 1.5em; 
 }
 
-[dir = "rtl"].efi2 {
-    overflow: hidden;
-    height: fit-content;
-    border-style: solid;
-    border-color: #00E784;
-    border-width: 0px 2px 0px 0px;
-    padding: 1.5em; 
-
+.H_info_h3 {
+    font-family: Carme;
 }
 
-
 div.Hme_info h3 {
-    font-family: Carme;
     font-weight: bold;
     font-size: 2em;
     padding-bottom: 0.5em;
@@ -74,10 +66,12 @@ div.Hme_info h3 {
    
 }
 
+.H_info_li {
+    font-family: Inter;
+}
 
 div.Hme_info li {
     padding-top: 5px;
-    font-family: Inter;
     font-size: 1.5em;
     list-style-type: none;
 }

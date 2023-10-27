@@ -56,11 +56,6 @@ button:focus, input:focus {
     font-family: Agbalumo;
 }
 
-[S_language = 'ur'].Main_Logo {
-    font-family: Noto Kufi Arabic;
-
-}
-
 .Main_Logo a {
     cursor: default;
    
@@ -80,17 +75,8 @@ button:focus, input:focus {
     
 }
 
-[S_language = 'ur'].nav-link {
-    font-family: Noto Kufi Arabic;
-}
-
 .nav-link:nth-child(2){
     margin-left: 8em;
-}
-
-[dir = 'rtl'].nav-link:nth-child(2){
-    margin-left: 0em;
-    margin-right: 8em;
 }
 
 .nav.right {
@@ -104,6 +90,7 @@ button:focus, input:focus {
 .Clapsed_Btn {
     background-color: none;
 }
+
 
 .App_Downld {
     border-radius: 0.7em;

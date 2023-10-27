@@ -1,8 +1,9 @@
+import '../Stylesheets/Footer.css';
+import '../Stylesheets/RTL/Footer_RTL.css';
 import React, { useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from '../Contexts/DataContext';
-import '../Stylesheets/Footer.css'
 import badge1 from '../images/apple-badge.png';
 import badge2 from '../images/google-badge.png';
 import fb_icon from '../images/fb_icon.png'
@@ -65,13 +66,13 @@ export default function Footer(props) {
       <nav id="nav_footer">
         <div className='FR_Sec1' dir={idir}>
           <div className='FR_Sec1_a'>
-            <h6>{t('Footer.Titles.Travelar')}</h6>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Travelar')}</h6>
             <a rel='noreferrer' href="/" target='_blank'><img className='Badge_d1 try_trans' src={badge1} alt="App Store Download =>" /></a>
             <a rel='noreferrer' href="/" target='_blank'><img className='Badge_d2 try_trans' src={badge2} alt="Play Store Download =>" /></a>
           </div>
           
           <div className='FR_Sec1_b Dimensions'>
-            <h6>{t('Footer.Titles.Services')}</h6>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Services')}</h6>
             <ul>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Eat</a></li>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Get</a></li>
@@ -80,7 +81,7 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className='FR_Sec1_c Dimensions'>
-            <h6>{t('Footer.Titles.Partners')}</h6>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Partners')}</h6>
             <ul>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Corporate packages</a></li>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Restaurant Delivery</a></li>
@@ -89,7 +90,7 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className='FR_Sec1_d Dimensions'>
-            <h6>{t('Footer.Titles.JoinTeam')}</h6>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.JoinTeam')}</h6>
             <ul>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">About us</a></li>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Enginerring at Travelar</a></li>
@@ -99,7 +100,7 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className='FR_Sec1_e Dimensions'>
-            <h6>{t('Footer.Titles.Aboutus')}</h6>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Aboutus')}</h6>
             <ul>
             <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Our Social Impact</a></li>
             <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Information security</a></li>
@@ -107,7 +108,7 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className='FR_Sec1_f Dimensions'>
-            <h6>{t('Footer.Titles.Langes')}</h6>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Langes')}</h6>
             <div>
             {Object.keys(lngs).map((lng)=> (
               <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{Tgle_LngChng(lng);}}>
@@ -134,7 +135,7 @@ export default function Footer(props) {
           </div>
         </div>
         </nav>
-        <div className='Bototma'></div>
+        <div className='Grad_Btm'></div>
     </footer>
   )
 }

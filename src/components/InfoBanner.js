@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../Stylesheets/InfoBanner.css'
+import '../Stylesheets/RTL/InfoBanner_RTL.css'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import i18next from 'i18next';
@@ -17,8 +18,8 @@ export default function InfoBanner(props) {
         <section id="Info_Banner">
           <div className="Info_Banner_Wrapr" dir={idir}>
             <span className="description">
-                <h3>{props.Title}</h3>
-                <p>{props.description}</p>
+                <h3 className='descp_h3' S_language={Slng}>{props.Title}</h3>
+                <p className='descp_p' S_language={Slng}>{props.description}</p>
             </span>
 
             <span className="mb_img">

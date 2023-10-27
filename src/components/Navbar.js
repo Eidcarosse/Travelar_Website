@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css/animate.min.css";
 import "../Stylesheets/Navbar.css";
+import '../Stylesheets/RTL/Navbar_Ar_Ur.css';
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from "../Contexts/DataContext";
@@ -48,6 +49,10 @@ export default function Navbar(props) {
       nativeName: "English",
       flag: "https://www.worldometers.info/img/flags/uk-flag.gif",
     },
+    ara: {
+      nativeName: "عربي",
+      flag: "https://www.worldometers.info/img/flags/sa-flag.gif",
+    },
     fr: {
       nativeName: "Français",
       flag: "https://www.worldometers.info/img/flags/fr-flag.gif",
@@ -59,10 +64,6 @@ export default function Navbar(props) {
     ru: {
       nativeName: "Русский",
       flag: "https://www.worldometers.info/img/flags/rs-flag.gif",
-    },
-    ara: {
-      nativeName: "عربي",
-      flag: "https://www.worldometers.info/img/flags/sa-flag.gif",
     },
     ur: {
       nativeName: "اردو",
@@ -128,7 +129,7 @@ export default function Navbar(props) {
                 size="xl"
               />
               <NavDropdown id="basic-nav-dropdown">
-                {Object.keys(lngs).map((lng) => (
+                <span></span>{Object.keys(lngs).map((lng) => (
                   <NavDropdown.Item
                     key={lng}
                     style={{
@@ -150,7 +151,7 @@ export default function Navbar(props) {
                 ))}
               </NavDropdown>
             </span>
-            <span className="btn-cstm App_Downld try_trans">
+            <span className="btn-cstm App_Downld try_trans" S_language={Slng}>
               <a href="/" target="_blank">
                 {t("Navbar.Titles.Dapp")}
               </a>

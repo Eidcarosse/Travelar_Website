@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Stylesheets/ServicesInfo.css";
+import "../Stylesheets/RTL/ServicesInfo_RTL.css";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,10 +30,10 @@ export default function ServicesInfo() {
               <img className="Hme_img_ds" src={bnrimg} alt="Our Services =>" />
             </div>
             <div className="Hme_info" dir={`${ddir}`}>
-              <span>
+              <span className="H_info_h3" S_language={Slng}>
                 <h3>{t("ServicesInfo.Heading")}</h3>
               </span>
-              <span className="efi2" dir={`${ddir}`}>
+              <span className="H_info_li efi2" dir={`${ddir}`} S_language={Slng}>
                 <ul>
                   <ScrollAnimation
                     animateIn="animate__fadeInRight"

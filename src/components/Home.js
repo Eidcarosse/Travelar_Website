@@ -1,4 +1,5 @@
 import '../Stylesheets/Home.css'
+import '../Stylesheets/RTL/Home_Ar_Ur.css'
 import "animate.css/animate.min.css";
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -25,16 +26,16 @@ export default function BnerContent(props) {
         <section id="Gradient_Home">
           <div className="Banner_Wrapper" dir={idir}>
             <div className='BW_Data-left'>
-            <span className="Item__1">
+            <span className="Item__1" S_language={Slng}>
               
               <h1>{props.title}</h1>
             </span>
-            <span className="Item__2">
+            <span className="Item__2" S_language={Slng}>
               <p>
                {props.description}
               </p>
             </span>
-            <span className="Item__3">
+            <span className="Item__3" S_language={Slng}>
               <a href="" target="_blank">
                 <button className="BANR_INF_BTN">{t('Button.Lsgo')} &nbsp;&nbsp;<FontAwesomeIcon icon='car-side'/></button>
               </a>

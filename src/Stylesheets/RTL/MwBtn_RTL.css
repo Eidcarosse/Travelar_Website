@@ -1,0 +1,16 @@
+[S_language = 'ara'].head_style {
+    font-family: Noto Kufi Arabic;
+}
+
+[S_language = 'ur'].head_style {
+    font-family: Noto Kufi Arabic;
+}
+
+
+[S_language = 'ara'].MWStyle {
+    font-family: Noto Sans Arabic;
+}
+
+[S_language = 'ur'].MWStyle {
+    font-family: Noto Sans Arabic;
+}

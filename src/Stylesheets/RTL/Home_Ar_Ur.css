@@ -1,0 +1,48 @@
+[S_language = 'ur'].Item__1 {
+  font-family: 'Noto Kufi Arabic';
+}
+
+[S_language = 'ara'].Item__1 {
+  font-family: 'Noto Kufi Arabic';
+}
+
+[S_language = 'ur'].Item__2 {
+  font-family: 'Noto Sans Arabic';
+}
+
+[S_language = 'ara'].Item__2 {
+  font-family: 'Noto Sans Arabic';
+}
+
+[S_language = 'ur'].Item__3 {
+  font-family: 'Noto Kufi Arabic';
+}
+
+[S_language = 'ara'].Item__3 {
+  font-family: 'Noto Kufi Arabic';
+}
+
+[dir = 'rtl'].Item__4 {
+  margin-left: 0;
+  border-top-left-radius: 0em;
+  border-bottom-left-radius: 0em;
+  border-top-right-radius: 2.5em;
+  border-bottom-right-radius: 2.5em;
+}
+
+@media (max-width:768px) {
+
+[dir = 'rtl'].Item__4{
+  border-bottom-right-radius: 0;
+}
+
+[dir = 'rtl'].BW_Data-right {
+  justify-content: left;
+}
+ 
+}
+
+
+
+
+
