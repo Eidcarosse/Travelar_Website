@@ -24,13 +24,12 @@
 }
 .MD_Details {
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 2px 15px 15px 15px;
     width: 87%;
     margin: auto;
     font-family: Inter;
     border-style: dashed;
-    border-width: 0px 2px 2px 2px;
+    border-width: 0px 2px 0px 2px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 14px;

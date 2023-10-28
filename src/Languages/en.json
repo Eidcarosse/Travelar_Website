@@ -1,72 +1,164 @@
 {
-      "Navbar": {
-          "Titles": {
-             "Logo": "Travelar",
-             "Home": "Home",
-             "Services": "Services",
-             "About": "About us",
-             "Contact": "Contact",
-             "Dapp": "Download App"
+  "Navbar": {
+    "Titles": {
+      "Logo": "Travelar",
+      "Home": "Home",
+      "Services": "Services",
+      "About": "About us",
+      "Contact": "Contact",
+      "Dapp": "Download App"
+    }
+  },
+  "Titles": {
+    "Home": "Travel with us",
+    "Services": "Services",
+    "Aboutus": "About us",
+    "Contactus": "Contact us"
+  },
+  "Descriptions": {
+    "Home": "Your ultimate destination for seamless car booking experiences! Whether you're planning a road trip, a business venture, or a leisurely escape, Travelar is here to redefine the way you embark on your journeys. With a vast network of trusted rental providers and a user-friendly interface, we bring you a world of convenience at your fingertips.",
+    "Services": "Traveler, the innovative app, offers a seamless experience for users by providing two essential services - medicine delivery and car booking. You can conveniently order prescription medications from the comfort of their homes. The app ensures timely and safe delivery, making healthcare more accessible than ever. Additionally, Traveler's car booking service enables you to effortlessly arrange transportation for your journeys. Traveler offers a reliable and efficient solution, ensuring users reach their destinations with ease. Traveler is truly a one-stop platform, catering to both healthcare and transportation needs.",
+    "Aboutus": "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Careem operates in over 70 cities across 10 countries, from Morocco to Pakistan."
+  },
+  "Button": {
+    "Lsgo": "Let's go"
+  },
+  "ServicesInfo": {
+    "Heading": "We Provide",
+    "Li1": "Certified Drivers",
+    "Li2": "Medicine Delivery",
+    "Li3": "Car Booking",
+    "Li4": "Real-Time Tracking",
+    "Li5": "Emergency Sharing",
+    "Li6": "Peace of Mind",
+    "Li7": "Enhanced Security",
+    "Li8": "Customized Choices"
+  },
+  "MwBtn": {
+    "Heading": "Explore Services",
+    "Btn": "Read More"
+  },
+  "InfoBanner": {
+    "Titles": {
+      "Home": "Travelar",
+      "Svcs1": "Medicine Delivery",
+      "Svcs2": "Car Booking"
+    },
+    "Descriptions": {
+      "Home": "Enjoy 30% discount on your first Rides !",
+      "Svcs1": "Convinient hassle-free medicine delivery",
+      "Svcs2": "Secure and fully tracked rides"
+    }
+  },
+  "About": {
+    "Titles": {
+      "Home": "About us"
+    },
+    "Descriptions": {
+      "Home": "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services."
+    },
+    "RMore": "Read More"
+  },
+  "Footer": {
+    "Titles": {
+      "Travelar": "Travelar",
+      "Services": "Services",
+      "Partners": "Partners",
+      "JoinTeam": "Join our Teams",
+      "Aboutus": "About us",
+      "Langes": "Languages"
+    }
+  },
+  "Services": {
+    "Headings": {
+      "OrSvcs": "Our Services",
+      "YourHDlvr": "Your Health, Delivered",
+      "YourGTAssis": "Your GoTo Assistant",
+      "FAQ": "FAQ's"
+    },
+    "Content": {
+      "YourHDlvr": {
+        "CMDApp": "Convenient Medicine Delivery App",
+        "CMDAppC": "In today's fast-paced world, where our lives are constantly on the move, convenience and accessibility are paramount. One aspect that has seen significant innovation and transformation is healthcare, and in particular, medicine delivery. 'Traveler' is a revolutionary mobile app that has redefined the way we access essential medicines. With its user-friendly interface and an extensive network of pharmacies, Traveler is your go-to solution for hassle-free medicine delivery.",
+        "TTExp": "The Traveler Experience",
+        "TTExpC": "Traveler simplifies the process of ordering and receiving your medications. With just a few taps on your smartphone, you can have your prescribed medicines delivered right to your doorstep. No more waiting in long queues at the pharmacy or worrying about running out of vital medications.",
+        "KFoT": "Key Features of Traveler",
+        "KFoTC": {
+          "des": "Traveler offers a range of features designed to make your medicine delivery experience as smooth as possible:",
+          "H&C": {
+            "EPU": "Easy Prescription Upload:",
+            "PL": "Pharmacy Locator:",
+            "SP": "Secure Payment:",
+            "ROT": "Real-time Order Tracking:",
+            "CS": "Customer Support:",
+            "EPUC": "Simply upload a photo of your prescription, and Traveler's partner pharmacies will process it promptly.",
+            "PLC": "Find nearby pharmacies that are part of the Traveler network, ensuring that you have access to a wide range of medicines.",
+            "SPC": "Traveler supports secure payment options, providing peace of mind for every transaction.",
+            "ROTC": "Keep track of your order from the moment it's placed until it arrives at your doorstep",
+            "CSC": "Traveler's dedicated customer support team is available to assist you with any questions or concerns."
           }
-       },
-       "Titles": {
-          "Home": "Travel with us",
-          "Services": "Services",
-          "Aboutus": "About us",
-          "Contactus": "Contact us"
-       },
-       "Descriptions": {
-          "Home": "Your ultimate destination for seamless car booking experiences! Whether you're planning a road trip, a business venture, or a leisurely escape, Travelar is here to redefine the way you embark on your journeys. With a vast network of trusted rental providers and a user-friendly interface, we bring you a world of convenience at your fingertips.",
-          "Services": "Traveler, the innovative app, offers a seamless experience for users by providing two essential services - medicine delivery and car booking. You can conveniently order prescription medications from the comfort of their homes. The app ensures timely and safe delivery, making healthcare more accessible than ever. Additionally, Traveler's car booking service enables you to effortlessly arrange transportation for your journeys. Traveler offers a reliable and efficient solution, ensuring users reach their destinations with ease. Traveler is truly a one-stop platform, catering to both healthcare and transportation needs.",
-          "Aboutus": "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Careem operates in over 70 cities across 10 countries, from Morocco to Pakistan."
-       },
-       "Button" : {
-         "Lsgo" : "Let's go"
-       },
-       "ServicesInfo": {
-          "Heading": "We Provide",
-          "Li1": "Certified Drivers",
-          "Li2": "Medicine Delivery",
-          "Li3": "Car Booking",
-          "Li4": "Real-Time Tracking",
-          "Li5": "Emergency Sharing",
-          "Li6": "Peace of Mind",
-          "Li7": "Enhanced Security",
-          "Li8": "Customized Choices"
-       },
-       "MwBtn" : {
-         "Heading" : "Explore Services",
-         "Btn" : "Read More"
-       },
-       "InfoBanner": {
-          "Titles": {
-             "Home": "Travelar",
-             "Svcs1": "Medicine Delivery",
-             "Svcs2": "Car Booking"
-          },
-          "Descriptions": {
-             "Home": "Enjoy 30% discount on your first Rides !",
-             "Svcs1": "Convinient hassle-free medicine delivery",
-             "Svcs2": "Secure and fully tracked rides"
+        },
+        "BOT": "Benefits of Traveler",
+        "BOTc": {
+          "des": "Traveler offers numerous advantages, including:",
+          "H&C": {
+            "Cn": "Convenience:",
+            "TS": "Time-Saving:",
+            "Acs": "Accessibility:",
+            "HOTG": "Healthcare on the Go:",
+            "CnC": "Order your medications from the comfort of your home, office, or even while traveling.",
+            "TSC": "No more time wasted in pharmacy queues; Traveler ensures your medicines are delivered on time.",
+            "AcsC": "Traveler partners with a vast network of pharmacies, so you have access to a wide range of medicines.",
+            "HOTGC" : "For frequent travelers, having access to medicines from any location is invaluable.",
+            "JTTC": "Join the Traveler Community",
+            "JTTCC": "Join the Traveler community and experience a new level of convenience when it comes to your healthcare needs. Download the Traveler app today and say goodbye to the hassle of medicine procurement. Your well-being is our priority, and we're here to make your life easier, one prescription at a time."
           }
+        }
+      },
+      "YGTA": {
+         "FTASR": "Fully Tracked and Secure Rides",
+         "FTASRC": "In today's fast-paced world, where getting around efficiently and securely is crucial, car booking services have revolutionized the way we commute. Our car booking app is designed to provide you with secure and fully tracked rides, ensuring peace of mind during your journeys.",
+         "TCBE": "The Car Booking Experience",
+         "TCBEC": "Our car booking service simplifies the process of reserving and tracking your rides. With just a few taps on your smartphone, you can book a ride that's secure, efficient, and fully traceable.",
+         "KFoCB": "Key Features of Car Booking",
+         "KFoCBC": {
+           "des": "Our car booking app offers a range of features designed to make your transportation experience as smooth as possible:",
+           "H&C": {
+             "SAER": "Secure and Efficient Rides:",
+             "RRT": "Real-time Ride Tracking:",
+             "DR": "Driver Ratings:",
+             "SP": "Secure Payment:",
+             "SAERC": "Simply upload a photo of your prescription, and Traveler's partner pharmacies will process it promptly.",
+             "RRTC": "Find nearby pharmacies that are part of the Traveler network, ensuring that you have access to a wide range of medicines.",
+             "DRC": "Traveler supports secure payment options, providing peace of mind for every transaction.",
+             "SPC": "Keep track of your order from the moment it's placed until it arrives at your doorstep"
+           }
+         },
+         "BOCB": "Benefits of Car Booking",
+         "BOCBc": {
+           "des": "Our car booking service offers numerous advantages, including:",
+           "H&C": {
+             "Scu": "Security:",
+             "Efy": "Efficiency",
+             "Ty": "Transparency::",
+             "24A": "24/7 Accessbility:",
+             "ScuC": "Your safety is our top priority.",
+             "EfyC": "Save time and energy with our efficient rides.",
+             "TyC": "We provide transparent, fully tracked rides for your peace of mind.",
+             "24AC": "Our services are available whenever you need them."
+           }
+         },
+         "JCBC" : "Join the Car Booking Community",
+         "JCBCC" : "Join the car booking community and experience a new level of convenience when it comes to your transportation needs. Download our car booking app today and enjoy secure, efficient, and fully tracked rides for a stress-free commute."
        },
-       "About": {
-          "Titles": {
-             "Home": "About us"
-          },
-          "Descriptions": {
-             "Home": "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services."
-          },
-          "RMore" : "Read More"
-       },
-       "Footer": {
-          "Titles": {
-             "Travelar": "Travelar",
-             "Services": "Services",
-             "Partners": "Partners",
-             "JoinTeam": "Join our Teams",
-             "Aboutus": "About us",
-             "Langes": "Languages"
-          }
+       "FAQs" : {
+         "HDIBR" : "How do I book a ride?",
+         "HDIBRC" : "To book a ride using a ride-sharing app, follow these steps: After signing in, enter your destination using the search bar. You'll then see a list of available vehicles with details like car types, estimated arrival times, and prices. Choose your preferred vehicle based on your preferences and budget. Next, confirm the ride details, including the estimated fare, pickup, and drop-off locations, ensuring everything is accurate. Set up your payment method, which typically involves adding credit/debit cards or digital wallets like PayPal if you haven't already. Finally, book your ride by tapping the 'Book' or 'Confirm' button.",
+         "WAMD" : "What is the average medicine delivery?",
+         "WAMDC" : "The cost or time for something depends on two factors: distance and urgency.",
+         "WADIR" : "What is the average discount on my initial rides?",
+         "WADIRC" : "Enjoy 20% off on your first rides, and is subject to change by loyalty coupons."
        }
- }
+    }
+  }
+}

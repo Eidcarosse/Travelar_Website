@@ -123,7 +123,7 @@ export default function Navbar(props) {
               </button>
             </span>
             <span className="Res_dropdown">
-              <FontAwesomeIcon
+              <FontAwesomeIcon className="lev_el"
                 style={{ margin: "3.2vh 0 0 0" }}
                 icon="globe"
                 size="xl"

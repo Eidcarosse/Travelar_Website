@@ -14,12 +14,14 @@ import lottie from 'lottie-web';
 import tickAnim from '../Animations/tickanim3.json'
 import crossanim from '../Animations/crossanim.json'
 import {useTranslation} from 'react-i18next'
+import i18next from "i18next";
 
 
 
 export default function Contact() {
 
   const {t} = useTranslation();
+  const Slng = i18next.language;
   const [isVisible, setIsVisible] = useState(false);
   const [sbmsg, setSbmsg] = useState(null);
   const [smstatus, setSmstatus] = useState(null);
@@ -115,7 +117,7 @@ export default function Contact() {
   return (
     <>
       <div className="Contact_Sec_1">
-        <h2 style={{ marginBottom: "0em" }} className="head_style highlight">
+        <h2 style={{ marginBottom: "0em" }} className="head_style highlight RTL_Thd" S_language={Slng}>
           {t('Titles.Contactus')}
         </h2>
         <p className="head_style_def">

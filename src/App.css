@@ -1,3 +1,27 @@
+@keyframes Levitate {
+    0%{
+        transform: translateY(0px);
+        box-shadow: 0.0px 0.0px 0.0px hsl(0deg 0% 0% / 0.50)
+    }
+    50%{
+    
+        transform: translateY(-8px);
+        box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    }
+
+    100%{
+        transform: translateY(0px);
+        box-shadow: 0.0px 0.0px 0.0px hsl(0deg 0% 0% / 0.50);
+    }
+    
+}
+
+.lev_el {
+    border-radius: 50%;
+    overflow: visible;
+    animation : Levitate 6s ease-in infinite;
+}
+
 :root{
     --Main_Grad : radial-gradient(circle, #2AE8A0 50%, #9EEDED 100%);
     --Info_Grad : linear-gradient(90deg,  #00493E 40%, #00905E 100%);
@@ -6,6 +30,22 @@
     --Sec : #00493E;
     --Fc : #2D2E2E;
 
+}
+
+[S_language='ara'].RTL_Tdes{
+    font-family: "Noto Sans Arabic";
+}
+
+[S_language='ur'].RTL_Tdes{
+    font-family: "Noto Sans Arabic";
+}
+
+[S_language='ara'].RTL_Thd{
+    font-family: "Noto Kufi Arabic";
+}
+
+[S_language='ur'].RTL_Thd{
+    font-family: "Noto Kufi Arabic";
 }
 
 a {
@@ -67,6 +107,8 @@ ul {
     line-height: 1.5em;
     
   }
+
+
   .highlight{
     position: relative;
   }
