@@ -50,27 +50,27 @@ export default function Navbar(props) {
       flag: "https://www.worldometers.info/img/flags/uk-flag.gif",
     },
     ara: {
-      nativeName: "عربي",
+      nativeName: "Arabic",
       flag: "https://www.worldometers.info/img/flags/sa-flag.gif",
     },
     fr: {
-      nativeName: "Français",
+      nativeName: "French",
       flag: "https://www.worldometers.info/img/flags/fr-flag.gif",
     },
     ger: {
-      nativeName: "Deutsch",
+      nativeName: "German",
       flag: "https://www.worldometers.info/img/flags/gm-flag.gif",
     },
     ru: {
-      nativeName: "Русский",
+      nativeName: "Russian",
       flag: "https://www.worldometers.info/img/flags/rs-flag.gif",
     },
     ur: {
-      nativeName: "اردو",
+      nativeName: "Urdu",
       flag: "https://www.worldometers.info/img/flags/pk-flag.gif",
     },
     ja: {
-      nativeName: "日本語",
+      nativeName: "Japanese",
       flag: "https://www.worldometers.info/img/flags/ja-flag.gif",
     },  
   };

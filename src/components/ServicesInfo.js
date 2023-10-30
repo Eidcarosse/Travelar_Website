@@ -27,7 +27,7 @@ export default function ServicesInfo() {
         <section id="ServicesInfo">
           <div className="ServicesInfo_Wrapper">
             <div className="Hme_img">
-              <img className="Hme_img_ds" src={bnrimg} alt="Our Services =>" />
+              <img className="Hme_img_ds" loading="lazy" src={bnrimg} alt="Slow Network" />
             </div>
             <div className="Hme_info" dir={`${ddir}`}>
               <span className="H_info_h3" S_language={Slng}>

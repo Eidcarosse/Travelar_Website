@@ -1,6 +1,7 @@
 import '../Stylesheets/Footer.css';
 import '../Stylesheets/RTL/Footer_RTL.css';
 import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'
 import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from '../Contexts/DataContext';
@@ -14,11 +15,16 @@ import i18next from 'i18next';
 
 
 export default function Footer(props) {
+
+  const {t, i18n} = useTranslation(); 
+  const Scroll_Top = useContext(DataContext);
   const[idir, setIdir] = useState('ltr');
   const Slng = i18next.language;
+
   useEffect(()=>{
     Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr')
   }, [Slng]);
+
   const lngs = {
     en: {
       nativeName: "English",
@@ -50,8 +56,7 @@ export default function Footer(props) {
     },  
   };
 
-  const {t, i18n} = useTranslation(); 
-  const Scroll_Top = useContext(DataContext);
+
   const Tgle_LngChng = async (lng) => {
     props.setSpner();
     Scroll_Top();
@@ -74,13 +79,20 @@ export default function Footer(props) {
           <div className='FR_Sec1_b Dimensions'>
             <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Services')}</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Eat</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Get</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Pay</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Travelar Plus</a></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/">Car Booking</Link></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/">Medicine Delivery</Link></li>
             </ul>
           </div>
           <div className='FR_Sec1_c Dimensions'>
+            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.JoinTeam')}</h6>
+            <ul>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">About us</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Careers</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Explore roles</a></li>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Why Travelar</a></li>
+            </ul>
+          </div>
+          <div className='FR_Sec1_d Dimensions'>
             <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Partners')}</h6>
             <ul>
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Corporate packages</a></li>
@@ -89,21 +101,11 @@ export default function Footer(props) {
             <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Pay merchant solution</a></li>
             </ul>
           </div>
-          <div className='FR_Sec1_d Dimensions'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.JoinTeam')}</h6>
-            <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">About us</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Enginerring at Travelar</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Careers</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Explore roles</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Why Travelar</a></li>
-            </ul>
-          </div>
           <div className='FR_Sec1_e Dimensions'>
             <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Aboutus')}</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Our Social Impact</a></li>
-            <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Information security</a></li>
+            <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Explore</a></li>
+            <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Eidcarosse</a></li>
             <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Blog</a></li>
             </ul>
           </div>
@@ -123,9 +125,8 @@ export default function Footer(props) {
           <div className='FR_Sec2_a'><span>All rights reserved. Travelar @ 2023</span></div>
           <div className='FR_Sec2_b'>
               <span><a rel='noreferrer'className='Lst_Anim' href="/">Terms of Service</a></span>
-              <span><a rel='noreferrer'className='Lst_Anim' href="/">Privacy Policy</a></span>
-              <span><a rel='noreferrer'className='Lst_Anim' href="/">Code of Coduct</a></span>
               <span><a rel='noreferrer' className='Lst_Anim' href="/">Third Party Code of Conduct</a></span> 
+              <span><a rel='noreferrer'className='Lst_Anim' href="/">Privacy Policy</a></span>
           </div>
           <div className='FR_Sec2_c'>
               <span><a href="/" rel='noreferrer'><img src={fb_icon}  alt="FB" /></a></span>

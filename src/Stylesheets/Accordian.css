@@ -1,4 +1,7 @@
 .Cr_Container {
 margin-bottom: 135px; 
-  
+}
+
+.accordion-button {
+    font-weight: bold;
 }

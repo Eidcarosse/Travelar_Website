@@ -1,27 +1,29 @@
 import ListItem from './ListItem';
 import '../Stylesheets/NavMenu.css'
+import { useTranslation } from 'react-i18next';
 
 export default function NavMenu(props) {
+  const{t} = useTranslation();
 
     const listitems = [
         {
           id : 1,
-          Item : "Home",
+          Item : t('Navbar.Titles.Home'),
           Link : "/"
         },
         {
           id : 2,
-          Item : "Services",
+          Item : t('Navbar.Titles.Services'),
           Link : "/Services"
         },
         { 
           id : 3,
-          Item : "About Us",
+          Item : t("Navbar.Titles.About"),
           Link : "AboutUs"
         },
         { 
           id : 4,
-          Item : "Contact",
+          Item : t("Navbar.Titles.Contact"),
           Link : "/Contact"
         }
       ]

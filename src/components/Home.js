@@ -27,7 +27,6 @@ export default function BnerContent(props) {
           <div className="Banner_Wrapper" dir={idir}>
             <div className='BW_Data-left'>
             <span className="Item__1" S_language={Slng}>
-              
               <h1>{props.title}</h1>
             </span>
             <span className="Item__2" S_language={Slng}>
@@ -43,7 +42,7 @@ export default function BnerContent(props) {
             </div>
             <div className='BW_Data-right' dir={idir}>
             <span className="Item__4" dir={idir}>
-              <img src={props.logo} alt=":)"/>
+              <img src={props.logo} loading='lazy' alt="Slow Network"/>
             </span>
             </div>
           </div>
