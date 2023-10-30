@@ -18,7 +18,7 @@
   "Descriptions": {
     "Home": "Your ultimate destination for seamless car booking experiences! Whether you're planning a road trip, a business venture, or a leisurely escape, Travelar is here to redefine the way you embark on your journeys. With a vast network of trusted rental providers and a user-friendly interface, we bring you a world of convenience at your fingertips.",
     "Services": "Traveler, the innovative app, offers a seamless experience for users by providing two essential services - medicine delivery and car booking. You can conveniently order prescription medications from the comfort of their homes. The app ensures timely and safe delivery, making healthcare more accessible than ever. Additionally, Traveler's car booking service enables you to effortlessly arrange transportation for your journeys. Traveler offers a reliable and efficient solution, ensuring users reach their destinations with ease. Traveler is truly a one-stop platform, catering to both healthcare and transportation needs.",
-    "Aboutus": "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Careem operates in over 70 cities across 10 countries, from Morocco to Pakistan."
+    "Aboutus": "Traveler is led by a powerful purpose to simplify and improve the lives of people and build an awesome organisation that inspires. Since 2023, Traveler has built a platform for the region’s best talent to thrive and for entrepreneurs to scale their businesses. Traveler operates in over 70 cities across 10 countries, from Morocco to Pakistan."
   },
   "Button": {
     "Lsgo": "Let's go"
@@ -63,7 +63,7 @@
     "Titles": {
       "Travelar": "Travelar",
       "Services": "Services",
-      "Partners": "Partners",
+      "ContUs": "Contact",
       "JoinTeam": "Join our Teams",
       "Aboutus": "About us",
       "Langes": "Languages"

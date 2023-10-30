@@ -30,11 +30,11 @@ export default function ServicesInfo() {
               <img className="Hme_img_ds" loading="lazy" src={bnrimg} alt="Slow Network" />
             </div>
             <div className="Hme_info" dir={`${ddir}`}>
-              <span className="H_info_h3" S_language={Slng}>
+              <span className="H_info_h3 RTL_Thd" S_language={Slng}>
                 <h3>{t("ServicesInfo.Heading")}</h3>
               </span>
               <span className="H_info_li efi2" dir={`${ddir}`} S_language={Slng}>
-                <ul>
+                <ul className="RTL_Tdes" S_language={Slng}>
                   <ScrollAnimation
                     animateIn="animate__fadeInRight"
                     animateOnce={true}

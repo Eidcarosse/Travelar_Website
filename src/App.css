@@ -32,21 +32,56 @@
 
 }
 
+[S_language='ara'].RTL_Thd{
+    font-family: "Noto Kufi Arabic";
+}
+
 [S_language='ara'].RTL_Tdes{
     font-family: "Noto Sans Arabic";
+}
+
+[S_language='ur'].RTL_Thd{
+    font-family: "Noto Kufi Arabic";
 }
 
 [S_language='ur'].RTL_Tdes{
     font-family: "Noto Sans Arabic";
 }
 
-[S_language='ara'].RTL_Thd{
-    font-family: "Noto Kufi Arabic";
+[S_language='ru'].RTL_Thd{
+    font-family: "Oswald";
 }
 
-[S_language='ur'].RTL_Thd{
-    font-family: "Noto Kufi Arabic";
+[S_language='ru'].RTL_Tdes{
+    font-family: "Raleway";
 }
+
+
+[S_language='ja'].RTL_Thd{
+    font-family: "Zen Antique";
+}
+
+[S_language='ja'].RTL_Tdes{
+    font-family: "Sawarabi Mincho";
+}
+
+[S_language='fr'].RTL_Thd{
+    font-family: "IM Fell French Canon";
+}
+
+[S_language='fr'].RTL_Tdes{
+    font-family: "Carme";
+}
+
+[S_language='ger'].RTL_Thd{
+    font-family: "Rosarivo";
+}
+
+[S_language='ger'].RTL_Tdes{
+    font-family: "Sawarabi Mincho";
+}
+
+
 
 a {
     text-decoration: none;

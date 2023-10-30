@@ -71,46 +71,43 @@ export default function Footer(props) {
       <nav id="nav_footer">
         <div className='FR_Sec1' dir={idir}>
           <div className='FR_Sec1_a'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Travelar')}</h6>
+            <h6 className='FR_Sec1_h6 RTL_Thd' S_language={Slng}>{t('Footer.Titles.Travelar')}</h6>
             <a rel='noreferrer' href="/" target='_blank'><img className='Badge_d1 try_trans' src={badge1} alt="App Store Download =>" /></a>
             <a rel='noreferrer' href="/" target='_blank'><img className='Badge_d2 try_trans' src={badge2} alt="Play Store Download =>" /></a>
           </div>
           
           <div className='FR_Sec1_b Dimensions'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Services')}</h6>
+            <h6 className='FR_Sec1_h6 RTL_Thd' S_language={Slng}>{t('Footer.Titles.Services')}</h6>
             <ul>
-            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/">Car Booking</Link></li>
-            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/">Medicine Delivery</Link></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/Services">Car Booking</Link></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/Services">Medicine Delivery</Link></li>
             </ul>
           </div>
           <div className='FR_Sec1_c Dimensions'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.JoinTeam')}</h6>
+            <h6 className='FR_Sec1_h6 RTL_Thd' S_language={Slng}>{t('Footer.Titles.JoinTeam')}</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">About us</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Careers</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Explore roles</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Why Travelar</a></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/AboutUs">About us</Link></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/AboutUs">Careers</Link></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/AboutUs">Explore roles</Link></li>
+            <li className='Ft_Sec1_li'><Link className='Lst_Anim2' to="/AboutUs">Why Travelar</Link></li>
             </ul>
           </div>
           <div className='FR_Sec1_d Dimensions'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Partners')}</h6>
+            <h6 className='FR_Sec1_h6 RTL_Thd' S_language={Slng}>{t('Footer.Titles.Aboutus')}</h6>
             <ul>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Corporate packages</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Restaurant Delivery</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">B2B delivery</a></li>
-            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Pay merchant solution</a></li>
-            </ul>
-          </div>
-          <div className='FR_Sec1_e Dimensions'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Aboutus')}</h6>
-            <ul>
-            <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Explore</a></li>
-            <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Eidcarosse</a></li>
+            <li className='Ft_Sec1_li'><Link rel='noreferrer' className='Lst_Anim2' to="/AboutUs">Explore</Link></li>
+            <li className='Ft_Sec1_li'><a rel='noreferrer' target='_blank' className='Lst_Anim2' href="https://eidcarosse.ch/en/">Eidcarosse</a></li>
             <li className='Ft_Sec1_li'><a rel='noreferrer' className='Lst_Anim2' href="/">Blog</a></li>
             </ul>
           </div>
+          <div className='FR_Sec1_e Dimensions'>
+            <h6 className='FR_Sec1_h6 RTL_Thd' S_language={Slng}>{t('Footer.Titles.ContUs')}</h6>
+            <ul>
+            <li className='Ft_Sec1_li'><a className='Lst_Anim2' href="/">Contact Us</a></li>
+            </ul>
+          </div>
           <div className='FR_Sec1_f Dimensions'>
-            <h6 className='FR_Sec1_h6' S_language={Slng}>{t('Footer.Titles.Langes')}</h6>
+            <h6 className='FR_Sec1_h6 RTL_Thd' S_language={Slng}>{t('Footer.Titles.Langes')}</h6>
             <div>
             {Object.keys(lngs).map((lng)=> (
               <NavDropdown.Item key={lng} style={{fontWeight : i18n.resolvedLanguage === lng ? 'bold' : 'normal'}} onClick={()=>{Tgle_LngChng(lng);}}>

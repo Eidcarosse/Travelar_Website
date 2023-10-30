@@ -26,15 +26,15 @@ export default function BnerContent(props) {
         <section id="Gradient_Home">
           <div className="Banner_Wrapper" dir={idir}>
             <div className='BW_Data-left'>
-            <span className="Item__1" S_language={Slng}>
+            <span className="Item__1 RTL_Thd" S_language={Slng}>
               <h1>{props.title}</h1>
             </span>
-            <span className="Item__2" S_language={Slng}>
+            <span className="Item__2 RTL_Tdes" S_language={Slng}>
               <p>
                {props.description}
               </p>
             </span>
-            <span className="Item__3" S_language={Slng}>
+            <span className="Item__3 RTL_Thd" S_language={Slng}>
               <a href="" target="_blank">
                 <button className="BANR_INF_BTN">{t('Button.Lsgo')} &nbsp;&nbsp;<FontAwesomeIcon icon='car-side'/></button>
               </a>

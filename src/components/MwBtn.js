@@ -10,8 +10,8 @@ export default function MwBtn() {
   const {t} = useTranslation();
   return (
     <div className='MWB_Container'>
-    <h4 className='head_style highlight' S_language={Slng}>{t('MwBtn.Heading')}</h4>
-    <Link className='MWStyle try_trans' to="Services" S_language={Slng}>{t('MwBtn.Btn')}</Link>        
+    <h4 className='head_style highlight RTL_Thd' S_language={Slng}>{t('MwBtn.Heading')}</h4>
+    <Link className='MWStyle try_trans RTL_Thd' to="Services" S_language={Slng}>{t('MwBtn.Btn')}</Link>        
     </div>
   )
 }

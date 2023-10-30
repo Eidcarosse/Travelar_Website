@@ -89,27 +89,27 @@ export default function Navbar(props) {
       <header id="nav_wrapper" className="nav_wrapper">
         <nav id="nav" dir={idir}>
           <div className="nav left">
-            <span className="Main_Logo" S_language={Slng}>
+            <span className="Main_Logo RTL_Thd" S_language={Slng}>
               <Link to="/" onClick={Scroll_Top}>
                 <strong>{t("Navbar.Titles.Logo")}</strong>
               </Link>
             </span>
-            <span className="nav-link" dir={idir} S_language={Slng}>
+            <span className="nav-link RTL_Thd" dir={idir} S_language={Slng}>
               <Link to="/" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Home")}
               </Link>
             </span>
-            <span className="nav-link" S_language={Slng}>
+            <span className="nav-link RTL_Thd" S_language={Slng}>
               <Link to="/Services" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Services")}
               </Link>
             </span>
-            <span className="nav-link" S_language={Slng}>
+            <span className="nav-link RTL_Thd" S_language={Slng}>
               <Link to="/AboutUs" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.About")}
               </Link>
             </span>
-            <span className="nav-link" S_language={Slng}>
+            <span className="nav-link RTL_Thd" S_language={Slng}>
               <Link to="/Contact" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Contact")}
               </Link>
