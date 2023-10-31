@@ -15,60 +15,65 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next'
+import i18next from 'i18next';
 
 
 
 export default function AboutMain(props) {
   const {t} = useTranslation();
+  const Slng = i18next.language;
  
   return (
     <>
       <Home key="New1" title={t("Titles.Aboutus")} description={t("Descriptions.Aboutus")} logo={AboutUsImg}
       />
+
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
-          <h3 className="head_style_cs1">We are always here for</h3>
-          <h4 className="head_style_cs2 highlight">you</h4>
-          <p>Please share your feedback or report a problem</p>
-          <Link  to="/Contact" onClick={props.top_function} className="Cotn_Btn try_trans">Contact Us</Link>
+          <h3 className="head_style_cs1 RTL_Thd" S_language={Slng}>{t('AboutMain.Titles.WAAH4')}</h3>
+          <h4 className="head_style_cs2 highlight RTL_Thd" S_language={Slng}>{t('AboutMain.Titles.WAAH4U')}</h4>
+          <p className='RTL_Tdes' S_language={Slng}>{t('AboutMain.Descriptions.WAAH4')}</p>
+          <Link  to="/Contact" onClick={props.top_function} className="Cotn_Btn RTL_Thd try_trans" S_language={Slng}>{t('AboutMain.Descriptions.BTN')}</Link>
         </div>
       </div>
+
       <InfoBanner
         key='AM01'
-        Title="24/7 Available"
-        description="Rapid Tech Support "
+        Title={t('InfoBanner.Titles.Abt1')}
+        description={t('InfoBanner.Descriptions.Abt1')}
         Image={Missn_Img}
       />
+
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
-          <h3 className="head_style highlight">Teams</h3>
+          <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('AboutMain.Titles.TMZ')}</h3>
           <hr />
           <Row>
             <Col md={4}>
               <Card className="mt-3 Abt_Main_Teams_Cards">
                 <Card.Body>
-                  <Card.Title className='Abt_Inherit_Txt'>Support Team</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn"  href="mailto:chmuttaqeen2@gmail.com">support@traveler.com</Button>
-                  <Card.Title className='Abt_Inherit_Txt'>Policy and Government Relations</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn"  href="mailto:chmuttaqeen@gmail.com">gr@traveler.com</Button>
+                  <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.TeamsCard.Titles.H1')}</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn RTL_Tdes" S_language={Slng}  href="mailto:chmuttaqeen2@gmail.com">{t('AboutMain.TeamsCard.Titles.H1C')}</Button>
+                  <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.TeamsCard.Titles.H2')}</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt RTL_Tdes btn_Bs_Stn" S_language={Slng}  href="mailto:chmuttaqeen@gmail.com">{t('AboutMain.TeamsCard.Titles.H2C')}</Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={4}>
               <Card className="mt-3 Abt_Main_Teams_Cards" style={{width: "100%", height:"13em" }}>
                 <Card.Body>
-                  <Card.Title className='Abt_Inherit_Txt'>Collaboration and Advertising</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn" href="mailto:chmuttaqeen@gmail.com">marketing@traveler.com</Button>
-                  <Card.Title className='Abt_Inherit_Txt'>PR department</Card.Title>
-                  <Button className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn" href="mailto:chmuttaqeen@gmail.com">pr@traveler.com</Button>
+                  <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.TeamsCard.Titles.H3')}</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt RTL_Tdes btn_Bs_Stn" S_language={Slng} href="mailto:chmuttaqeen@gmail.com">{t('AboutMain.TeamsCard.Titles.H3C')}</Button>
+                  <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.TeamsCard.Titles.H4')}</Card.Title>
+                  <Button className="mb-2 Abt_Sb_Inherit_Txt RTL_Tdes btn_Bs_Stn" S_language={Slng} href="mailto:chmuttaqeen@gmail.com">{t('AboutMain.TeamsCard.Titles.H4C')}</Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={4}>
               <Card className="mt-3 Abt_Main_Teams_Cards" style={{ width: "100%", height:"13em" }}>
                 <Card.Body>
-                  <Card.Title className='Abt_Inherit_Txt'>Cyber Security</Card.Title>
-                  <Card.Text className='mb-2'>We accept vulerablity reports through the HackerOne platform</Card.Text>
+                  <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.TeamsCard.Titles.H5')}</Card.Title>
+                  <Card.Text className='RTL_Tdes mb-2' S_language={Slng}>{t('AboutMain.TeamsCard.Titles.H5C')}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -76,25 +81,26 @@ export default function AboutMain(props) {
           <hr />
         </div>
       </div>
+
       <InfoBanner
         key='AM02'
-        Title="Shared Goals"
-        description="Innovation, Convenience, and Reliability :) "
+        Title={t('InfoBanner.Titles.Abt2')}
+        description={t('InfoBanner.Descriptions.Abt2')}
         Image={ShredGoals}
       />
       <div className="About_Main2">
         <div className="Abt_Main_Wrapper2">
-          <h3 className="head_style highlight">Leadership</h3>
+          <h3 className="head_style highlight">{t('AboutMain.Titles.Lship')}</h3>
           <Card>
             <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: '#00493E', color: "#fff" }}>
-              Our Leadership statement
+            {t('AboutMain.LshipCard.Lstate')}
             </Card.Header>
             <Card.Body>
               <blockquote className="blockquote mb-1">
                 <p className='Abt_Sb_Inherit_Txt'>
-                  '' Adapt to change, and turn challenges into opportunities.''
+                  '' {t('AboutMain.LshipCard.Lment')}''
                 </p>
-                <footer className="blockquote-footer Abt_Sb_Inherit_Txt">Richard Branson</footer>
+                <footer className="blockquote-footer Abt_Sb_Inherit_Txt">{t('AboutMain.LshipCard.LAuth')}</footer>
               </blockquote>
             </Card.Body>
           </Card>
@@ -104,14 +110,14 @@ export default function AboutMain(props) {
                 <Card className='Card_bdy'>
                   <Card.Img className='Avatr_Ds' variant="top" src={avatar1} />
                   <Card.Body>
-                    <Card.Title className='Abt_Inherit_Txt'>Chandler</Card.Title>
-                    <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder and CEO</Card.Text>
+                    <Card.Title className='Abt_Inherit_Txt'>{t('AboutMain.LshipCard.Ledr1')}</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt'>{t('AboutMain.LshipCard.Led1Desg')}</Card.Text>
                     <Button className='try_trans'
                       style={{ backgroundColor: "#00E784", color: "#2D2E2E",fontWeight:"bold", border:"none" }}
                       href="/"
                       target="_blank"
                     >
-                      Read More
+                      {t('AboutMain.LshipCard.Rmore')}
                     </Button>
                   </Card.Body>
                 </Card>
@@ -120,14 +126,14 @@ export default function AboutMain(props) {
                 <Card className='Card_bdy'>
                   <Card.Img className='Avatr_Ds' variant="top" src={avatar2} />
                   <Card.Body>
-                    <Card.Title className='Abt_Inherit_Txt'>Monica</Card.Title>
-                    <Card.Text className='Abt_Sb_Inherit_Txt'>Co-founder</Card.Text>
+                    <Card.Title className='Abt_Inherit_Txt'>{t('AboutMain.LshipCard.Ledr2')}</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt'>{t('AboutMain.LshipCard.Led2Desg')}</Card.Text>
                     <Button  className='try_trans'
                       style={{ backgroundColor: "#00E784", color: "#2D2E2E", fontWeight:"bold", border:"none"}}
                       href="/"
                       target="_blank"
                     >
-                      Read More
+                      {t('AboutMain.LshipCard.Rmore')}
                     </Button>
                   </Card.Body>
                 </Card>
@@ -136,14 +142,14 @@ export default function AboutMain(props) {
                 <Card className='Card_bdy'>
                   <Card.Img className='Avatr_Ds' variant="top" src={avatar3} />
                   <Card.Body>
-                    <Card.Title className='Abt_Inherit_Txt'>Jannice</Card.Title>
-                    <Card.Text className='Abt_Sb_Inherit_Txt'>Chief Product Architect</Card.Text>
+                    <Card.Title className='Abt_Inherit_Txt'>{t('AboutMain.LshipCard.Ledr3')}</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt'>{t('AboutMain.LshipCard.Led3Desg')}</Card.Text>
                     <Button className='try_trans'
                       style={{ backgroundColor: "#00E784", color: "#2D2E2E",fontWeight:"bold", border:"none" }}
                       href="/"
                       target="_blank"
                     >
-                      Read More
+                      {t('AboutMain.LshipCard.Rmore')}
                     </Button>
                   </Card.Body>
                 </Card>

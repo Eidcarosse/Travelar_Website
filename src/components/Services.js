@@ -30,12 +30,12 @@ export default function Services() {
           description={t("Descriptions.Services")}
           logo={Svcs_Logo}
         />
-        <h3 className="head_style highlight" S_language={Slng}>{t('Services.Headings.OrSvcs')}</h3>
+        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('Services.Headings.OrSvcs')}</h3>
         <ServicesInfo key="Svcs_Svcs" />
       </div>
 
       <div className="SS_Section1">
-        <h3 className="head_style highlight" S_language={Slng}>{t('Services.Headings.YourHDlvr')}</h3>
+        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('Services.Headings.YourHDlvr')}</h3>
         <div className="Stcky_Stl">
           <InfoBanner
             Title={t("InfoBanner.Titles.Svcs1")}
@@ -134,7 +134,7 @@ export default function Services() {
       </div>
 
       <div className="SS_Section1" dir={idir}>
-        <h3 className="head_style highlight" S_language={Slng}>{t('Services.Headings.YourGTAssis')}</h3>
+        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('Services.Headings.YourGTAssis')}</h3>
         <div className="Stcky_Stl">
         <InfoBanner
           Title={t("InfoBanner.Titles.Svcs2")}

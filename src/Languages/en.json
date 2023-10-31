@@ -42,12 +42,16 @@
     "Titles": {
       "Home": "Travelar",
       "Svcs1": "Medicine Delivery",
-      "Svcs2": "Car Booking"
+      "Svcs2": "Car Booking",
+      "Abt1" : "24/7 Available",
+      "Abt2" : "Shared Goals"
     },
     "Descriptions": {
       "Home": "Enjoy 30% discount on your first Rides !",
       "Svcs1": "Convinient hassle-free medicine delivery",
-      "Svcs2": "Secure and fully tracked rides"
+      "Svcs2": "Secure and fully tracked rides",
+      "Abt1" : "Rapid Tech Support",
+      "Abt2" : "Innovation, Convenience, and Reliability"
     }
   },
   "About": {
@@ -58,6 +62,45 @@
       "Home": "Travelar’s purpose is to simplify and improve the lives of people and build an awesome organisation that inspires. Learn more about our purpose, people and services."
     },
     "RMore": "Read More"
+  },
+  "AboutMain" : {
+    "Titles" : {
+      "WAAH4" : "We are always here for",
+      "WAAH4U" : "you",
+      "TMZ" : "Teams",
+      "Lship" : "Leadership"
+
+    },
+    "Descriptions" : {
+      "WAAH4" : "Please share your feedback or report a problem",
+      "BTN" : "Contact Us"
+    },
+    "TeamsCard" : {
+      "Titles" : {
+        "H1" : "Support Team",
+        "H1C" : "support@traveler.com",
+        "H2" : "Policy and Government Relations",
+        "H2C" : "gr@traveler.com",
+        "H3" : "Collaboration and Advertising",
+        "H3C" : "marketing@traveler.com",
+        "H4" : "PR department",
+        "H4C" : "pr@traveler.com",
+        "H5" : "Cyber Security",
+        "H5C" : "We accept vulerablity reports through the HackerOne platform"
+      }
+    },
+    "LshipCard" : {
+      "Lstate" : "Our Leadership statement",
+      "Lment" : "Adapt to change, and turn challenges into opportunities.",
+      "LAuth" : "Richard Branson",
+      "Ledr1" : "Chandler",
+      "Led1Desg" : "Co-founder and CEO",
+      "Ledr2" : "Monica",
+      "Led2Desg" : "Co-founder",
+      "Ledr3" : "Jannice",
+      "Led3Desg" : "Chief Product Architect",
+      "Rmore" : "Read More"
+    }
   },
   "Footer": {
     "Titles": {

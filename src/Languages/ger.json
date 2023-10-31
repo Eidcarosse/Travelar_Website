@@ -42,12 +42,16 @@
      "Titles": {
        "Home": "Travelar",
        "Svcs1": "Medikamentenlieferung",
-       "Svcs2": "Autovermietung"
+       "Svcs2": "Autovermietung",
+       "Abt1" : "24/7 verfügbar",
+      "Abt2" : "Geteilte Ziele"
      },
      "Descriptions": {
        "Home": "Profitieren Sie von 30% Rabatt auf Ihre ersten Fahrten!",
        "Svcs1": "Bequeme und problemlose Medikamentenlieferung",
-       "Svcs2": "Sichere und vollständig verfolgte Fahrten"
+       "Svcs2": "Sichere und vollständig verfolgte Fahrten",
+       "Abt1" : "Schneller technischer Support",
+      "Abt2" : "Innovation, Komfort und Zuverlässigkeit"
      }
    },
    "About": {
@@ -59,6 +63,44 @@
      },
      "RMore": "Mehr erfahren"
    },
+   "AboutMain": {
+    "Titles": {
+        "WAAH4": "Wir sind immer hier",
+        "WAAH4U": "für dich",
+        "TMZ": "Teams",
+        "Lship": "Führung"
+    },
+    "Descriptions": {
+        "WAAH4": "Bitte teilen Sie uns Ihr Feedback mit oder melden Sie ein Problem",
+        "BTN": "Kontaktieren Sie uns"
+    },
+    "TeamsCard": {
+        "Titles": {
+            "H1": "Support-Team",
+            "H1C": "support@traveler.com",
+            "H2": "Politik und Regierungsbeziehungen",
+            "H2C": "gr@traveler.com",
+            "H3": "Zusammenarbeit und Werbung",
+            "H3C": "marketing@traveler.com",
+            "H4": "PR-Abteilung",
+            "H4C": "pr@traveler.com",
+            "H5": "Cyber-Sicherheit",
+            "H5C": "Wir akzeptieren Schwachstellenberichte über die HackerOne-Plattform"
+        }
+    },
+    "LshipCard": {
+        "Lstate": "Unsere Führungserklärung",
+        "Lment": "Sich an Veränderungen anpassen und Herausforderungen in Chancen umwandeln.",
+        "LAuth": "Richard Branson",
+        "Ledr1": "Chandler",
+        "Led1Desg": "Mitbegründer und CEO",
+        "Ledr2": "Monica",
+        "Led2Desg": "Mitbegründer",
+        "Ledr3": "Jannice",
+        "Led3Desg": "Chief Product Architect",
+        "Rmore": "Mehr erfahren"
+    }
+},
    "Footer": {
      "Titles": {
        "Travelar": "Travelar",

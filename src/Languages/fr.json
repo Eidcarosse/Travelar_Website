@@ -42,12 +42,16 @@
      "Titles": {
        "Home": "Travelar",
        "Svcs1": "Livraison de médicaments",
-       "Svcs2": "Réservation de voitures"
+       "Svcs2": "Réservation de voitures",
+       "Abt1" : "Disponible 24h/24 et 7j/7",
+       "Abt2" : "Objectifs partagés"
      },
      "Descriptions": {
        "Home": "Profitez de 30% de réduction sur vos premiers trajets !",
        "Svcs1": "Livraison de médicaments pratique et sans tracas",
-       "Svcs2": "Trajets sécurisés et entièrement suivis"
+       "Svcs2": "Trajets sécurisés et entièrement suivis",
+       "Abt1" : "Assistance technique rapide",
+       "Abt2" : "Innovation, commodité et fiabilité"
      }
    },
    "About": {
@@ -59,6 +63,44 @@
      },
      "RMore": "Lire la suite"
    },
+   "AboutMain": {
+    "Titles": {
+        "WAAH4": "Nous sommes toujours là",
+        "WAAH4U": "pour toi",
+        "TMZ": "Équipes",
+        "Lship": "Leadership"
+    },
+    "Descriptions": {
+        "WAAH4": "Veuillez partager vos commentaires ou signaler un problème",
+        "BTN": "Contactez-nous"
+    },
+    "TeamsCard": {
+        "Titles": {
+            "H1": "Équipe de support",
+            "H1C": "support@traveler.com",
+            "H2": "Politique et relations gouvernementales",
+            "H2C": "gr@traveler.com",
+            "H3": "Collaboration et publicité",
+            "H3C": "marketing@traveler.com",
+            "H4": "Service des relations publiques",
+            "H4C": "pr@traveler.com",
+            "H5": "Sécurité informatique",
+            "H5C": "Nous acceptons les rapports de vulnérabilité via la plateforme HackerOne"
+        }
+    },
+    "LshipCard": {
+        "Lstate": "Notre déclaration de leadership",
+        "Lment": "S'adapter au changement et transformer les défis en opportunités.",
+        "LAuth": "Richard Branson",
+        "Ledr1": "Chandler",
+        "Led1Desg": "Co-fondateur et PDG",
+        "Ledr2": "Monica",
+        "Led2Desg": "Co-fondateur",
+        "Ledr3": "Jannice",
+        "Led3Desg": "Architecte principal des produits",
+        "Rmore": "Lire la suite"
+    }
+},
    "Footer": {
      "Titles": {
        "Travelar": "Travelar",
