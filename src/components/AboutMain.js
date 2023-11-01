@@ -2,6 +2,7 @@ import React from 'react';
 import '../Stylesheets/AboutMain.css'
 import Home from './Home';
 import InfoBanner from './InfoBanner';
+import MWBtn from './MwBtn';
 import avatar1 from '../SVGs/Avatar1.svg'
 import avatar2 from '../SVGs/Avatar2.svg'
 import avatar3 from '../SVGs/Avatar3.svg'
@@ -43,7 +44,6 @@ export default function AboutMain(props) {
         description={t('InfoBanner.Descriptions.Abt1')}
         Image={Missn_Img}
       />
-
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
           <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('AboutMain.Titles.TMZ')}</h3>
@@ -79,6 +79,7 @@ export default function AboutMain(props) {
             </Col>
           </Row>
           <hr />
+          <MWBtn/>
         </div>
       </div>
 
@@ -90,17 +91,17 @@ export default function AboutMain(props) {
       />
       <div className="About_Main2">
         <div className="Abt_Main_Wrapper2">
-          <h3 className="head_style highlight">{t('AboutMain.Titles.Lship')}</h3>
+          <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('AboutMain.Titles.Lship')}</h3>
           <Card>
-            <Card.Header className='Abt_Sb_Inherit_Txt' style={{ backgroundColor: '#00493E', color: "#fff" }}>
+            <Card.Header className='Abt_Sb_Inherit_Txt RTL_Thd' S_language={Slng} style={{ backgroundColor: '#00493E', color: "#fff" }}>
             {t('AboutMain.LshipCard.Lstate')}
             </Card.Header>
             <Card.Body>
-              <blockquote className="blockquote mb-1">
+              <blockquote className="blockquote RTL_Tdes mb-1" S_language={Slng} >
                 <p className='Abt_Sb_Inherit_Txt'>
                   '' {t('AboutMain.LshipCard.Lment')}''
                 </p>
-                <footer className="blockquote-footer Abt_Sb_Inherit_Txt">{t('AboutMain.LshipCard.LAuth')}</footer>
+                <span className="blockquote-footer Abt_Sb_Inherit_Txt">{t('AboutMain.LshipCard.LAuth')}</span>
               </blockquote>
             </Card.Body>
           </Card>
@@ -110,9 +111,9 @@ export default function AboutMain(props) {
                 <Card className='Card_bdy'>
                   <Card.Img className='Avatr_Ds' variant="top" src={avatar1} />
                   <Card.Body>
-                    <Card.Title className='Abt_Inherit_Txt'>{t('AboutMain.LshipCard.Ledr1')}</Card.Title>
-                    <Card.Text className='Abt_Sb_Inherit_Txt'>{t('AboutMain.LshipCard.Led1Desg')}</Card.Text>
-                    <Button className='try_trans'
+                    <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.LshipCard.Ledr1')}</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt RTL_Tdes' S_language={Slng}>{t('AboutMain.LshipCard.Led1Desg')}</Card.Text>
+                    <Button className='RTL_Thd try_trans' S_language={Slng}
                       style={{ backgroundColor: "#00E784", color: "#2D2E2E",fontWeight:"bold", border:"none" }}
                       href="/"
                       target="_blank"
@@ -126,9 +127,9 @@ export default function AboutMain(props) {
                 <Card className='Card_bdy'>
                   <Card.Img className='Avatr_Ds' variant="top" src={avatar2} />
                   <Card.Body>
-                    <Card.Title className='Abt_Inherit_Txt'>{t('AboutMain.LshipCard.Ledr2')}</Card.Title>
-                    <Card.Text className='Abt_Sb_Inherit_Txt'>{t('AboutMain.LshipCard.Led2Desg')}</Card.Text>
-                    <Button  className='try_trans'
+                    <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.LshipCard.Ledr2')}</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt RTL_Tdes' S_language={Slng}>{t('AboutMain.LshipCard.Led2Desg')}</Card.Text>
+                    <Button  className='RTL_Thd try_trans' S_language={Slng}
                       style={{ backgroundColor: "#00E784", color: "#2D2E2E", fontWeight:"bold", border:"none"}}
                       href="/"
                       target="_blank"
@@ -142,9 +143,9 @@ export default function AboutMain(props) {
                 <Card className='Card_bdy'>
                   <Card.Img className='Avatr_Ds' variant="top" src={avatar3} />
                   <Card.Body>
-                    <Card.Title className='Abt_Inherit_Txt'>{t('AboutMain.LshipCard.Ledr3')}</Card.Title>
-                    <Card.Text className='Abt_Sb_Inherit_Txt'>{t('AboutMain.LshipCard.Led3Desg')}</Card.Text>
-                    <Button className='try_trans'
+                    <Card.Title className='Abt_Inherit_Txt RTL_Thd' S_language={Slng}>{t('AboutMain.LshipCard.Ledr3')}</Card.Title>
+                    <Card.Text className='Abt_Sb_Inherit_Txt RTL_Tdes' S_language={Slng}>{t('AboutMain.LshipCard.Led3Desg')}</Card.Text>
+                    <Button className='RTL_Thd try_trans' S_language={Slng}
                       style={{ backgroundColor: "#00E784", color: "#2D2E2E",fontWeight:"bold", border:"none" }}
                       href="/"
                       target="_blank"
@@ -157,6 +158,7 @@ export default function AboutMain(props) {
             </Row>
           </Container>
         </div>
+        
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import "../Stylesheets/Services.css";
 import Home from "./Home";
 import ServicesInfo from "./ServicesInfo";
 import InfoBanner from "./InfoBanner";
+import About from './About';
 import Accordian from "./Accordian";
 import React, { useEffect, useState } from "react";
 import Svcs_Logo from "../SVGs/Svcs_Logo.svg";
@@ -225,6 +226,7 @@ export default function Services() {
         </div>
 
       </div>
+      <About/>
       <div className="SS_Section2">
         <h3 className="head_style highlight RTL_Thd" S_language={Slng}>{t('Services.Headings.FAQ')}</h3>
         <Accordian />
