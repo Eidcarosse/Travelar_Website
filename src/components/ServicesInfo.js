@@ -36,7 +36,7 @@ export default function ServicesInfo() {
               <span className="H_info_li efi2" dir={`${ddir}`} S_language={Slng}>
                 <ul className="RTL_Tdes" S_language={Slng}>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                   >
                     <li className="bf_li">
@@ -44,7 +44,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={100}
                   >
@@ -53,7 +53,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={200}
                   >
@@ -62,7 +62,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={300}
                   >
@@ -71,7 +71,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={400}
                   >
@@ -80,7 +80,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={500}
                   >
@@ -89,7 +89,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={600}
                   >
@@ -98,7 +98,7 @@ export default function ServicesInfo() {
                     </li>
                   </ScrollAnimation>
                   <ScrollAnimation
-                    animateIn="animate__fadeInRight"
+                    animateIn="animate__fadeInUp"
                     animateOnce={true}
                     delay={700}
                   >

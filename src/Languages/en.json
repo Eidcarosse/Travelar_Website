@@ -102,6 +102,20 @@
       "Rmore" : "Read More"
     }
   },
+  "Contact" : {
+    "Hd2" : "Your",
+    "St1" : "Queries",
+    "St2" : "Concerns",
+    "St3" : "Suggestions",
+    "St4" : "Feedback",
+    "Fmhd" : "Fill out the form",
+    "Sbj": "Subject",
+    "Cnt": "Country",
+    "Nme": "Name",
+    "Eml": "Email",
+    "Kmnt": "Comment",
+    "Sbmt" : "Submit"
+  },
   "Footer": {
     "Titles": {
       "Travelar": "Travelar",

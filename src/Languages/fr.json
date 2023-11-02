@@ -1,211 +1,220 @@
 {
-   "Navbar": {
-     "Titles": {
-       "Logo": "Travelar",
-       "Home": "Accueil",
-       "Services": "Services",
-       "About": "À propos de nous",
-       "Contact": "Contact",
-       "Dapp": "Télécharger l'application"
-     }
-   },
-   "Titles": {
-     "Home": "Voyagez avec nous",
-     "Services": "Services",
-     "Aboutus": "À propos de nous",
-     "Contactus": "Contactez-nous"
-   },
-   "Descriptions": {
-     "Home": "Votre destination ultime pour des expériences de réservation de voiture sans faille ! Que vous planifiiez un voyage sur la route, une entreprise ou une escapade paisible, Travelar est là pour redéfinir la manière dont vous commencez vos voyages. Avec un vaste réseau de fournisseurs de location de confiance et une interface conviviale, nous vous offrons un monde de commodité à portée de main.",
-     "Services": "Traveler, l'application innovante, offre une expérience transparente aux utilisateurs en fournissant deux services essentiels - la livraison de médicaments et la réservation de voitures. Vous pouvez commander facilement des médicaments sur ordonnance depuis le confort de votre domicile. L'application garantit une livraison rapide et sécurisée, rendant les soins de santé plus accessibles que jamais. De plus, le service de réservation de voitures de Traveler vous permet d'organiser sans effort le transport pour vos voyages. Traveler offre une solution fiable et efficace, garantissant que les utilisateurs atteignent leur destination en toute simplicité. Traveler est vraiment une plateforme tout-en-un, répondant aux besoins de la santé et du transport.",
-     "Aboutus": "Traveler est animé par un puissant objectif de simplifier et d'améliorer la vie des gens et de construire une organisation formidable qui inspire. Depuis 2023, Traveler a créé une plateforme pour les meilleurs talents de la région pour s'épanouir et pour les entrepreneurs à développer leurs entreprises. Traveler opère dans plus de 70 villes réparties dans 10 pays, du Maroc au Pakistan."
-   },
-   "Button": {
-     "Lsgo": "C'est parti"
-   },
-   "ServicesInfo": {
-     "Heading": "Nous fournissons",
-     "Li1": "Chauffeurs certifiés",
-     "Li2": "Livraison de médicaments",
-     "Li3": "Réservation de voitures",
-     "Li4": "Suivi en temps réel",
-     "Li5": "Partage d'urgence",
-     "Li6": "Sérénité",
-     "Li7": "Sécurité renforcée",
-     "Li8": "Choix personnalisés"
-   },
-   "MwBtn": {
-     "Heading": "Découvrir les services",
-     "Btn": "Lire la suite"
-   },
-   "InfoBanner": {
-     "Titles": {
-       "Home": "Travelar",
-       "Svcs1": "Livraison de médicaments",
-       "Svcs2": "Réservation de voitures",
-       "Abt1" : "Disponible 24h/24 et 7j/7",
-       "Abt2" : "Objectifs partagés"
-     },
-     "Descriptions": {
-       "Home": "Profitez de 30% de réduction sur vos premiers trajets !",
-       "Svcs1": "Livraison de médicaments pratique et sans tracas",
-       "Svcs2": "Trajets sécurisés et entièrement suivis",
-       "Abt1" : "Assistance technique rapide",
-       "Abt2" : "Innovation, commodité et fiabilité"
-     }
-   },
-   "About": {
-     "Titles": {
-       "Home": "À propos de nous"
-     },
-     "Descriptions": {
-       "Home": "La mission de Travelar est de simplifier et d'améliorer la vie des gens et de construire une organisation formidable qui inspire. Apprenez-en davantage sur notre mission, nos collaborateurs et nos services."
-     },
-     "RMore": "Lire la suite"
-   },
-   "AboutMain": {
+  "Navbar": {
     "Titles": {
-        "WAAH4": "Nous sommes toujours là",
-        "WAAH4U": "pour toi",
-        "TMZ": "Équipes",
-        "Lship": "Leadership"
+      "Logo": "Travelar",
+      "Home": "Accueil",
+      "Services": "Services",
+      "About": "À propos de nous",
+      "Contact": "Contact",
+      "Dapp": "Télécharger l'application"
+    }
+  },
+  "Titles": {
+    "Home": "Voyagez avec nous",
+    "Services": "Services",
+    "Aboutus": "À propos de nous",
+    "Contactus": "Contactez-nous"
+  },
+  "Descriptions": {
+    "Home": "Votre destination ultime pour des expériences de réservation de voiture sans faille ! Que vous planifiiez un voyage sur la route, une entreprise ou une escapade paisible, Travelar est là pour redéfinir la manière dont vous commencez vos voyages. Avec un vaste réseau de fournisseurs de location de confiance et une interface conviviale, nous vous offrons un monde de commodité à portée de main.",
+    "Services": "Traveler, l'application innovante, offre une expérience transparente aux utilisateurs en fournissant deux services essentiels - la livraison de médicaments et la réservation de voitures. Vous pouvez commander facilement des médicaments sur ordonnance depuis le confort de votre domicile. L'application garantit une livraison rapide et sécurisée, rendant les soins de santé plus accessibles que jamais. De plus, le service de réservation de voitures de Traveler vous permet d'organiser sans effort le transport pour vos voyages. Traveler offre une solution fiable et efficace, garantissant que les utilisateurs atteignent leur destination en toute simplicité. Traveler est vraiment une plateforme tout-en-un, répondant aux besoins de la santé et du transport.",
+    "Aboutus": "Traveler est animé par un puissant objectif de simplifier et d'améliorer la vie des gens et de construire une organisation formidable qui inspire. Depuis 2023, Traveler a créé une plateforme pour les meilleurs talents de la région pour s'épanouir et pour les entrepreneurs à développer leurs entreprises. Traveler opère dans plus de 70 villes réparties dans 10 pays, du Maroc au Pakistan."
+  },
+  "Button": {
+    "Lsgo": "C'est parti"
+  },
+  "ServicesInfo": {
+    "Heading": "Nous fournissons",
+    "Li1": "Chauffeurs certifiés",
+    "Li2": "Livraison de médicaments",
+    "Li3": "Réservation de voitures",
+    "Li4": "Suivi en temps réel",
+    "Li5": "Partage d'urgence",
+    "Li6": "Sérénité",
+    "Li7": "Sécurité renforcée",
+    "Li8": "Choix personnalisés"
+  },
+  "MwBtn": {
+    "Heading": "Découvrir les services",
+    "Btn": "Lire la suite"
+  },
+  "InfoBanner": {
+    "Titles": {
+      "Home": "Travelar",
+      "Svcs1": "Livraison de médicaments",
+      "Svcs2": "Réservation de voitures",
+      "Abt1": "Disponible 24h/24 et 7j/7",
+      "Abt2": "Objectifs partagés"
     },
     "Descriptions": {
-        "WAAH4": "Veuillez partager vos commentaires ou signaler un problème",
-        "BTN": "Contactez-nous"
+      "Home": "Profitez de 30% de réduction sur vos premiers trajets !",
+      "Svcs1": "Livraison de médicaments pratique et sans tracas",
+      "Svcs2": "Trajets sécurisés et entièrement suivis",
+      "Abt1": "Assistance technique rapide",
+      "Abt2": "Innovation, commodité et fiabilité"
+    }
+  },
+  "About": {
+    "Titles": {
+      "Home": "À propos de nous"
+    },
+    "Descriptions": {
+      "Home": "La mission de Travelar est de simplifier et d'améliorer la vie des gens et de construire une organisation formidable qui inspire. Apprenez-en davantage sur notre mission, nos collaborateurs et nos services."
+    },
+    "RMore": "Lire la suite"
+  },
+  "AboutMain": {
+    "Titles": {
+      "WAAH4": "Nous sommes toujours là",
+      "WAAH4U": "pour toi",
+      "TMZ": "Équipes",
+      "Lship": "Leadership"
+    },
+    "Descriptions": {
+      "WAAH4": "Veuillez partager vos commentaires ou signaler un problème",
+      "BTN": "Contactez-nous"
     },
     "TeamsCard": {
-        "Titles": {
-            "H1": "Équipe de support",
-            "H1C": "support@traveler.com",
-            "H2": "Politique et relations gouvernementales",
-            "H2C": "gr@traveler.com",
-            "H3": "Collaboration et publicité",
-            "H3C": "marketing@traveler.com",
-            "H4": "Service des relations publiques",
-            "H4C": "pr@traveler.com",
-            "H5": "Sécurité informatique",
-            "H5C": "Nous acceptons les rapports de vulnérabilité via la plateforme HackerOne"
-        }
+      "Titles": {
+        "H1": "Équipe de support",
+        "H1C": "support@traveler.com",
+        "H2": "Politique et relations gouvernementales",
+        "H2C": "gr@traveler.com",
+        "H3": "Collaboration et publicité",
+        "H3C": "marketing@traveler.com",
+        "H4": "Service des relations publiques",
+        "H4C": "pr@traveler.com",
+        "H5": "Sécurité informatique",
+        "H5C": "Nous acceptons les rapports de vulnérabilité via la plateforme HackerOne"
+      }
     },
     "LshipCard": {
-        "Lstate": "Notre déclaration de leadership",
-        "Lment": "S'adapter au changement et transformer les défis en opportunités.",
-        "LAuth": "Richard Branson",
-        "Ledr1": "Chandler",
-        "Led1Desg": "Co-fondateur et PDG",
-        "Ledr2": "Monica",
-        "Led2Desg": "Co-fondateur",
-        "Ledr3": "Jannice",
-        "Led3Desg": "Architecte principal des produits",
-        "Rmore": "Lire la suite"
+      "Lstate": "Notre déclaration de leadership",
+      "Lment": "S'adapter au changement et transformer les défis en opportunités.",
+      "LAuth": "Richard Branson",
+      "Ledr1": "Chandler",
+      "Led1Desg": "Co-fondateur et PDG",
+      "Ledr2": "Monica",
+      "Led2Desg": "Co-fondateur",
+      "Ledr3": "Jannice",
+      "Led3Desg": "Architecte principal des produits",
+      "Rmore": "Lire la suite"
     }
-},
-   "Footer": {
-     "Titles": {
-       "Travelar": "Travelar",
-       "Services": "Services",
-       "ContUs": "Contact",
-       "JoinTeam": "Rejoignez nos équipes",
-       "Aboutus": "À propos de nous",
-       "Langes": "Langues"
-     }
-   },
-   "Services": {
-     "Headings": {
-       "OrSvcs": "Nos services",
-       "YourHDlvr": "Votre santé, livrée",
-       "YourGTAssis": "Votre assistant personnel",
-       "FAQ": "FAQ"
-     },
-     "Content": {
-       "YourHDlvr": {
-         "CMDApp": "Application pratique de livraison de médicaments",
-         "CMDAppC": "Dans le monde d'aujourd'hui en constante évolution, où nos vies sont constamment en mouvement, la commodité et l'accessibilité sont primordiales. Un aspect qui a connu une innovation et une transformation significatives est les soins de santé, en particulier la livraison de médicaments. 'Traveler' est une application mobile révolutionnaire qui a redéfini la manière dont nous accédons aux médicaments essentiels. Avec son interface conviviale et un vaste réseau de pharmacies, Traveler est votre solution incontournable pour une livraison de médicaments sans tracas.",
-         "TTExp": "L'expérience Traveler",
-         "TTExpC": "Traveler simplifie le processus de commande et de réception de vos médicaments. Avec quelques clics sur votre smartphone, vous pouvez vous faire livrer vos médicaments prescrits directement chez vous. Fini les longues files d'attente à la pharmacie ou les inquiétudes de manquer de médicaments vitaux.",
-         "KFoT": "Caractéristiques clés de Traveler",
-         "KFoTC": {
-           "des": "Traveler propose une gamme de fonctionnalités conçues pour rendre votre expérience de livraison de médicaments aussi fluide que possible :",
-           "H&C": {
-             "EPU": "Téléchargement facile de l'ordonnance :",
-             "PL": "Localisateur de pharmacie :",
-             "SP": "Paiement sécurisé :",
-             "ROT": "Suivi de commande en temps réel :",
-             "CS": "Service client :",
-             "EPUC": "Il vous suffit de télécharger une photo de votre ordonnance, et les pharmacies partenaires de Traveler la traiteront rapidement.",
-             "PLC": "Trouvez des pharmacies à proximité qui font partie du réseau Traveler, garantissant que vous avez accès à une large gamme de médicaments.",
-             "SPC": "Traveler prend en charge des options de paiement sécurisées, offrant la tranquillité d'esprit pour chaque transaction.",
-             "ROTC": "Gardez un œil sur votre commande depuis le moment où elle est passée jusqu'à sa livraison à votre domicile",
-             "CSC": "L'équipe dédiée au service client de Traveler est disponible pour répondre à toutes vos questions ou préoccupations."
-           }
-         },
-         "BOT": "Avantages de Traveler",
-         "BOTc": {
-           "des": "Traveler offre de nombreux avantages, notamment :",
-           "H&C": {
-             "Cn": "Confort :",
-             "TS": "Économie de temps :",
-             "Acs": "Accessibilité :",
-             "HOTG": "Soins de santé en déplacement :",
-             "CnC": "Commandez vos médicaments depuis le confort de votre domicile, de votre bureau, ou même en voyage.",
-             "TSC": "Plus de temps perdu dans les files d'attente des pharmacies ; Traveler garantit que vos médicaments sont livrés à temps.",
-             "AcsC": "Traveler collabore avec un vaste réseau de pharmacies, vous offrant ainsi un large éventail de médicaments.",
-             "HOTGC": "Pour les voyageurs fréquents, avoir accès aux médicaments de n'importe quel endroit est inestimable.",
-             "JTTC": "Rejoignez la communauté Traveler",
-             "JTTCC": "Rejoignez la communauté Traveler et découvrez un nouveau niveau de commodité en ce qui concerne vos besoins en matière de soins de santé. Téléchargez l'application Traveler dès aujourd'hui et dites adieu aux tracas liés à l'obtention de médicaments. Votre bien-être est notre priorité, et nous sommes là pour vous faciliter la vie, une ordonnance à la fois."
-           }
-         }
-       },
-       "YGTA": {
-          "FTASR": "Trajets entièrement suivis et sécurisés",
-          "FTASRC": "Dans le monde d'aujourd'hui en constante évolution, où se déplacer de manière efficace et sécurisée est essentiel, les services de réservation de voitures ont révolutionné notre manière de nous déplacer. Notre application de réservation de voitures est conçue pour vous offrir des trajets sécurisés et entièrement suivis, garantissant la tranquillité d'esprit lors de vos déplacements.",
-          "TCBE": "L'expérience de réservation de voitures",
-          "TCBEC": "Notre service de réservation de voitures simplifie le processus de réservation et de suivi de vos trajets. Avec quelques clics sur votre smartphone, vous pouvez réserver un trajet sécurisé, efficace et entièrement traçable.",
-          "KFoCB": "Caractéristiques clés de la réservation de voitures",
-          "KFoCBC": {
-            "des": "Notre application de réservation de voitures propose une gamme de fonctionnalités conçues pour rendre votre expérience de transport aussi fluide que possible :",
-            "H&C": {
-              "SAER": "Trajets sécurisés et efficaces :",
-              "RRT": "Suivi en temps réel des trajets :",
-              "DR": "Évaluations des conducteurs :",
-              "SP": "Paiement sécurisé :",
-              "SAERC": "Il vous suffit de télécharger une photo de votre ordonnance, et les pharmacies partenaires de Traveler la traiteront rapidement.",
-              "RRTC": "Trouvez des pharmacies à proximité qui font partie du réseau Traveler, garantissant que vous avez accès à une large gamme de médicaments.",
-              "DRC": "Traveler prend en charge des options de paiement sécurisées, offrant la tranquillité d'esprit pour chaque transaction.",
-              "SPC": "Gardez un œil sur votre commande depuis le moment où elle est passée jusqu'à sa livraison à votre domicile"
-            }
-          },
-          "BOCB": "Avantages de la réservation de voitures",
-          "BOCBc": {
-            "des": "Notre service de réservation de voitures offre de nombreux avantages, notamment :",
-            "H&C": {
-              "Scu": "Sécurité :",
-              "Efy": "Efficacité",
-              "Ty": "Transparence :",
-              "24A": "Accessibilité 24/7 :",
-              "ScuC": "Votre sécurité est notre priorité absolue.",
-              "EfyC": "Économisez du temps et de l'énergie avec nos trajets efficaces.",
-              "TyC": "Nous offrons des trajets entièrement suivis et transparents pour votre tranquillité d'esprit.",
-              "24AC": "Nos services sont disponibles chaque fois que vous en avez besoin."
-            }
-          },
-          "JCBC" : "Rejoignez la communauté de réservation de voitures",
-          "JCBCC" : "Rejoignez la communauté de réservation de voitures et découvrez un nouveau niveau de commodité en ce qui concerne vos besoins en matière de transport. Téléchargez notre application de réservation de voitures aujourd'hui et profitez de trajets sécurisés, efficaces et entièrement suivis pour des déplacements sans stress."
+  },
+  "Contact": {
+    "Hd2": "Votre",
+    "St1": "Questions",
+    "St2": "Préoccupations",
+    "St3": "Suggestions",
+    "St4": "Retour d'information",
+    "Fmhd": "Remplissez le formulaire",
+    "Sbj": "Sujet",
+    "Cnt": "Pays",
+    "Nme": "Nom",
+    "Eml": "E-mail",
+    "Kmnt": "Commentaire",
+    "Sbmt": "Envoyer"
+  },
+  "Footer": {
+    "Titles": {
+      "Travelar": "Travelar",
+      "Services": "Services",
+      "ContUs": "Contact",
+      "JoinTeam": "Rejoignez nos équipes",
+      "Aboutus": "À propos de nous",
+      "Langes": "Langues"
+    }
+  },
+  "Services": {
+    "Headings": {
+      "OrSvcs": "Nos services",
+      "YourHDlvr": "Votre santé, livrée",
+      "YourGTAssis": "Votre assistant personnel",
+      "FAQ": "FAQ"
+    },
+    "Content": {
+      "YourHDlvr": {
+        "CMDApp": "Application pratique de livraison de médicaments",
+        "CMDAppC": "Dans le monde d'aujourd'hui en constante évolution, où nos vies sont constamment en mouvement, la commodité et l'accessibilité sont primordiales. Un aspect qui a connu une innovation et une transformation significatives est les soins de santé, en particulier la livraison de médicaments. 'Traveler' est une application mobile révolutionnaire qui a redéfini la manière dont nous accédons aux médicaments essentiels. Avec son interface conviviale et un vaste réseau de pharmacies, Traveler est votre solution incontournable pour une livraison de médicaments sans tracas.",
+        "TTExp": "L'expérience Traveler",
+        "TTExpC": "Traveler simplifie le processus de commande et de réception de vos médicaments. Avec quelques clics sur votre smartphone, vous pouvez vous faire livrer vos médicaments prescrits directement chez vous. Fini les longues files d'attente à la pharmacie ou les inquiétudes de manquer de médicaments vitaux.",
+        "KFoT": "Caractéristiques clés de Traveler",
+        "KFoTC": {
+          "des": "Traveler propose une gamme de fonctionnalités conçues pour rendre votre expérience de livraison de médicaments aussi fluide que possible :",
+          "H&C": {
+            "EPU": "Téléchargement facile de l'ordonnance :",
+            "PL": "Localisateur de pharmacie :",
+            "SP": "Paiement sécurisé :",
+            "ROT": "Suivi de commande en temps réel :",
+            "CS": "Service client :",
+            "EPUC": "Il vous suffit de télécharger une photo de votre ordonnance, et les pharmacies partenaires de Traveler la traiteront rapidement.",
+            "PLC": "Trouvez des pharmacies à proximité qui font partie du réseau Traveler, garantissant que vous avez accès à une large gamme de médicaments.",
+            "SPC": "Traveler prend en charge des options de paiement sécurisées, offrant la tranquillité d'esprit pour chaque transaction.",
+            "ROTC": "Gardez un œil sur votre commande depuis le moment où elle est passée jusqu'à sa livraison à votre domicile",
+            "CSC": "L'équipe dédiée au service client de Traveler est disponible pour répondre à toutes vos questions ou préoccupations."
+          }
         },
-        "FAQs" : {
-          "HDIBR" : "Comment réserver un trajet ?",
-          "HDIBRC" : "Pour réserver un trajet à l'aide d'une application de covoiturage, suivez ces étapes : Après vous être connecté, saisissez votre destination à l'aide de la barre de recherche. Vous verrez ensuite une liste de véhicules disponibles avec des détails tels que les types de voitures, les temps d'arrivée estimés et les prix. Choisissez le véhicule de votre choix en fonction de vos préférences et de votre budget. Ensuite, confirmez les détails du trajet, y compris le tarif estimé, les lieux de prise en charge et de dépôt, en vous assurant que tout est correct. Configurez votre méthode de paiement, ce qui implique généralement l'ajout de cartes de crédit/débit ou de portefeuilles numériques comme PayPal si ce n'est pas déjà fait. Enfin, réservez votre trajet en appuyant sur le bouton 'Réserver' ou 'Confirmer'.",
-          "WAMD" : "Quel est le coût moyen de la livraison de médicaments ?",
-          "WAMDC" : "Le coût ou le délai de livraison dépend de deux facteurs : la distance et l'urgence.",
-          "WADIR" : "Quelle est la réduction moyenne sur mes premiers trajets ?",
-          "WADIRC" : "Profitez de 20% off sur vos premiers trajets, cette réduction est sujette à modification grâce à des coupons de fidélité."
+        "BOT": "Avantages de Traveler",
+        "BOTc": {
+          "des": "Traveler offre de nombreux avantages, notamment :",
+          "H&C": {
+            "Cn": "Confort :",
+            "TS": "Économie de temps :",
+            "Acs": "Accessibilité :",
+            "HOTG": "Soins de santé en déplacement :",
+            "CnC": "Commandez vos médicaments depuis le confort de votre domicile, de votre bureau, ou même en voyage.",
+            "TSC": "Plus de temps perdu dans les files d'attente des pharmacies ; Traveler garantit que vos médicaments sont livrés à temps.",
+            "AcsC": "Traveler collabore avec un vaste réseau de pharmacies, vous offrant ainsi un large éventail de médicaments.",
+            "HOTGC": "Pour les voyageurs fréquents, avoir accès aux médicaments de n'importe quel endroit est inestimable.",
+            "JTTC": "Rejoignez la communauté Traveler",
+            "JTTCC": "Rejoignez la communauté Traveler et découvrez un nouveau niveau de commodité en ce qui concerne vos besoins en matière de soins de santé. Téléchargez l'application Traveler dès aujourd'hui et dites adieu aux tracas liés à l'obtention de médicaments. Votre bien-être est notre priorité, et nous sommes là pour vous faciliter la vie, une ordonnance à la fois."
           }
+        }
+      },
+      "YGTA": {
+        "FTASR": "Trajets entièrement suivis et sécurisés",
+        "FTASRC": "Dans le monde d'aujourd'hui en constante évolution, où se déplacer de manière efficace et sécurisée est essentiel, les services de réservation de voitures ont révolutionné notre manière de nous déplacer. Notre application de réservation de voitures est conçue pour vous offrir des trajets sécurisés et entièrement suivis, garantissant la tranquillité d'esprit lors de vos déplacements.",
+        "TCBE": "L'expérience de réservation de voitures",
+        "TCBEC": "Notre service de réservation de voitures simplifie le processus de réservation et de suivi de vos trajets. Avec quelques clics sur votre smartphone, vous pouvez réserver un trajet sécurisé, efficace et entièrement traçable.",
+        "KFoCB": "Caractéristiques clés de la réservation de voitures",
+        "KFoCBC": {
+          "des": "Notre application de réservation de voitures propose une gamme de fonctionnalités conçues pour rendre votre expérience de transport aussi fluide que possible :",
+          "H&C": {
+            "SAER": "Trajets sécurisés et efficaces :",
+            "RRT": "Suivi en temps réel des trajets :",
+            "DR": "Évaluations des conducteurs :",
+            "SP": "Paiement sécurisé :",
+            "SAERC": "Il vous suffit de télécharger une photo de votre ordonnance, et les pharmacies partenaires de Traveler la traiteront rapidement.",
+            "RRTC": "Trouvez des pharmacies à proximité qui font partie du réseau Traveler, garantissant que vous avez accès à une large gamme de médicaments.",
+            "DRC": "Traveler prend en charge des options de paiement sécurisées, offrant la tranquillité d'esprit pour chaque transaction.",
+            "SPC": "Gardez un œil sur votre commande depuis le moment où elle est passée jusqu'à sa livraison à votre domicile"
           }
+        },
+        "BOCB": "Avantages de la réservation de voitures",
+        "BOCBc": {
+          "des": "Notre service de réservation de voitures offre de nombreux avantages, notamment :",
+          "H&C": {
+            "Scu": "Sécurité :",
+            "Efy": "Efficacité",
+            "Ty": "Transparence :",
+            "24A": "Accessibilité 24/7 :",
+            "ScuC": "Votre sécurité est notre priorité absolue.",
+            "EfyC": "Économisez du temps et de l'énergie avec nos trajets efficaces.",
+            "TyC": "Nous offrons des trajets entièrement suivis et transparents pour votre tranquillité d'esprit.",
+            "24AC": "Nos services sont disponibles chaque fois que vous en avez besoin."
           }
-          }
-     
-     
-     
-     
-     
+        },
+        "JCBC": "Rejoignez la communauté de réservation de voitures",
+        "JCBCC": "Rejoignez la communauté de réservation de voitures et découvrez un nouveau niveau de commodité en ce qui concerne vos besoins en matière de transport. Téléchargez notre application de réservation de voitures aujourd'hui et profitez de trajets sécurisés, efficaces et entièrement suivis pour des déplacements sans stress."
+      },
+      "FAQs": {
+        "HDIBR": "Comment réserver un trajet ?",
+        "HDIBRC": "Pour réserver un trajet à l'aide d'une application de covoiturage, suivez ces étapes : Après vous être connecté, saisissez votre destination à l'aide de la barre de recherche. Vous verrez ensuite une liste de véhicules disponibles avec des détails tels que les types de voitures, les temps d'arrivée estimés et les prix. Choisissez le véhicule de votre choix en fonction de vos préférences et de votre budget. Ensuite, confirmez les détails du trajet, y compris le tarif estimé, les lieux de prise en charge et de dépôt, en vous assurant que tout est correct. Configurez votre méthode de paiement, ce qui implique généralement l'ajout de cartes de crédit/débit ou de portefeuilles numériques comme PayPal si ce n'est pas déjà fait. Enfin, réservez votre trajet en appuyant sur le bouton 'Réserver' ou 'Confirmer'.",
+        "WAMD": "Quel est le coût moyen de la livraison de médicaments ?",
+        "WAMDC": "Le coût ou le délai de livraison dépend de deux facteurs : la distance et l'urgence.",
+        "WADIR": "Quelle est la réduction moyenne sur mes premiers trajets ?",
+        "WADIRC": "Profitez de 20% off sur vos premiers trajets, cette réduction est sujette à modification grâce à des coupons de fidélité."
+      }
+    }
+  }
+}

@@ -25,8 +25,9 @@ export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
   const [sbmsg, setSbmsg] = useState(null);
   const [smstatus, setSmstatus] = useState(null);
+  const[idir, setIdir] = useState('ltr')
   let animContainer = React.createRef();
-  const RenderedStrings = ["Queries", "Concerns", "Suggestions", "Feedback"];
+  const RenderedStrings = [t('Contact.St1'), t('Contact.St2'), t('Contact.St3'), t('Contact.St4')];
 
   useEffect(() => {
     lottie.destroy();
@@ -53,9 +54,13 @@ export default function Contact() {
     window.scrollTo(0, 0);
     const element = document.getElementById('myElement');
     const contentHeight = element.scrollHeight;
-    const additionalHeight = 135; // Adjust this value as needed
+    const additionalHeight = 145; // Adjust this value as needed
     element.style.height = `calc(${contentHeight}px + ${additionalHeight}px)`;
   },[])
+
+  useEffect(() => {
+    Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
+  }, [Slng]);
   
  
   const Sbmit_Mail = (e) => {
@@ -116,12 +121,12 @@ export default function Contact() {
 
   return (
     <>
-      <div className="Contact_Sec_1">
+      <div className="Contact_Sec_1" dir={idir}>
         <h2 style={{ marginBottom: "0em" }} className="head_style highlight RTL_Thd" S_language={Slng}>
           {t('Titles.Contactus')}
         </h2>
-        <p className="head_style_def">
-          Your{" "}
+        <p className="RTL_Thd head_style_def" S_language={Slng}>
+          {t('Contact.Hd2')}{" "}
           <Typed
             className="highlight_def"
             strings={RenderedStrings}
@@ -132,23 +137,25 @@ export default function Contact() {
           />
         </p>
       </div>
-      <Container id='myElement' className="Media_1">
+      <Container id='myElement' className="Media_1" style={{textAlign:"center"}}>
         <Row>
           <Col xs={12}>
-            <h4 style={{ fontWeight: "bold" }}>Fill out the form</h4>
+            <h4 className='RTL_Thd' S_language={Slng} style={{ fontWeight: "bold" }}>{t('Contact.Fmhd')}</h4>
             <Form onSubmit={Sbmit_Mail}>
               <Form.Group className="mb-3" controlId="ContactForm">
-                <Form.Label>Subject</Form.Label>
+                <span dir="ltr">
+                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Sbj')}</Form.Label>
+               </span>
                 <FloatingLabel
                   aria-label="Subject"
                   controlId="Fm_Subject"
-                  label="Enter Subject"
+                  label="*"
                   className="mb-3"
                 >
                   <Form.Control type="text" name="Cs_Subject" />
                 </FloatingLabel>
 
-                <Form.Label>Country</Form.Label>
+                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Cnt')}</Form.Label>
                 <Form.Select
                   aria-label="Country/Residence"
                   name="Cs_Country"
@@ -158,49 +165,50 @@ export default function Contact() {
                   <CountriesList />
                 </Form.Select>
 
-                <Form.Label>Name</Form.Label>
+                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Nme')}</Form.Label>
                 <FloatingLabel
                  aria-label="Name"
                   controlId="Fm_Name"
-                  label="Enter Name"
+                  label="*"
                   className="mb-3"
                 >
                   <Form.Control type="text" name="Cs_Name" />
                 </FloatingLabel>
 
-                <Form.Label>Email address</Form.Label>
+                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Eml')}</Form.Label>
                 <FloatingLabel
                   aria-label="Email Address"
                   controlId="Fm_Email"
-                  label="Enter email"
+                  label="*"
                   className="mb-3"
                 >
                   <Form.Control type="email" name="Cs_Mail" />
                 </FloatingLabel>
 
                 <Form.Group controlId="Fm_Cmnt">
-                  <Form.Label  aria-label="Suggestion/ Comment">Comment</Form.Label>
+                  <Form.Label className="RTL_Tdes" S_language={Slng}  aria-label="Suggestion/ Comment">{t('Contact.Kmnt')}</Form.Label>
                   <Form.Control
                     name="Cs_Concern"
                     as="textarea"
                     rows={5}
-                    placeholder="Leave a comment"
+                    placeholder="*"
                   />
                 </Form.Group>
               </Form.Group>
               <Button
-                className="bg_anim"
+                className="RTL_Thd bg_anim"
+                S_language={Slng}
                 id="showButton"
                 style={{ width: "100%", border: "none" }}
                 type="submit"
               >
-                Submit
-              </Button>
+              {t('Contact.Sbmt')}</Button>
               <div id='Ani_Kntnr' style={{display: `${isVisible ? 'block' : 'none'}`}} className={`${isVisible ? 'entryanim' : ''}`}>
               <div ref={animContainer} className='animContainer'></div>
               <p style={{color : `${smstatus == 'submitted' ? 'green' : 'red'}`, width:"fit-content", margin:"0 auto 1em auto", fontFamily : 'Carme'}}>{sbmsg}</p>
               </div>
             </Form>
+            
           </Col>
         </Row>
       </Container>

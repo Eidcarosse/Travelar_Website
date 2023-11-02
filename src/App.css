@@ -81,6 +81,12 @@
     font-family: "Sawarabi Mincho";
 }
 
+.blurred-background {
+    margin: 0;
+    padding: 0;
+    border: 1px solid green;
+    filter: blur(15px);
+  }
 
 
 a {

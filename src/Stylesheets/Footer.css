@@ -1,12 +1,7 @@
-.Grad_Btm {
-    background-image: linear-gradient(139deg, #00E784, #00493E,#00493E, #00E784);
-    height: 10px;
-}
 #footer_wrapper
 {
     overflow: hidden;
     width: 100%;
-   
     margin-bottom:0px ;
     bottom: 0;
     left: 0;
@@ -105,6 +100,11 @@
 .FR_Sec2_c img {
     height: 25px;
     width: 24px;
+}
+
+.Grad_Btm {
+    background-image: linear-gradient(139deg, #00E784, #00493E,#00493E, #00E784);
+    height: 10px;
 }
 
 @media (max-width: 1400px) {

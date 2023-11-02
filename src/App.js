@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./components/i18nxt";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DataProvider } from "./Contexts/DataContext";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -16,6 +16,7 @@ import Contact from "./components/Contact";
 import PgeNotFnd from "./components/PgeNotFnd";
 import Footer from "./components/Footer";
 import hme_logo from "./SVGs/Tvl_W_U.svg";
+import Spinner from './components/Spinner'
 import HashLoader from "react-spinners/HashLoader";
 import Gft_Box from "./SVGs/Gft_Box.svg";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -32,9 +33,9 @@ function App() {
   const { t } = useTranslation();
   let [loading, setLoading] = useState(false);
   const setSpner = () => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
+      setLoading(false);
     }, 1500);
   };
 
@@ -42,24 +43,18 @@ function App() {
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
   };
-  
+
+  useEffect(()=>{
+    const appRoot = document.querySelector('#APP_ROOT');
+    loading == true ? appRoot.classList.add('blurred-background') : appRoot.classList.remove('blurred-background');
+  },[loading])
+
   return (
     <>
+    <Spinner display={loading ? 'block' : 'none'}/>
+    <div id="APP_ROOT">
       <DataProvider value={Scroll_Top}>
         <Navbar setSpner={setSpner} />
-        <HashLoader
-          style={{
-            zIndex: "3",
-            width: "fit-content",
-            margin: "15% 50% 0 50%",
-            position: "fixed",
-          }}
-          loading={loading}
-          color="#004225"
-          size={85}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
         <Routes>
           <Route
             path="/"
@@ -71,7 +66,7 @@ function App() {
                 logo={hme_logo}
               />,
               <ServicesInfo key="Index_Svcs" />,
-              <MwBtn key='MWB1122'/>,
+              <MwBtn key="MWB1122" />,
               <InfoBanner
                 key="IIB01"
                 Title={t("InfoBanner.Titles.Home")}
@@ -89,8 +84,9 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<PgeNotFnd />} />
         </Routes>
-        <Footer setSpner={setSpner}/>
+        <Footer setSpner={setSpner} />
       </DataProvider>
+      </div>
     </>
   );
 }
