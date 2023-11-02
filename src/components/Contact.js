@@ -29,6 +29,14 @@ export default function Contact() {
   let animContainer = React.createRef();
   const RenderedStrings = [t('Contact.St1'), t('Contact.St2'), t('Contact.St3'), t('Contact.St4')];
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+    const element = document.getElementById('myElement');
+    const contentHeight = element.scrollHeight;
+    const additionalHeight = 135; // Adjust this value as needed
+    element.style.height = `calc(${contentHeight}px + ${additionalHeight}px)`;
+  },[])
+
   useEffect(() => {
     lottie.destroy();
     if(isVisible && smstatus == 'failed')  
@@ -49,14 +57,6 @@ export default function Contact() {
     }
     
   }, [isVisible, smstatus]);
-
-  useEffect(()=>{
-    window.scrollTo(0, 0);
-    const element = document.getElementById('myElement');
-    const contentHeight = element.scrollHeight;
-    const additionalHeight = 130; // Adjust this value as needed
-    element.style.height = `calc(${contentHeight}px + ${additionalHeight}px)`;
-  },[])
 
   useEffect(() => {
     Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
