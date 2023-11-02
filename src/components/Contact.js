@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
@@ -10,59 +10,52 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import CountriesList from "./CountriesList";
 import "../Stylesheets/Contact.css";
 import "animate.css/animate.min.css";
-import lottie from 'lottie-web';
-import tickAnim from '../Animations/tickanim3.json'
-import crossanim from '../Animations/crossanim.json'
-import {useTranslation} from 'react-i18next'
+import lottie from "lottie-web";
+import tickAnim from "../Animations/tickanim3.json";
+import crossanim from "../Animations/crossanim.json";
+import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-
-
 export default function Contact() {
-
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const Slng = i18next.language;
   const [isVisible, setIsVisible] = useState(false);
   const [sbmsg, setSbmsg] = useState(null);
   const [smstatus, setSmstatus] = useState(null);
-  const[idir, setIdir] = useState('ltr')
+  const [idir, setIdir] = useState("ltr");
   let animContainer = React.createRef();
-  const RenderedStrings = [t('Contact.St1'), t('Contact.St2'), t('Contact.St3'), t('Contact.St4')];
+  const RenderedStrings = [
+    t("Contact.St1"),
+    t("Contact.St2"),
+    t("Contact.St3"),
+    t("Contact.St4"),
+  ];
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-    const element = document.getElementById('myElement');
-    const contentHeight = element.scrollHeight;
-    const additionalHeight = 135; // Adjust this value as needed
-    element.style.height = `calc(${contentHeight}px + ${additionalHeight}px)`;
-  },[])
+  }, []);
 
   useEffect(() => {
     lottie.destroy();
-    if(isVisible && smstatus == 'failed')  
-    {
+    if (isVisible && smstatus == "failed") {
       lottie.loadAnimation({
-      container : animContainer.current,
-      animationData : crossanim,
-      loop : false
-    })
-    }
-    else if(isVisible && smstatus == 'submitted')  
-    {
+        container: animContainer.current,
+        animationData: crossanim,
+        loop: false,
+      });
+    } else if (isVisible && smstatus == "submitted") {
       lottie.loadAnimation({
-      container : animContainer.current,
-      animationData : tickAnim,
-      loop: false
-    })
+        container: animContainer.current,
+        animationData: tickAnim,
+        loop: false,
+      });
     }
-    
   }, [isVisible, smstatus]);
 
   useEffect(() => {
-    Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
+    Slng == "ara" || Slng == "ur" ? setIdir("rtl") : setIdir("ltr");
   }, [Slng]);
-  
- 
+
   const Sbmit_Mail = (e) => {
     e.preventDefault();
     let Subject = document.querySelector("#Fm_Subject");
@@ -73,47 +66,51 @@ export default function Contact() {
     const CommentV = () => {
       if (Comment.value === "") return null;
     };
-    const cleanup = ()=> {
+    const cleanup = () => {
       Subject.value = null;
-      Country.value = '';
+      Country.value = "";
       Name.value = null;
       Email.value = null;
-      Comment.value = '';
-    }
-    
-    if (Subject.value && Country.value && Name.value && Email.value && CommentV() !== null) {
-      {/*emailjs.sendForm(
+      Comment.value = "";
+    };
+
+    if (
+      Subject.value &&
+      Country.value &&
+      Name.value &&
+      Email.value &&
+      CommentV() !== null
+    ) {
+      {
+        /*emailjs.sendForm(
         process.env.REACT_APP_ServiceID,
         process.env.REACT_APP_TemplateID,
         e.target,
         process.env.REACT_APP_ApiID
-      );*/}
-      cleanup()
-      setIsVisible(true)
-      setSmstatus('submitted')
-      setSbmsg('Submitted !');
-      const Ani_Kntnr = document.querySelector('#Ani_Kntnr')
+      );*/
+      }
+      cleanup();
+      setIsVisible(true);
+      setSmstatus("submitted");
+      setSbmsg("Submitted !");
+      const Ani_Kntnr = document.querySelector("#Ani_Kntnr");
       setTimeout(() => {
-        Ani_Kntnr.classList.remove('entryanim')
-        Ani_Kntnr.classList.add('exitanim')
-        
-        
+        Ani_Kntnr.classList.remove("entryanim");
+        Ani_Kntnr.classList.add("exitanim");
       }, 2000);
       setTimeout(() => {
         setIsVisible(false);
       }, 2350);
-    }
-    else {
+    } else {
       setIsVisible(true);
-      setSmstatus('failed')
+      setSmstatus("failed");
       setSbmsg("Please fill all fields !");
-      const Ani_Kntnr = document.querySelector("#Ani_Kntnr")
+      const Ani_Kntnr = document.querySelector("#Ani_Kntnr");
       setTimeout(() => {
-        Ani_Kntnr.classList.remove('entryanim')
-        Ani_Kntnr.classList.add('exitanim')  
-        
+        Ani_Kntnr.classList.remove("entryanim");
+        Ani_Kntnr.classList.add("exitanim");
       }, 2400);
-       setTimeout(() => {
+      setTimeout(() => {
         setIsVisible(false);
       }, 2750);
     }
@@ -122,11 +119,15 @@ export default function Contact() {
   return (
     <>
       <div className="Contact_Sec_1" dir={idir}>
-        <h2 style={{ marginBottom: "0em" }} className="head_style highlight RTL_Thd" S_language={Slng}>
-          {t('Titles.Contactus')}
+        <h2
+          style={{ marginBottom: "0em" }}
+          className="head_style highlight RTL_Thd"
+          S_language={Slng}
+        >
+          {t("Titles.Contactus")}
         </h2>
         <p className="RTL_Thd head_style_def" S_language={Slng}>
-          {t('Contact.Hd2')}{" "}
+          {t("Contact.Hd2")}{" "}
           <Typed
             className="highlight_def"
             strings={RenderedStrings}
@@ -137,15 +138,23 @@ export default function Contact() {
           />
         </p>
       </div>
-      <Container id='myElement' className="Media_1" style={{textAlign:"center"}}>
+      <Container className="Media_1" style={{ textAlign: "center" }}>
         <Row>
           <Col xs={12}>
-            <h4 className='RTL_Thd' S_language={Slng} style={{ fontWeight: "bold" }}>{t('Contact.Fmhd')}</h4>
+            <h4
+              className="RTL_Thd"
+              S_language={Slng}
+              style={{ fontWeight: "bold" }}
+            >
+              {t("Contact.Fmhd")}
+            </h4>
             <Form onSubmit={Sbmit_Mail}>
               <Form.Group className="mb-3" controlId="ContactForm">
                 <span dir="ltr">
-                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Sbj')}</Form.Label>
-               </span>
+                  <Form.Label className="RTL_Tdes" S_language={Slng}>
+                    {t("Contact.Sbj")}
+                  </Form.Label>
+                </span>
                 <FloatingLabel
                   aria-label="Subject"
                   controlId="Fm_Subject"
@@ -155,7 +164,9 @@ export default function Contact() {
                   <Form.Control type="text" name="Cs_Subject" />
                 </FloatingLabel>
 
-                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Cnt')}</Form.Label>
+                <Form.Label className="RTL_Tdes" S_language={Slng}>
+                  {t("Contact.Cnt")}
+                </Form.Label>
                 <Form.Select
                   aria-label="Country/Residence"
                   name="Cs_Country"
@@ -165,9 +176,11 @@ export default function Contact() {
                   <CountriesList />
                 </Form.Select>
 
-                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Nme')}</Form.Label>
+                <Form.Label className="RTL_Tdes" S_language={Slng}>
+                  {t("Contact.Nme")}
+                </Form.Label>
                 <FloatingLabel
-                 aria-label="Name"
+                  aria-label="Name"
                   controlId="Fm_Name"
                   label="*"
                   className="mb-3"
@@ -175,7 +188,9 @@ export default function Contact() {
                   <Form.Control type="text" name="Cs_Name" />
                 </FloatingLabel>
 
-                <Form.Label className="RTL_Tdes" S_language={Slng}>{t('Contact.Eml')}</Form.Label>
+                <Form.Label className="RTL_Tdes" S_language={Slng}>
+                  {t("Contact.Eml")}
+                </Form.Label>
                 <FloatingLabel
                   aria-label="Email Address"
                   controlId="Fm_Email"
@@ -186,7 +201,13 @@ export default function Contact() {
                 </FloatingLabel>
 
                 <Form.Group controlId="Fm_Cmnt">
-                  <Form.Label className="RTL_Tdes" S_language={Slng}  aria-label="Suggestion/ Comment">{t('Contact.Kmnt')}</Form.Label>
+                  <Form.Label
+                    className="RTL_Tdes"
+                    S_language={Slng}
+                    aria-label="Suggestion/ Comment"
+                  >
+                    {t("Contact.Kmnt")}
+                  </Form.Label>
                   <Form.Control
                     name="Cs_Concern"
                     as="textarea"
@@ -202,16 +223,31 @@ export default function Contact() {
                 style={{ width: "100%", border: "none" }}
                 type="submit"
               >
-              {t('Contact.Sbmt')}</Button>
-              <div id='Ani_Kntnr' style={{display: `${isVisible ? 'block' : 'none'}`}} className={`${isVisible ? 'entryanim' : ''}`}>
-              <div ref={animContainer} className='animContainer'></div>
-              <p style={{color : `${smstatus == 'submitted' ? 'green' : 'red'}`, width:"fit-content", margin:"0 auto 1em auto", fontFamily : 'Carme'}}>{sbmsg}</p>
-              </div>
+                {t("Contact.Sbmt")}
+              </Button>
             </Form>
-            
           </Col>
         </Row>
       </Container>
+      <div style={{height:'50vmin'}}>
+      <div
+        id="Ani_Kntnr"
+        style={{ display: `${isVisible ? "block" : "none"}` }}
+        className={`${isVisible ? "entryanim" : ""}`}
+      >
+        <div ref={animContainer} className="animContainer"></div>
+        <p
+          style={{
+            color: `${smstatus == "submitted" ? "green" : "red"}`,
+            width: "fit-content",
+            margin: "0 auto 1em auto",
+            fontFamily: "Carme",
+          }}
+        >
+          {sbmsg}
+        </p>
+      </div>
+      </div>
     </>
   );
 }
