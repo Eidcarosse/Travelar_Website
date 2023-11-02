@@ -54,7 +54,7 @@ export default function Contact() {
     window.scrollTo(0, 0);
     const element = document.getElementById('myElement');
     const contentHeight = element.scrollHeight;
-    const additionalHeight = 145; // Adjust this value as needed
+    const additionalHeight = 130; // Adjust this value as needed
     element.style.height = `calc(${contentHeight}px + ${additionalHeight}px)`;
   },[])
 

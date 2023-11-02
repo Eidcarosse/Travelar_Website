@@ -17,7 +17,6 @@ import PgeNotFnd from "./components/PgeNotFnd";
 import Footer from "./components/Footer";
 import hme_logo from "./SVGs/Tvl_W_U.svg";
 import Spinner from './components/Spinner'
-import HashLoader from "react-spinners/HashLoader";
 import Gft_Box from "./SVGs/Gft_Box.svg";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
