@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import "../Stylesheets/About.css";
 import "../Stylesheets/RTL/About_RTL.css";
 import "animate.css/animate.min.css";
-import AboutImg from "../SVGs/AboutImg.svg";
+import AboutImg from "../assets/SVGs/AboutImg.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
 import DataContext from "../Contexts/DataContext";

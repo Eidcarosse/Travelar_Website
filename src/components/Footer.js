@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from "../Contexts/DataContext";
-import badge1 from "../images/apple-badge.png";
-import badge2 from "../images/google-badge.png";
-import fb_icon from "../images/fb_icon.png";
-import twtr_icon from "../images/twtr_icon.png";
-import lin_icon from "../images/lin_icon.png";
-import ig_icon from "../images/ig_icon.png";
+import badge1 from "../assets/images/apple-badge.png";
+import badge2 from "../assets/images/google-badge.png";
+import fb_icon from "../assets/images/fb_icon.png";
+import twtr_icon from "../assets/images/twtr_icon.png";
+import lin_icon from "../assets/images/lin_icon.png";
+import ig_icon from "../assets/images/ig_icon.png";
 import i18next from "i18next";
 
 export default function Footer(props) {

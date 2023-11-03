@@ -15,9 +15,9 @@ import AboutMain from "./components/AboutMain";
 import Contact from "./components/Contact";
 import PgeNotFnd from "./components/PgeNotFnd";
 import Footer from "./components/Footer";
-import hme_logo from "./SVGs/Tvl_W_U.svg";
+import hme_logo from "./assets/SVGs/Tvl_W_U.svg";
 import Spinner from './components/Spinner'
-import Gft_Box from "./SVGs/Gft_Box.svg";
+import Gft_Box from "./assets/SVGs/Gft_Box.svg";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBars,

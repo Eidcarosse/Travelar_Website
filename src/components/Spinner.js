@@ -1,5 +1,5 @@
 import React from "react";
-import Gif from "../SVGs/vnl.svg";
+import Gif from "../assets/SVGs/vnl.svg";
 
 export default function Spinner(props) {
   return (

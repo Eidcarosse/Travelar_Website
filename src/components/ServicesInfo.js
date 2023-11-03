@@ -4,7 +4,7 @@ import "../Stylesheets/RTL/ServicesInfo_RTL.css";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import bnrimg from "../images/Home_Banner.jpg";
+import bnrimg from "../assets/images/Home_Banner.jpg";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import i18next from "i18next";

@@ -17,7 +17,7 @@
 
 .error-code {
     cursor: default;
-    background-image: url(../images/4042.jpg);
+    background-image: url(../assets/images/4042.jpg);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
