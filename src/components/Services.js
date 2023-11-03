@@ -31,14 +31,14 @@ export default function Services() {
           description={t("Descriptions.Services")}
           logo={Svcs_Logo}
         />
-        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>
+        <h3 className="head_style highlight RTL_Thd" s_language={Slng}>
           {t("Services.Headings.OrSvcs")}
         </h3>
         <ServicesInfo key="Svcs_Svcs" />
       </div>
 
       <div className="SS_Section1">
-        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>
+        <h3 className="head_style highlight RTL_Thd" s_language={Slng}>
           {t("Services.Headings.YourHDlvr")}
         </h3>
         <div className="Stcky_Stl">
@@ -51,31 +51,31 @@ export default function Services() {
 
         <div className="MD_Details" dir={idir}>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YourHDlvr.CMDApp")}
             </h4>
           </ScrollAnimation>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YourHDlvr.CMDAppC")}
           </p>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YourHDlvr.TTExp")}
             </h4>
           </ScrollAnimation>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YourHDlvr.CMDAppC")}
           </p>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YourHDlvr.KFoT")}
             </h4>
           </ScrollAnimation>
-          <span className="RTL_Tdes" S_language={Slng}>
+          <span className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YourHDlvr.KFoTC.des")}
           </span>
           <ul style={{ listStyleType: "none", textAlign: "center" }}>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>
@@ -85,7 +85,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.KFoTC.H&C.EPUC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>
@@ -95,7 +95,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.KFoTC.H&C.PLC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>
@@ -105,7 +105,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.KFoTC.H&C.SPC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>
@@ -115,7 +115,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.KFoTC.H&C.ROTC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5 style={{ height: "fit-content" }}>
                   <strong>
@@ -127,15 +127,15 @@ export default function Services() {
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YourHDlvr.BOT")}
             </h4>
           </ScrollAnimation>
-          <span className="RTL_Tdes" S_language={Slng}>
+          <span className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YourHDlvr.BOTc.des")}
           </span>
           <ul style={{ listStyleType: "none", textAlign: "center" }}>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YourHDlvr.BOTc.H&C.Cn")}</strong>
@@ -143,7 +143,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.BOTc.H&C.CnC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YourHDlvr.BOTc.H&C.TS")}</strong>
@@ -151,7 +151,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.BOTc.H&C.TSC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>
@@ -161,7 +161,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YourHDlvr.BOTc.H&C.AcsC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>
@@ -173,18 +173,18 @@ export default function Services() {
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YourHDlvr.BOTc.H&C.JTTC")}
             </h4>
           </ScrollAnimation>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YourHDlvr.BOTc.H&C.JTTCC")}
           </p>
         </div>
       </div>
 
       <div className="SS_Section1" dir={idir}>
-        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>
+        <h3 className="head_style highlight RTL_Thd" s_language={Slng}>
           {t("Services.Headings.YourGTAssis")}
         </h3>
         <div className="Stcky_Stl">
@@ -197,31 +197,31 @@ export default function Services() {
 
         <div className="MD_Details">
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YGTA.FTASR")}
             </h4>
           </ScrollAnimation>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YGTA.FTASRC")}
           </p>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YGTA.TCBE")}
             </h4>
           </ScrollAnimation>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YGTA.TCBEC")}
           </p>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YGTA.KFoCB")}
             </h4>
           </ScrollAnimation>
-          <span className="RTL_Tdes" S_language={Slng}>
+          <span className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YGTA.KFoCBC.des")}
           </span>
           <ul style={{ listStyleType: "none", textAlign: "center" }}>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.KFoCBC.H&C.SAER")}</strong>
@@ -229,7 +229,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YGTA.KFoCBC.H&C.SAERC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.KFoCBC.H&C.RRT")}</strong>
@@ -237,7 +237,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YGTA.KFoCBC.H&C.RRTC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.KFoCBC.H&C.DR")}</strong>
@@ -245,7 +245,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YGTA.KFoCBC.H&C.DRC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.KFoCBC.H&C.SP")}</strong>
@@ -255,15 +255,15 @@ export default function Services() {
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YGTA.BOCB")}
             </h4>
           </ScrollAnimation>
-          <span className="RTL_Tdes" S_language={Slng}>
+          <span className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YGTA.BOCBc.des")}
           </span>
           <ul style={{ listStyleType: "none", textAlign: "center" }}>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.BOCBc.H&C.Scu")}</strong>
@@ -271,7 +271,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YGTA.BOCBc.H&C.ScuC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.BOCBc.H&C.Efy")}</strong>
@@ -279,7 +279,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YGTA.BOCBc.H&C.EfyC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.BOCBc.H&C.Ty")}</strong>
@@ -287,7 +287,7 @@ export default function Services() {
               </ScrollAnimation>
               {t("Services.Content.YGTA.BOCBc.H&C.TyC")}
             </li>
-            <li className="RTL_Tdes" S_language={Slng}>
+            <li className="RTL_Tdes" s_language={Slng}>
               <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
                 <h5>
                   <strong>{t("Services.Content.YGTA.BOCBc.H&C.24A")}</strong>
@@ -297,18 +297,18 @@ export default function Services() {
             </li>
           </ul>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-            <h4 className="highlight2 RTL_Thd" S_language={Slng}>
+            <h4 className="highlight2 RTL_Thd" s_language={Slng}>
               {t("Services.Content.YGTA.JCBC")}
             </h4>
           </ScrollAnimation>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("Services.Content.YGTA.JCBCC")}
           </p>
         </div>
       </div>
       <About />
       <div className="SS_Section2">
-        <h3 className="head_style highlight RTL_Thd" S_language={Slng}>
+        <h3 className="head_style highlight RTL_Thd" s_language={Slng}>
           {t("Services.Headings.FAQ")}
         </h3>
         <Accordian />

@@ -33,20 +33,20 @@ export default function AboutMain(props) {
 
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
-          <h3 className="head_style_cs1 RTL_Thd" S_language={Slng}>
+          <h3 className="head_style_cs1 RTL_Thd" s_language={Slng}>
             {t("AboutMain.Titles.WAAH4")}
           </h3>
-          <h4 className="head_style_cs2 highlight RTL_Thd" S_language={Slng}>
+          <h4 className="head_style_cs2 highlight RTL_Thd" s_language={Slng}>
             {t("AboutMain.Titles.WAAH4U")}
           </h4>
-          <p className="RTL_Tdes" S_language={Slng}>
+          <p className="RTL_Tdes" s_language={Slng}>
             {t("AboutMain.Descriptions.WAAH4")}
           </p>
           <Link
             to="/Contact"
             onClick={props.top_function}
             className="Cotn_Btn RTL_Thd try_trans"
-            S_language={Slng}
+            s_language={Slng}
           >
             {t("AboutMain.Descriptions.BTN")}
           </Link>
@@ -61,7 +61,7 @@ export default function AboutMain(props) {
       />
       <div className="About_Main">
         <div className="Abt_Main_Wrapper">
-          <h3 className="head_style highlight RTL_Thd" S_language={Slng}>
+          <h3 className="head_style highlight RTL_Thd" s_language={Slng}>
             {t("AboutMain.Titles.TMZ")}
           </h3>
           <hr />
@@ -71,26 +71,26 @@ export default function AboutMain(props) {
                 <Card.Body>
                   <Card.Title
                     className="Abt_Inherit_Txt RTL_Thd"
-                    S_language={Slng}
+                    s_language={Slng}
                   >
                     {t("AboutMain.TeamsCard.Titles.H1")}
                   </Card.Title>
                   <Button
                     className="mb-2 Abt_Sb_Inherit_Txt btn_Bs_Stn RTL_Tdes"
-                    S_language={Slng}
+                    s_language={Slng}
                     href="mailto:chmuttaqeen2@gmail.com"
                   >
                     {t("AboutMain.TeamsCard.Titles.H1C")}
                   </Button>
                   <Card.Title
                     className="Abt_Inherit_Txt RTL_Thd"
-                    S_language={Slng}
+                    s_language={Slng}
                   >
                     {t("AboutMain.TeamsCard.Titles.H2")}
                   </Card.Title>
                   <Button
                     className="mb-2 Abt_Sb_Inherit_Txt RTL_Tdes btn_Bs_Stn"
-                    S_language={Slng}
+                    s_language={Slng}
                     href="mailto:chmuttaqeen@gmail.com"
                   >
                     {t("AboutMain.TeamsCard.Titles.H2C")}
@@ -106,26 +106,26 @@ export default function AboutMain(props) {
                 <Card.Body>
                   <Card.Title
                     className="Abt_Inherit_Txt RTL_Thd"
-                    S_language={Slng}
+                    s_language={Slng}
                   >
                     {t("AboutMain.TeamsCard.Titles.H3")}
                   </Card.Title>
                   <Button
                     className="mb-2 Abt_Sb_Inherit_Txt RTL_Tdes btn_Bs_Stn"
-                    S_language={Slng}
+                    s_language={Slng}
                     href="mailto:chmuttaqeen@gmail.com"
                   >
                     {t("AboutMain.TeamsCard.Titles.H3C")}
                   </Button>
                   <Card.Title
                     className="Abt_Inherit_Txt RTL_Thd"
-                    S_language={Slng}
+                    s_language={Slng}
                   >
                     {t("AboutMain.TeamsCard.Titles.H4")}
                   </Card.Title>
                   <Button
                     className="mb-2 Abt_Sb_Inherit_Txt RTL_Tdes btn_Bs_Stn"
-                    S_language={Slng}
+                    s_language={Slng}
                     href="mailto:chmuttaqeen@gmail.com"
                   >
                     {t("AboutMain.TeamsCard.Titles.H4C")}
@@ -141,11 +141,11 @@ export default function AboutMain(props) {
                 <Card.Body>
                   <Card.Title
                     className="Abt_Inherit_Txt RTL_Thd"
-                    S_language={Slng}
+                    s_language={Slng}
                   >
                     {t("AboutMain.TeamsCard.Titles.H5")}
                   </Card.Title>
-                  <Card.Text className="RTL_Tdes mb-2" S_language={Slng}>
+                  <Card.Text className="RTL_Tdes mb-2" s_language={Slng}>
                     {t("AboutMain.TeamsCard.Titles.H5C")}
                   </Card.Text>
                 </Card.Body>
@@ -165,13 +165,13 @@ export default function AboutMain(props) {
       />
       <div className="About_Main2">
         <div className="Abt_Main_Wrapper2">
-          <h3 className="head_style highlight RTL_Thd" S_language={Slng}>
+          <h3 className="head_style highlight RTL_Thd" s_language={Slng}>
             {t("AboutMain.Titles.Lship")}
           </h3>
           <Card>
             <Card.Header
               className="Abt_Sb_Inherit_Txt RTL_Thd"
-              S_language={Slng}
+              s_language={Slng}
               style={{ backgroundColor: "#00493E", color: "#fff" }}
             >
               {t("AboutMain.LshipCard.Lstate")}
@@ -179,7 +179,7 @@ export default function AboutMain(props) {
             <Card.Body>
               <blockquote
                 className="blockquote RTL_Tdes mb-1"
-                S_language={Slng}
+                s_language={Slng}
               >
                 <p className="Abt_Sb_Inherit_Txt">
                   '' {t("AboutMain.LshipCard.Lment")}''
@@ -194,29 +194,30 @@ export default function AboutMain(props) {
             <Row className="Card_rw">
               <Col className="Card_clm" md={4}>
                 <Card className="Card_bdy">
-                  <Card.Img className="Avatr_Ds" variant="top" src={avatar1} />
+                  <Card.Img loading='lazy' className="Avatr_Ds" variant="top" src={avatar1} />
                   <Card.Body>
                     <Card.Title
                       className="Abt_Inherit_Txt RTL_Thd"
-                      S_language={Slng}
+                      s_language={Slng}
                     >
                       {t("AboutMain.LshipCard.Ledr1")}
                     </Card.Title>
                     <Card.Text
                       className="Abt_Sb_Inherit_Txt RTL_Tdes"
-                      S_language={Slng}
+                      s_language={Slng}
                     >
                       {t("AboutMain.LshipCard.Led1Desg")}
                     </Card.Text>
                     <Button
                       className="RTL_Thd try_trans"
-                      S_language={Slng}
+                      s_language={Slng}
                       style={{
                         backgroundColor: "#00E784",
                         color: "#2D2E2E",
                         fontWeight: "bold",
                         border: "none",
                       }}
+                      rel="norefere noopener"
                       href="/"
                       target="_blank"
                     >
@@ -227,29 +228,30 @@ export default function AboutMain(props) {
               </Col>
               <Col className="Card_clm" md={4}>
                 <Card className="Card_bdy">
-                  <Card.Img className="Avatr_Ds" variant="top" src={avatar2} />
+                  <Card.Img loading='lazy' className="Avatr_Ds" variant="top" src={avatar2} />
                   <Card.Body>
                     <Card.Title
                       className="Abt_Inherit_Txt RTL_Thd"
-                      S_language={Slng}
+                      s_language={Slng}
                     >
                       {t("AboutMain.LshipCard.Ledr2")}
                     </Card.Title>
                     <Card.Text
                       className="Abt_Sb_Inherit_Txt RTL_Tdes"
-                      S_language={Slng}
+                      s_language={Slng}
                     >
                       {t("AboutMain.LshipCard.Led2Desg")}
                     </Card.Text>
                     <Button
                       className="RTL_Thd try_trans"
-                      S_language={Slng}
+                      s_language={Slng}
                       style={{
                         backgroundColor: "#00E784",
                         color: "#2D2E2E",
                         fontWeight: "bold",
                         border: "none",
                       }}
+                      rel="noreferer noopener"
                       href="/"
                       target="_blank"
                     >
@@ -260,29 +262,30 @@ export default function AboutMain(props) {
               </Col>
               <Col className="Card_clm" md={4}>
                 <Card className="Card_bdy">
-                  <Card.Img className="Avatr_Ds" variant="top" src={avatar3} />
+                  <Card.Img loading='lazy' className="Avatr_Ds" variant="top" src={avatar3} />
                   <Card.Body>
                     <Card.Title
                       className="Abt_Inherit_Txt RTL_Thd"
-                      S_language={Slng}
+                      s_language={Slng}
                     >
                       {t("AboutMain.LshipCard.Ledr3")}
                     </Card.Title>
                     <Card.Text
                       className="Abt_Sb_Inherit_Txt RTL_Tdes"
-                      S_language={Slng}
+                      s_language={Slng}
                     >
                       {t("AboutMain.LshipCard.Led3Desg")}
                     </Card.Text>
                     <Button
                       className="RTL_Thd try_trans"
-                      S_language={Slng}
+                      s_language={Slng}
                       style={{
                         backgroundColor: "#00E784",
                         color: "#2D2E2E",
                         fontWeight: "bold",
                         border: "none",
                       }}
+                      rel="noreferer noopener"
                       href="/"
                       target="_blank"
                     >

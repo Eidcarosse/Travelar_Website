@@ -35,15 +35,15 @@ export default function ServicesInfo() {
               />
             </div>
             <div className="Hme_info" dir={`${ddir}`}>
-              <span className="H_info_h3 RTL_Thd" S_language={Slng}>
+              <span className="H_info_h3 RTL_Thd" s_language={Slng}>
                 <h3>{t("ServicesInfo.Heading")}</h3>
               </span>
               <span
                 className="H_info_li efi2"
                 dir={`${ddir}`}
-                S_language={Slng}
+                s_language={Slng}
               >
-                <ul className="RTL_Tdes" S_language={Slng}>
+                <ul className="RTL_Tdes" s_language={Slng}>
                   <ScrollAnimation
                     animateIn="animate__fadeInUp"
                     animateOnce={true}

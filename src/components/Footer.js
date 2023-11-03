@@ -68,36 +68,38 @@ export default function Footer(props) {
       <nav id="nav_footer">
         <div className="FR_Sec1" dir={idir}>
           <div className="FR_Sec1_a">
-            <h6 className="FR_Sec1_h6 RTL_Thd" S_language={Slng}>
+            <h6 className="FR_Sec1_h6 RTL_Thd" s_language={Slng}>
               {t("Footer.Titles.Travelar")}
             </h6>
             <a rel="noreferrer" href="/" target="_blank">
               <img
+                loading="lazy"
                 className="Badge_d1 try_trans"
                 src={badge1}
-                alt="App Store Download =>"
+                alt="Slow Network"
               />
             </a>
             <a rel="noreferrer" href="/" target="_blank">
               <img
+                loading="lazy"
                 className="Badge_d2 try_trans"
                 src={badge2}
-                alt="Play Store Download =>"
+                alt="Slow Network"
               />
             </a>
           </div>
 
           <div className="FR_Sec1_b Dimensions">
-            <h6 className="FR_Sec1_h6 RTL_Thd" S_language={Slng}>
+            <h6 className="FR_Sec1_h6 RTL_Thd" s_language={Slng}>
               {t("Footer.Titles.Services")}
             </h6>
             <ul>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/Services">
                   {t("Footer.services.CB")}
                 </Link>
               </li>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/Services">
                   {t("Footer.services.MD")}
                 </Link>
@@ -105,26 +107,26 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className="FR_Sec1_c Dimensions">
-            <h6 className="FR_Sec1_h6 RTL_Thd" S_language={Slng}>
+            <h6 className="FR_Sec1_h6 RTL_Thd" s_language={Slng}>
               {t("Footer.Titles.JoinTeam")}
             </h6>
             <ul>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/AboutUs">
                   {t("Footer.joinRteam.Au")}
                 </Link>
               </li>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/AboutUs">
                   {t("Footer.joinRteam.Cr")}
                 </Link>
               </li>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/AboutUs">
                   {t("Footer.joinRteam.Er")}
                 </Link>
               </li>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/AboutUs">
                   {t("Footer.joinRteam.WT")}
                 </Link>
@@ -132,16 +134,16 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className="FR_Sec1_d Dimensions">
-            <h6 className="FR_Sec1_h6 RTL_Thd" S_language={Slng}>
+            <h6 className="FR_Sec1_h6 RTL_Thd" s_language={Slng}>
               {t("Footer.Titles.Aboutus")}
             </h6>
             <ul>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link rel="noreferrer" className="Lst_Anim2" to="/AboutUs">
                   {t("Footer.Abtus.Exp")}
                 </Link>
               </li>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -151,7 +153,7 @@ export default function Footer(props) {
                   {t("Footer.Abtus.Ec")}
                 </a>
               </li>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link rel="noreferrer" className="Lst_Anim2" to="/AboutUs">
                   {t("Footer.Abtus.Bg")}
                 </Link>
@@ -159,11 +161,11 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className="FR_Sec1_e Dimensions">
-            <h6 className="FR_Sec1_h6 RTL_Thd" S_language={Slng}>
+            <h6 className="FR_Sec1_h6 RTL_Thd" s_language={Slng}>
               {t("Footer.Titles.ContUs")}
             </h6>
             <ul>
-              <li className="Ft_Sec1_li RTL_Tdes" S_language={Slng}>
+              <li className="Ft_Sec1_li RTL_Tdes" s_language={Slng}>
                 <Link className="Lst_Anim2" to="/Contact">
                   {t("Footer.Cntkt.Cu")}
                 </Link>
@@ -171,7 +173,7 @@ export default function Footer(props) {
             </ul>
           </div>
           <div className="FR_Sec1_f Dimensions">
-            <h6 className="FR_Sec1_h6 RTL_Thd" S_language={Slng}>
+            <h6 className="FR_Sec1_h6 RTL_Thd" s_language={Slng}>
               {t("Footer.Titles.Langes")}
             </h6>
             <div>
@@ -188,7 +190,7 @@ export default function Footer(props) {
                 >
                   <ul>
                     <li>
-                      <img src={lngs[lng].flag} alt="Ctry: " width="25px" />
+                      <img src={lngs[lng].flag} loading='lazy' alt="Slow Network " width="25px" />
                       &nbsp;{lngs[lng].nativeName}
                     </li>
                   </ul>
@@ -207,40 +209,40 @@ export default function Footer(props) {
           </div>
           <div className="FR_Sec2_b">
             <span>
-              <a rel="noreferrer" className="Lst_Anim" href="/">
+              <a rel="noreferrer noopener" className="Lst_Anim" href="/">
                 Terms of Service
               </a>
             </span>
             <span>
-              <a rel="noreferrer" className="Lst_Anim" href="/">
+              <a rel="noreferrer noopener" className="Lst_Anim" href="/">
                 Third Party Code of Conduct
               </a>
             </span>
             <span>
-              <a rel="noreferrer" className="Lst_Anim" href="/">
+              <a rel="noreferrer noopener" className="Lst_Anim" href="/">
                 Privacy Policy
               </a>
             </span>
           </div>
           <div className="FR_Sec2_c">
             <span>
-              <a href="/" rel="noreferrer">
-                <img src={fb_icon} alt="FB" />
+              <a href="/" rel="noreferrer noopener">
+                <img loading='lazy' src={fb_icon} alt="FB" />
               </a>
             </span>
             <span>
-              <a href="/" rel="noreferrer">
-                <img src={twtr_icon} alt="TW" />
+              <a href="/" rel="noreferrer noopener">
+                <img loading='lazy' src={twtr_icon} alt="TW" />
               </a>
             </span>
             <span>
-              <a href="/" rel="noreferrer">
-                <img src={lin_icon} alt="LI" />
+              <a href="/" rel="noreferrer noopener">
+                <img loading='lazy' src={lin_icon} alt="LI" />
               </a>
             </span>
             <span>
-              <a href="/" rel="noreferrer">
-                <img src={ig_icon} alt="IG" />
+              <a href="/" rel="noreferrer noopener">
+                <img loading='lazy' src={ig_icon} alt="IG" />
               </a>
             </span>
           </div>

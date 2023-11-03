@@ -17,10 +17,10 @@ export default function InfoBanner(props) {
         <section id="Info_Banner">
           <div className="Info_Banner_Wrapr" dir={idir}>
             <span className="description">
-              <h3 className="descp_h3 RTL_Thd" S_language={Slng}>
+              <h3 className="descp_h3 RTL_Thd" s_language={Slng}>
                 {props.Title}
               </h3>
-              <p className="descp_p RTL_Tdes" S_language={Slng}>
+              <p className="descp_p RTL_Tdes" s_language={Slng}>
                 {props.description}
               </p>
             </span>

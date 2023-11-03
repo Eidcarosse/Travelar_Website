@@ -65,14 +65,14 @@ export default function Navbar(props) {
       nativeName: "Russian",
       flag: "https://www.worldometers.info/img/flags/rs-flag.gif",
     },
-    ur: {
-      nativeName: "Urdu",
-      flag: "https://www.worldometers.info/img/flags/pk-flag.gif",
-    },
     ja: {
       nativeName: "Japanese",
       flag: "https://www.worldometers.info/img/flags/ja-flag.gif",
     },
+    ur: {
+      nativeName: "Urdu",
+      flag: "https://www.worldometers.info/img/flags/pk-flag.gif",
+    }    
   };
 
   const Tgle_LngChng = async (lng) => {
@@ -89,27 +89,27 @@ export default function Navbar(props) {
       <header id="nav_wrapper" className="nav_wrapper">
         <nav id="nav" dir={idir}>
           <div className="nav left">
-            <span className="Main_Logo RTL_Thd" S_language={Slng}>
+            <span className="Main_Logo RTL_Thd" s_language={Slng}>
               <Link to="/" onClick={Scroll_Top}>
                 <strong>{t("Navbar.Titles.Logo")}</strong>
               </Link>
             </span>
-            <span className="nav-link RTL_Thd" dir={idir} S_language={Slng}>
+            <span className="nav-link RTL_Thd" dir={idir} s_language={Slng}>
               <Link to="/" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Home")}
               </Link>
             </span>
-            <span className="nav-link RTL_Thd" S_language={Slng}>
+            <span className="nav-link RTL_Thd" s_language={Slng}>
               <Link to="/Services" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Services")}
               </Link>
             </span>
-            <span className="nav-link RTL_Thd" S_language={Slng}>
+            <span className="nav-link RTL_Thd" s_language={Slng}>
               <Link to="/AboutUs" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.About")}
               </Link>
             </span>
-            <span className="nav-link RTL_Thd" S_language={Slng}>
+            <span className="nav-link RTL_Thd" s_language={Slng}>
               <Link to="/Contact" onClick={Scroll_Top} className="Lst_Anim">
                 {t("Navbar.Titles.Contact")}
               </Link>
@@ -153,7 +153,7 @@ export default function Navbar(props) {
                 ))}
               </NavDropdown>
             </span>
-            <span className="btn-cstm App_Downld try_trans" S_language={Slng}>
+            <span className="btn-cstm App_Downld try_trans" s_language={Slng}>
               <a href="/" target="_blank">
                 {t("Navbar.Titles.Dapp")}
               </a>

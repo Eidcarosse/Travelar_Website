@@ -122,11 +122,11 @@ export default function Contact() {
         <h2
           style={{ marginBottom: "0em" }}
           className="head_style highlight RTL_Thd"
-          S_language={Slng}
+          s_language={Slng}
         >
           {t("Titles.Contactus")}
         </h2>
-        <p className="RTL_Thd head_style_def" S_language={Slng}>
+        <p className="RTL_Thd head_style_def" s_language={Slng}>
           {t("Contact.Hd2")}{" "}
           <Typed
             className="highlight_def"
@@ -143,7 +143,7 @@ export default function Contact() {
           <Col xs={12}>
             <h4
               className="RTL_Thd"
-              S_language={Slng}
+              s_language={Slng}
               style={{ fontWeight: "bold" }}
             >
               {t("Contact.Fmhd")}
@@ -151,7 +151,7 @@ export default function Contact() {
             <Form onSubmit={Sbmit_Mail}>
               <Form.Group className="mb-3" controlId="ContactForm">
                 <span dir="ltr">
-                  <Form.Label className="RTL_Tdes" S_language={Slng}>
+                  <Form.Label className="RTL_Tdes" s_language={Slng}>
                     {t("Contact.Sbj")}
                   </Form.Label>
                 </span>
@@ -164,7 +164,7 @@ export default function Contact() {
                   <Form.Control type="text" name="Cs_Subject" />
                 </FloatingLabel>
 
-                <Form.Label className="RTL_Tdes" S_language={Slng}>
+                <Form.Label className="RTL_Tdes" s_language={Slng}>
                   {t("Contact.Cnt")}
                 </Form.Label>
                 <Form.Select
@@ -176,7 +176,7 @@ export default function Contact() {
                   <CountriesList />
                 </Form.Select>
 
-                <Form.Label className="RTL_Tdes" S_language={Slng}>
+                <Form.Label className="RTL_Tdes" s_language={Slng}>
                   {t("Contact.Nme")}
                 </Form.Label>
                 <FloatingLabel
@@ -188,7 +188,7 @@ export default function Contact() {
                   <Form.Control type="text" name="Cs_Name" />
                 </FloatingLabel>
 
-                <Form.Label className="RTL_Tdes" S_language={Slng}>
+                <Form.Label className="RTL_Tdes" s_language={Slng}>
                   {t("Contact.Eml")}
                 </Form.Label>
                 <FloatingLabel
@@ -203,7 +203,7 @@ export default function Contact() {
                 <Form.Group controlId="Fm_Cmnt">
                   <Form.Label
                     className="RTL_Tdes"
-                    S_language={Slng}
+                    s_language={Slng}
                     aria-label="Suggestion/ Comment"
                   >
                     {t("Contact.Kmnt")}
@@ -218,7 +218,7 @@ export default function Contact() {
               </Form.Group>
               <Button
                 className="RTL_Thd bg_anim"
-                S_language={Slng}
+                s_language={Slng}
                 id="showButton"
                 style={{ width: "100%", border: "none" }}
                 type="submit"

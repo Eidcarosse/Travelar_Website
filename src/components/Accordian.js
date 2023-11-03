@@ -14,7 +14,7 @@ export default function Accordian() {
   return (
     <>
       <div className="Cr_Container">
-        <Accordion dir={idir} className="RTL_Tdes" S_language={Slng}>
+        <Accordion dir={idir} className="RTL_Tdes" s_language={Slng}>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               {t("Services.Content.FAQs.HDIBR")}

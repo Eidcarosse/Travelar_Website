@@ -24,17 +24,17 @@ export default function About() {
         <section id="About">
           <div className="Abt_Wrapper">
             <div className="Abt_description" dir={idir}>
-              <h3 className="Abt_descrp_h3 RTL_Thd" S_language={Slng}>
+              <h3 className="Abt_descrp_h3 RTL_Thd" s_language={Slng}>
                 {t("About.Titles.Home")}
               </h3>
-              <p className="Abt_descrp_p RTL_Tdes" S_language={Slng}>
+              <p className="Abt_descrp_p RTL_Tdes" s_language={Slng}>
                 {t("About.Descriptions.Home")}
               </p>
               <Link
                 to="/AboutUs"
                 onClick={Scroll_Top}
                 className="Read_Mr_Dn try_trans RTL_Thd"
-                S_language={Slng}
+                s_language={Slng}
               >
                 {t("About.RMore")}
               </Link>
@@ -51,7 +51,7 @@ export default function About() {
                   animationIterationCount: "1",
                 }}
               >
-                <img src={AboutImg} alt="IMG" />
+                <img src={AboutImg} alt="Slow Network" loading="lazy" />
               </ScrollAnimation>
             </div>
           </div>

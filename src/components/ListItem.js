@@ -14,7 +14,7 @@ export default function ListItem(props) {
       <span className="Cntent_Wraper">
         <Link
           className="RTL_Thd Lst_Anim"
-          S_language={Slng}
+          s_language={Slng}
           onClick={() => {
             ToggleIcon();
             Scroll_Top();
