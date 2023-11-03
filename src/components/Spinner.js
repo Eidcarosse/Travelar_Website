@@ -6,16 +6,20 @@ export default function Spinner(props) {
     <>
       <div
         style={{
-          position:'fixed',
-          top : "50%",
-          left : "50%",
-          transform: 'translate(-50%, -50%)',  
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
           display: props.display,
           zIndex: "1000",
           width: "fit-content",
         }}
       >
-        <img src={Gif} alt="Loading..." style={{width:'35vmin', height:'25vmin'}}/>
+        <img
+          src={Gif}
+          alt="Loading..."
+          style={{ width: "35vmin", height: "25vmin" }}
+        />
       </div>
     </>
   );

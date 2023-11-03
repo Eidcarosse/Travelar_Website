@@ -11,8 +11,8 @@ import CountriesList from "./CountriesList";
 import "../Stylesheets/Contact.css";
 import "animate.css/animate.min.css";
 import lottie from "lottie-web";
-import tickAnim from "../Animations/tickanim3.json";
-import crossanim from "../Animations/crossanim.json";
+import tka from "../assets/jsa/csa.json";
+import csa from "../assets/jsa/csa.json";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
@@ -40,13 +40,13 @@ export default function Contact() {
     if (isVisible && smstatus == "failed") {
       lottie.loadAnimation({
         container: animContainer.current,
-        animationData: crossanim,
+        animationData: csa,
         loop: false,
       });
     } else if (isVisible && smstatus == "submitted") {
       lottie.loadAnimation({
         container: animContainer.current,
-        animationData: tickAnim,
+        animationData: tka,
         loop: false,
       });
     }
@@ -82,12 +82,12 @@ export default function Contact() {
       CommentV() !== null
     ) {
       {
-        /*emailjs.sendForm(
-        process.env.REACT_APP_ServiceID,
-        process.env.REACT_APP_TemplateID,
-        e.target,
-        process.env.REACT_APP_ApiID
-      );*/
+        emailjs.sendForm(
+          process.env.REACT_APP_ServiceID,
+          process.env.REACT_APP_TemplateID,
+          e.target,
+          process.env.REACT_APP_ApiID
+        );
       }
       cleanup();
       setIsVisible(true);
@@ -229,24 +229,24 @@ export default function Contact() {
           </Col>
         </Row>
       </Container>
-      <div style={{height:'50vmin'}}>
-      <div
-        id="Ani_Kntnr"
-        style={{ display: `${isVisible ? "block" : "none"}` }}
-        className={`${isVisible ? "entryanim" : ""}`}
-      >
-        <div ref={animContainer} className="animContainer"></div>
-        <p
-          style={{
-            color: `${smstatus == "submitted" ? "green" : "red"}`,
-            width: "fit-content",
-            margin: "0 auto 1em auto",
-            fontFamily: "Carme",
-          }}
+      <div style={{ height: "50vmin" }}>
+        <div
+          id="Ani_Kntnr"
+          style={{ display: `${isVisible ? "block" : "none"}` }}
+          className={`${isVisible ? "entryanim" : ""}`}
         >
-          {sbmsg}
-        </p>
-      </div>
+          <div ref={animContainer} className="animContainer"></div>
+          <p
+            style={{
+              color: `${smstatus == "submitted" ? "green" : "red"}`,
+              width: "fit-content",
+              margin: "0 auto 1em auto",
+              fontFamily: "Carme",
+            }}
+          >
+            {sbmsg}
+          </p>
+        </div>
       </div>
     </>
   );

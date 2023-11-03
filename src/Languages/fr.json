@@ -123,8 +123,27 @@
       "JoinTeam": "Rejoignez nos équipes",
       "Aboutus": "À propos de nous",
       "Langes": "Langues"
+    },
+    "services": {
+      "CB": "Réservation de voiture",
+      "MD": "Livraison de médicaments"
+    },
+    "joinRteam": {
+      "Au": "À propos de nous",
+      "Cr": "Carrières",
+      "Er": "Explorer les postes",
+      "WT": "Pourquoi Travelar"
+    },
+    "Abtus": {
+      "Exp": "Explorer",
+      "Ec": "Edicarosse",
+      "Bg": "Blog"
+    },
+    "Cntkt": {
+      "Cu": "Nous contacter"
     }
   },
+  
   "Services": {
     "Headings": {
       "OrSvcs": "Nos services",

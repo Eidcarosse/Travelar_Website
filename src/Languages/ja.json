@@ -123,6 +123,24 @@
       "JoinTeam": "チームに参加",
       "Aboutus": "私たちについて",
       "Langes": "言語"
+    },
+    "services": {
+      "CB": "車の予約",
+      "MD": "薬の配達"
+    },
+    "joinRteam": {
+      "Au": "私たちについて",
+      "Cr": "キャリア",
+      "Er": "役割を探る",
+      "WT": "Travelarの魅力"
+    },
+    "Abtus": {
+      "Exp": "探る",
+      "Ec": "Edicarosse",
+      "Bg": "ブログ"
+    },
+    "Cntkt": {
+      "Cu": "お問い合わせ"
     }
   },
   "Services": {

@@ -123,6 +123,24 @@
       "JoinTeam": "Treten Sie unserem Team bei",
       "Aboutus": "Über uns",
       "Langes": "Sprachen"
+    },
+    "services": {
+      "CB": "Auto buchen",
+      "MD": "Medikamentenlieferung"
+    },
+    "joinRteam": {
+      "Au": "Über uns",
+      "Cr": "Karriere",
+      "Er": "Stellenangebote erkunden",
+      "WT": "Warum Travelar"
+    },
+    "Abtus": {
+      "Exp": "Erkunden",
+      "Ec": "Edicarosse",
+      "Bg": "Blog"
+    },
+    "Cntkt": {
+      "Cu": "Kontaktiere uns"
     }
   },
   "Services": {

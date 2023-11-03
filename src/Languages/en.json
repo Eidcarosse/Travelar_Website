@@ -124,6 +124,25 @@
       "JoinTeam": "Join our Teams",
       "Aboutus": "About us",
       "Langes": "Languages"
+    },
+    "services" : {
+      "CB" : "Car Booking",
+      "MD" : "Medicine Delivery"
+    },
+    "joinRteam" : {
+      "Au" : "About us",
+      "Cr" : "Careers",
+      "Er" : "Explore roles",
+      "WT" : "Why Travelar"
+    },
+    "Abtus" : {
+      "Exp" : "Explore",
+      "Ec" : "Edicarosse",
+      "Bg" : "Blog"
+
+    },
+    "Cntkt" : {
+      "Cu" : "Contact Us"
     }
   },
   "Services": {

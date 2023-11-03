@@ -16,9 +16,9 @@ export default function ServicesInfo() {
     <FontAwesomeIcon icon="check-double" size="xs" color="#00E784" />
   );
 
-  const[ddir, setDdir] = useState('ltr')
+  const [ddir, setDdir] = useState("ltr");
   useEffect(() => {
-    Slng == 'ara'|| Slng == 'ur' ? setDdir('rtl') : setDdir('ltr');
+    Slng == "ara" || Slng == "ur" ? setDdir("rtl") : setDdir("ltr");
   }, [Slng]);
 
   return (
@@ -27,13 +27,22 @@ export default function ServicesInfo() {
         <section id="ServicesInfo">
           <div className="ServicesInfo_Wrapper">
             <div className="Hme_img">
-              <img className="Hme_img_ds" loading="lazy" src={bnrimg} alt="Slow Network" />
+              <img
+                className="Hme_img_ds"
+                loading="lazy"
+                src={bnrimg}
+                alt="Slow Network"
+              />
             </div>
             <div className="Hme_info" dir={`${ddir}`}>
               <span className="H_info_h3 RTL_Thd" S_language={Slng}>
                 <h3>{t("ServicesInfo.Heading")}</h3>
               </span>
-              <span className="H_info_li efi2" dir={`${ddir}`} S_language={Slng}>
+              <span
+                className="H_info_li efi2"
+                dir={`${ddir}`}
+                S_language={Slng}
+              >
                 <ul className="RTL_Tdes" S_language={Slng}>
                   <ScrollAnimation
                     animateIn="animate__fadeInUp"

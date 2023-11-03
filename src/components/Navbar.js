@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css/animate.min.css";
 import "../Stylesheets/Navbar.css";
-import '../Stylesheets/RTL/Navbar_Ar_Ur.css';
+import "../Stylesheets/RTL/Navbar_Ar_Ur.css";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import DataContext from "../Contexts/DataContext";
@@ -17,7 +17,7 @@ export default function Navbar(props) {
   const Scroll_Top = useContext(DataContext);
   const [NavMn, setNavMenu] = useState("none");
   const [MenuIcon, setMenIc] = useState("bars");
-  const [idir, setIdir] = useState('ltr');
+  const [idir, setIdir] = useState("ltr");
 
   useEffect(() => {
     document.getElementById("Menu_BTN").addEventListener("click", (e) => {
@@ -29,7 +29,7 @@ export default function Navbar(props) {
   }, []);
 
   useEffect(() => {
-    Slng == 'ara' || Slng == 'ur' ? setIdir('rtl') : setIdir('ltr');
+    Slng == "ara" || Slng == "ur" ? setIdir("rtl") : setIdir("ltr");
   }, [Slng]);
 
   window.addEventListener("scroll", () => {
@@ -72,13 +72,13 @@ export default function Navbar(props) {
     ja: {
       nativeName: "Japanese",
       flag: "https://www.worldometers.info/img/flags/ja-flag.gif",
-    },  
+    },
   };
 
   const Tgle_LngChng = async (lng) => {
     props.setSpner();
     Scroll_Top();
-    setTimeout( async () => {  
+    setTimeout(async () => {
       await i18n.changeLanguage(lng);
       window.location.reload();
     }, 1500);
@@ -123,13 +123,15 @@ export default function Navbar(props) {
               </button>
             </span>
             <span className="Res_dropdown">
-              <FontAwesomeIcon className="lev_el"
+              <FontAwesomeIcon
+                className="lev_el"
                 style={{ margin: "3.2vh 0 0 0" }}
                 icon="globe"
                 size="xl"
               />
               <NavDropdown id="basic-nav-dropdown">
-                <span></span>{Object.keys(lngs).map((lng) => (
+                <span></span>
+                {Object.keys(lngs).map((lng) => (
                   <NavDropdown.Item
                     key={lng}
                     style={{

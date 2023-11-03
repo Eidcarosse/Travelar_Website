@@ -132,10 +132,7 @@ ul {
     text-decoration-thickness: 2px;
   }
 
-@font-face {
-    font-family: Logo_Font;
-    src: url(/src/Fonts/TakeLooks.otf);
-  }
+
   
 .head_style{
     text-align: center;
