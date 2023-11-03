@@ -11,7 +11,7 @@ import CountriesList from "./CountriesList";
 import "../Stylesheets/Contact.css";
 import "animate.css/animate.min.css";
 import lottie from "lottie-web";
-import tka from "../assets/jsa/csa.json";
+import tka from "../assets/jsa/tka.json";
 import csa from "../assets/jsa/csa.json";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
